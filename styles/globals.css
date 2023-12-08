@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+ background: linear-gradient(to bottom, #08201D, #000000);
+ 
+
+}
+
+/* components/Preloader.module.css */
+
+.preloader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  background: linear-gradient(to bottom, #08201D, #000000);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+
+
+
+@media screen and (max-width: 360px) {
+  .responsive-container {
+    width: 250px; /* Set the width to 380px for mobile view */
+  }
+}
+
+.background-video {
+    position: fixed;
+    top: 100;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.background-video video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5); /* Optional overlay color */
+    /* Your content styling goes here */
+}
+
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+/* Style the video element */
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
