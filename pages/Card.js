@@ -27,7 +27,7 @@ const Card = () => {
           <div className="flex flex-col items-center">
             <div className="text-center">
               <h2 className="mt-4 text-3xl font-bold text-white sm:text-4xl xl:text-5xl font-pj">
-                BRO Bot: Your Ultimate Trading Ally
+                BRO BOT: Your Ultimate Trading Ally
               </h2>
             </div>
 
