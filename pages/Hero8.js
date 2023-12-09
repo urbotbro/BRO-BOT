@@ -24,7 +24,7 @@ const Hero8 = () => {
           visible ? 'opacity-100 translate-y-0' : ''
         }`}>
     <div class="container px-6 py-10 mx-auto">
-        <h1 class="text-3xl text-center font-semibold text-gray-100 capitalize lg:text-4xl dark:text-white">BRO Bot: Journey Ahead</h1>
+        <h1 class="text-3xl text-center font-semibold text-gray-100 capitalize lg:text-4xl dark:text-white">BRO BOT: Journey Ahead</h1>
         
         
         
@@ -52,7 +52,7 @@ const Hero8 = () => {
 
                 <p class="text-gray-100 dark:text-gray-300">
                    <ul className='mt-12'>
-                    <li className=''>Web Gateway: BRO Bot, now in your browser.</li>
+                    <li className=''>Web Gateway: BRO BOT, now in your browser.</li>
                       <li className='mt-4'>Multi-Realm Trades: Spanning across blockchains.</li>
                      <li className='mt-4'>Trade Insights: Your trading, deciphered.</li> 
 
