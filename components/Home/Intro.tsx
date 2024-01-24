@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Intro = () => {
   return (
-    <Flex as='section' width="100%" maxWidth="1280px" justifyContent='center' align="center" minH='650px'>
+    <Flex as='section' width="100%" maxWidth="1280px" justifyContent='center' align="center" minH='700px'>
         <Box width="60%">
             <Heading fontSize='55px' pb='20px'>
                 BRO Bot: Your Ultimate Trading Ally

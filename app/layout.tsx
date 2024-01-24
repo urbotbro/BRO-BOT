@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Providers } from "@/contexts/Chakra-provider";
+import { Box } from '@chakra-ui/react';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Providers>
-        <body className={inter.className}>{children}</body>
+        <Box as="body" className={inter.className} bg="#0c0f12" color='#fff'>{children}</Box>
       </Providers>
     </html>
   );

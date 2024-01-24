@@ -1,5 +1,6 @@
 'use client';
 import { Flex, Box } from "@chakra-ui/react"
+import { RoadmapCard } from "../Card";
 
 const Roadmap = () => {
   const journeyAhead = [
@@ -59,13 +60,10 @@ const Roadmap = () => {
   ]
 
   return (
-    <Flex mt='150px' mb='150px' width="100%" maxW='1280px'>
+    <Flex mt='150px' mb='150px' width="100%" maxW='1280px' justify='center' align='center'>
       <Flex>
         {journeyAhead.map(elem => 
-          <Box key={journeyAhead.indexOf(elem)}>
-            <Box>{elem.title}</Box>
-            <Box>{elem.phases.map(list_ => <Box key={`${journeyAhead.indexOf(elem)}${elem.phases.indexOf(list_)}`}>{list_.subTitle}: {list_.desc}</Box>)}</Box>
-          </Box>
+          <RoadmapCard key={journeyAhead.indexOf(elem)} phases={elem.phases} title={elem.title} />
         )}
       </Flex>
     </Flex>

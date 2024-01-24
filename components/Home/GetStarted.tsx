@@ -8,14 +8,14 @@ const GetStarted = () => {
             title: 'Telegram Bot',
             comingSoon: false,
             description: 'Elevate your trading game with the BRO Telegram Bot – your intelligent companion in the world of finance. Enhance your gains, execute trades swiftly, seize opportunities early, and monitor real-time profits.',
-            imgSrc: '',
+            imgSrc: '/BRO BOT Dash.png',
             link: '/#',
         },
         {
             title: 'Web App',
             comingSoon: true,
             description: 'Embark on a seamless trading experience with our innovative Webapp! Delight in familiar Telegram features and a host of extras—effortlessly manage portfolios, establish watchlists, and tailor your interface for a personalized journey through the markets.',
-            imgSrc: '',
+            imgSrc: '/BRO BOT Dash.png',
             link: '/#',
         },
         {
