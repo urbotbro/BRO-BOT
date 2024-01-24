@@ -22,8 +22,8 @@ const GetStarted = () => {
             title: 'Dashboard',
             comingSoon: false,
             description: 'Token holders can seize a portion of revenue by utilizing this dashboard. Furthermore, you have the option to generate a referral link and collect rewards for successful referrals.',
-            imgSrc: '',
-            link: '/#',
+            imgSrc: '/BRO BOT Dash.png',
+            link: 'https://bro-dashboard-gules.vercel.app/',
         },
     ]
   return (

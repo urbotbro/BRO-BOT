@@ -15,10 +15,11 @@ const Header = () => {
           <Link href='#' pl='10px' pr='10px' fontSize='14px' _hover={{color: ''}}>Getting Started</Link>
           <Link href='#' pl='10px' pr='10px' fontSize='14px' _hover={{color: ''}}>Whitepaper</Link>
           <Link href='#' pl='10px' pr='10px' fontSize='14px' _hover={{color: ''}}>Roadmap</Link>
+          <Link href='#' pl='10px' pr='10px' fontSize='14px' _hover={{color: ''}}>Docs</Link>
         </Box>
         <Box>
           <Button>
-            Connect
+            Dashboard
           </Button>
         </Box>
 

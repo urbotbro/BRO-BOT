@@ -59,10 +59,15 @@ const Roadmap = () => {
   ]
 
   return (
-    <Flex>
-      <Box>
-      Roadmap
-      </Box>
+    <Flex mt='150px' mb='150px' width="100%" maxW='1280px'>
+      <Flex>
+        {journeyAhead.map(elem => 
+          <Box key={journeyAhead.indexOf(elem)}>
+            <Box>{elem.title}</Box>
+            <Box>{elem.phases.map(list_ => <Box key={`${journeyAhead.indexOf(elem)}${elem.phases.indexOf(list_)}`}>{list_.subTitle}: {list_.desc}</Box>)}</Box>
+          </Box>
+        )}
+      </Flex>
     </Flex>
   )
 }

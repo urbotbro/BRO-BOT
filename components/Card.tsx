@@ -19,10 +19,10 @@ export const Card = ({title, description}: featureList<string>) => {
   return (
     <ChakraCard maxW='sm'>
         <CardHeader>
-            <Heading>{title}</Heading>
+            <Heading size='md' mb='20px'>{title}</Heading>
         </CardHeader>
         <CardBody>
-            <Box>{description}</Box>
+            <Box mb='40px'>{description}</Box>
         </CardBody>
     </ChakraCard>
   )
@@ -32,7 +32,7 @@ export const FullLinkCard = (props: linkList) => {
   return (
     <ChakraCard maxW='sm' ml='20px' mr='20px'>
       <CardBody>
-        <Image borderRadius='lg' src={props.imgSrc} alt={props.title}  />
+        <Image borderRadius='lg' width='100%' src={props.imgSrc} alt={props.title}  />
         <Heading size='md' pt='20px' pb='20px'>{props.title}</Heading>
         <Box pb='20px'>
           {props.description}
