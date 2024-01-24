@@ -6,7 +6,7 @@ import { Providers } from "@/contexts/Chakra-provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Your Bro Bot",
+  title: "BRO Bot",
   description: "Harness the unmatched power of the BRO Bot to dominate the trading landscape",
   icons: {
     icon: "/Logo.png",

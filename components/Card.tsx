@@ -1,4 +1,4 @@
-import { Card as ChakraCard, CardBody, CardHeader, Box, CardFooter, Button } from "@chakra-ui/react";
+import { Card as ChakraCard, CardBody, CardHeader, Box, CardFooter, Button, Image } from "@chakra-ui/react";
 import { Heading } from "@chakra-ui/react";
 import Link from "next/link";
 
@@ -30,12 +30,15 @@ export const Card = ({title, description}: featureList<string>) => {
 
 export const FullLinkCard = (props: linkList) => {
   return (
-    <ChakraCard>
-      <CardHeader>
-        <Heading>{props.title}</Heading>
-      </CardHeader>
-      <CardBody>{props.description}</CardBody>
-      <CardFooter>{ props.comingSoon ? <></> : <Button as={Link} href={props.link}>Open {props.title}</Button> }</CardFooter>
+    <ChakraCard maxW='sm' ml='20px' mr='20px'>
+      <CardBody>
+        <Image borderRadius='lg' src={props.imgSrc} alt={props.title}  />
+        <Heading size='md' pt='20px' pb='20px'>{props.title}</Heading>
+        <Box pb='20px'>
+          {props.description}
+        </Box>
+      </CardBody>
+      <CardFooter>{ props.comingSoon ? <Box opacity='.4'> Coming Soon</Box> : <Button as={Link} href={props.link}>Open {props.title}</Button> }</CardFooter>
     </ChakraCard>
   )
 }
