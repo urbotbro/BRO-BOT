@@ -6,7 +6,7 @@ import { FaTelegram } from "react-icons/fa";
 const Footer = () => {
   const date = new Date();
   return (
-    <Flex as='footer' justify='center' direction='column' align='center'>
+    <Flex as='footer' justify='center' direction='column' align='center' bg='black'>
       <Flex direction='column' as='div' width='100%' maxWidth='1280px' mt='150px' mb='150px' justify='center' align='center'>
         <Box width='200px'>
           <Image src='/Logo.png' alt='Footer Logo' />
