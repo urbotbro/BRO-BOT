@@ -17,7 +17,7 @@ interface linkList {
 
 export const Card = ({title, description}: featureList<string>) => {
   return (
-    <ChakraCard>
+    <ChakraCard maxW='sm'>
         <CardHeader>
             <Heading>{title}</Heading>
         </CardHeader>
@@ -38,7 +38,7 @@ export const FullLinkCard = (props: linkList) => {
           {props.description}
         </Box>
       </CardBody>
-      <CardFooter>{ props.comingSoon ? <Box opacity='.4'> Coming Soon</Box> : <Button as={Link} href={props.link}>Open {props.title}</Button> }</CardFooter>
+      <CardFooter display='flex' alignItems='center'>{ props.comingSoon ? <Box opacity='.4' display='flex' alignItems='center'> Coming Soon</Box> : <Button as={Link} href={props.link}>Open {props.title}</Button> }</CardFooter>
     </ChakraCard>
   )
 }

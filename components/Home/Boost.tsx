@@ -4,7 +4,7 @@ import { Box, Flex, Heading, Image } from "@chakra-ui/react"
 
 const Boost = () => {
     return (
-    <Flex>
+    <Flex width="100%" maxWidth='1280px' justify='center' align='center'>
         <Box>
             <Heading>
                 Trade Like Never Before

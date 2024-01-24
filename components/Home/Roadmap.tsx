@@ -61,7 +61,7 @@ const Roadmap = () => {
   return (
     <Flex>
       <Box>
-      Hello
+      Roadmap
       </Box>
     </Flex>
   )

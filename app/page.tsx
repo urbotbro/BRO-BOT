@@ -17,8 +17,8 @@ export default function Home() {
       <Intro />
       <GetStarted />
       <Features />
-      <Roadmap />
       <Signal />
+      <Roadmap />
       <Boost />
     </Box>
     <Footer />

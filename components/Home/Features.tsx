@@ -1,4 +1,4 @@
-import { Box } from "@chakra-ui/react";
+import { Box, Flex, Heading, SimpleGrid } from "@chakra-ui/react";
 import { Card } from "../Card";
 
 interface featureList<Type> {
@@ -32,9 +32,14 @@ const Features = () => {
 
 
   return (
-    <Box>
-      {mainFeatures.map(elem => <Card key={mainFeatures.indexOf(elem)} title={elem.title} description={elem.description} />)}
-    </Box>
+    <Flex width="100%" maxWidth='1280px' mt='150px' mb='150px' justify='center' align='center' flexDirection='column'>
+      <Heading alignSelf='flex-start' ml='20px' mt='50px' mb='50px'>
+        Features
+      </Heading>
+      <SimpleGrid columns={3} spacing={6}>
+        {mainFeatures.map(elem => <Card key={mainFeatures.indexOf(elem)} title={elem.title} description={elem.description} />)}
+      </SimpleGrid>
+    </Flex>
   )
 }
 
