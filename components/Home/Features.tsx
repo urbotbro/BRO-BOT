@@ -1,10 +1,10 @@
 import { Box, Flex, Heading, SimpleGrid } from "@chakra-ui/react";
 import { Card } from "../Card";
+import { Ubuntu } from "next/font/google";
+import { motion } from 'framer-motion';
+import glitch from '@/components/Home/glitch.module.css'
 
-interface featureList<Type> {
-  title: Type;
-  description: Type;
-}
+const ubuntuFont = Ubuntu({weight: ['300', '400', '500', '700'], subsets: ['latin']})
 
 const Features = () => {
   const mainFeatures = [
@@ -33,10 +33,10 @@ const Features = () => {
 
   return (
     <Flex width="100%" maxWidth='1280px' mt='150px' mb='150px' justify='center' align='center' flexDirection='column'>
-      <Heading alignSelf='flex-start' ml='20px' mt='50px' mb='50px'>
-        Features
+      <Heading alignSelf='flex-start' ml='20px' mt='50px' mb='50px' style={ubuntuFont.style} className={glitch.glitchWapper}>
+        <span className={glitch.glitch} data-text='Features'>Features</span>
       </Heading>
-      <SimpleGrid columns={3} spacing={6}>
+      <SimpleGrid as={motion.div} initial={{opacity: 0}} whileInView={{opacity: 1, transition: {duration: 1.5}}}   columns={3} spacing={6}>
         {mainFeatures.map(elem => <Card key={mainFeatures.indexOf(elem)} title={elem.title} description={elem.description} />)}
       </SimpleGrid>
     </Flex>

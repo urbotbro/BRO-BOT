@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Ubuntu } from "next/font/google";
 import "./globals.css";
 import { Providers } from "@/contexts/Chakra-provider";
 import { Box } from '@chakra-ui/react';
 
 const inter = Inter({ subsets: ["latin"] });
+const ubuntu = Ubuntu({ weight: ['300', '400', '500', '700'], subsets: ["latin"], variable: '--font-ubuntu' });
 
 export const metadata: Metadata = {
   title: "BRO BOT",
@@ -23,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Providers>
-        <Box as="body" className={inter.className} bg="#0c0f12" color='#fff'>{children}</Box>
+        <Box as="body" className={`${inter.className}`} bg="#0c0f12" color='#fff'>{children}</Box>
       </Providers>
     </html>
   );

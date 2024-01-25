@@ -1,6 +1,7 @@
 'use client';
 import { Box, Flex } from "@chakra-ui/react";
 import { FullLinkCard } from "../Card";
+import { motion } from 'framer-motion';
 
 const GetStarted = () => {
     const startOptions = [
@@ -27,7 +28,7 @@ const GetStarted = () => {
         },
     ]
   return (
-    <Flex width="100%" maxWidth='1280px' justify='center'>
+    <Flex as={motion.div} id='get-started' width="100%" maxWidth='1280px' justify='center' initial={{opacity: 0}} whileInView={{opacity: 1, transition: {duration: 1.5}}}>
         {startOptions.map(elem => <FullLinkCard key={startOptions.indexOf(elem)} title={elem.title} comingSoon={elem.comingSoon} description={elem.description} imgSrc={elem.imgSrc} link={elem.link}  />)}
     </Flex>
   )
