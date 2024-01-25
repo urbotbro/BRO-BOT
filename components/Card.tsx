@@ -31,7 +31,7 @@ interface roadmapList<type> {
 
 export const Card = ({title, description}: featureList<string>) => {
   return (
-    <ChakraCard minHeight={{base:'auto', md: '400px'}} maxW='sm' background='#14191e' color='white' border='0.001px solid #ffffff23'>
+    <ChakraCard minHeight={{base:'auto', md: '400px'}} background='#14191e' color='white' border='0.001px solid #ffffff23'>
         <CardHeader>
             <Heading size='md' mt='20px' mb='25px' style={orbitronFont.style}>
               <span>{title}</span>
@@ -46,7 +46,7 @@ export const Card = ({title, description}: featureList<string>) => {
 
 export const FullLinkCard = (props: linkList) => {
   return (
-    <ChakraCard minH='650px' maxW='sm' ml='20px' mr='20px' mb='20px' background='#14191e' color='white' border='0.001px solid #ffffff23' >
+    <ChakraCard minH='650px' ml='20px' mr='20px' mb='20px' background='#14191e' color='white' border='0.001px solid #ffffff23' >
       <CardBody>
         {/* <Image borderRadius='lg' width='100%' src={props.imgSrc} alt={props.title}  /> */}
         <Box display='flex' position='relative' justifyContent='center' alignItems='center' width="100%" minHeight="200px">
@@ -74,7 +74,7 @@ export const FullLinkCard = (props: linkList) => {
 
 export const RoadmapCard = (props: roadmapList<string>) => {
   return (
-    <ChakraCard as={motion.div} mb='20px' initial={{opacity: 0}} whileInView={{opacity: 1, transition: {duration: .5, staggerChildren: 0.07, delayChildren: 0.2}}} maxW='sm' ml='20px' mr='20px' background='#14191e' color='white' border='0.001px solid #ffffff23'>
+    <ChakraCard as={motion.div} mb='20px' initial={{opacity: 0}} maxW={{base: 'sm'}} whileInView={{opacity: 1, transition: {duration: .5, staggerChildren: 0.07, delayChildren: 0.2}}}  ml='20px' mr='20px' background='#14191e' color='white' border='0.001px solid #ffffff23'>
       <CardHeader>
         <Heading size='lg'pb='10px' pt="10px" style={orbitronFont.style} className={glitch.glitchWrapper}>
           <span className={glitch.glitch} data-text={props.title}>{props.title}</span>
