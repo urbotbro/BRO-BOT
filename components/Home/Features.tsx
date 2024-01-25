@@ -1,10 +1,11 @@
 import { Box, Flex, Heading, SimpleGrid } from "@chakra-ui/react";
 import { Card } from "../Card";
-import { Ubuntu } from "next/font/google";
+import { Ubuntu, Orbitron } from "next/font/google";
 import { motion } from 'framer-motion';
 import glitch from '@/components/Home/glitch.module.css'
 
 const ubuntuFont = Ubuntu({weight: ['300', '400', '500', '700'], subsets: ['latin']})
+const orbitronFont = Orbitron({weight: ['400', '500', '600', '700'], subsets: ['latin']})
 
 const Features = () => {
   const mainFeatures = [
@@ -33,7 +34,7 @@ const Features = () => {
 
   return (
     <Flex width="100%" maxWidth='1280px' mt='150px' mb='150px' justify='center' align='center' flexDirection='column'>
-      <Heading alignSelf='flex-start' ml='20px' mt='50px' mb='50px' style={ubuntuFont.style} className={glitch.glitchWapper}>
+      <Heading alignSelf='flex-start' ml='20px' mt='50px' mb='50px' style={orbitronFont.style} className={glitch.glitchWapper}>
         <span className={glitch.glitch} data-text='Features'>Features</span>
       </Heading>
       <SimpleGrid as={motion.div} initial={{opacity: 0}} whileInView={{opacity: 1, transition: {duration: 1.5}}}   columns={{base: 1, sm: 2,  md: 3}} spacing={6}>

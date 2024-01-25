@@ -1,11 +1,12 @@
 import { Card as ChakraCard, CardBody, CardHeader, Box, CardFooter, Button, Image } from "@chakra-ui/react";
 import { Heading } from "@chakra-ui/react";
 import Link from "next/link";
-import { Ubuntu } from "next/font/google";
+import { Ubuntu, Orbitron } from "next/font/google";
 import { motion } from 'framer-motion';
 import glitch from '@/components/Home/glitch.module.css'
 
 const ubuntuFont = Ubuntu({weight: ['300', '400', '500', '700'], subsets: ['latin']})
+const orbitronFont = Orbitron({weight: ['400', '500', '600', '700'], subsets: ['latin']})
 
 interface featureList<Type> {
     title: Type;
@@ -30,9 +31,9 @@ interface roadmapList<type> {
 
 export const Card = ({title, description}: featureList<string>) => {
   return (
-    <ChakraCard maxW='sm' background='#14191e' color='white' border='0.001px solid #ffffff23'>
+    <ChakraCard minHeight={{base:'auto', md: '400px'}} maxW='sm' background='#14191e' color='white' border='0.001px solid #ffffff23'>
         <CardHeader>
-            <Heading size='md' mt='20px' mb='25px' style={ubuntuFont.style}>
+            <Heading size='md' mt='20px' mb='25px' style={orbitronFont.style}>
               <span>{title}</span>
             </Heading>
         </CardHeader>
@@ -45,7 +46,7 @@ export const Card = ({title, description}: featureList<string>) => {
 
 export const FullLinkCard = (props: linkList) => {
   return (
-    <ChakraCard maxW='sm' ml='20px' mr='20px' mb='20px' background='#14191e' color='white' border='0.001px solid #ffffff23'>
+    <ChakraCard minH='650px' maxW='sm' ml='20px' mr='20px' mb='20px' background='#14191e' color='white' border='0.001px solid #ffffff23' >
       <CardBody>
         {/* <Image borderRadius='lg' width='100%' src={props.imgSrc} alt={props.title}  /> */}
         <Box display='flex' position='relative' justifyContent='center' alignItems='center' width="100%" minHeight="200px">
@@ -55,12 +56,12 @@ export const FullLinkCard = (props: linkList) => {
           filter: props.comingSoon && 'blur(5px)',
           // opacity: props.comingSoon ? '.25' : '1',
           }}></Box>
-          {props.comingSoon ? <Box as="span" zIndex="11" color="#ffffffab" style={ubuntuFont.style}>Coming Soon</Box>: <></>}
+          {props.comingSoon ? <Box as="span" zIndex="11" color="#ffffffab" style={orbitronFont.style}>Coming Soon</Box>: <></>}
         </Box>
-        <Heading size='md' pt='30px' pb='30px' fontSize='30px' style={ubuntuFont.style} className={glitch.glitchWrapper}>
+        <Heading size='md' pt='30px' pb='30px' fontSize='30px' style={orbitronFont.style} className={glitch.glitchWrapper}>
           <span className={glitch.glitch} data-text={props.title}>{props.title}</span>
         </Heading>
-        <Box pb='20px' fontSize='20px'>
+        <Box pb='20px' fontSize='18px'>
           {props.description}
         </Box>
       </CardBody>
@@ -75,7 +76,7 @@ export const RoadmapCard = (props: roadmapList<string>) => {
   return (
     <ChakraCard as={motion.div} mb='20px' initial={{opacity: 0}} whileInView={{opacity: 1, transition: {duration: .5, staggerChildren: 0.07, delayChildren: 0.2}}} maxW='sm' ml='20px' mr='20px' background='#14191e' color='white' border='0.001px solid #ffffff23'>
       <CardHeader>
-        <Heading style={ubuntuFont.style} className={glitch.glitchWrapper}>
+        <Heading size='lg'pb='10px' pt="10px" style={orbitronFont.style} className={glitch.glitchWrapper}>
           <span className={glitch.glitch} data-text={props.title}>{props.title}</span>
         </Heading>
       </CardHeader>

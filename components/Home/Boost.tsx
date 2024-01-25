@@ -1,16 +1,17 @@
 'use client'
 
 import { Box, Flex, Heading, Image } from "@chakra-ui/react"
-import { Ubuntu } from "next/font/google";
+import { Ubuntu, Orbitron } from "next/font/google";
 import glitch from '@/components/Home/glitch.module.css';
 
 const ubuntuFont = Ubuntu({weight: ['300', '400', '500', '700'], subsets: ['latin']})
+const orbitronFont = Orbitron({weight: ['400', '500', '600', '700'], subsets: ['latin']})
 
 const Boost = () => {
     return (
-    <Flex textAlign='center' width="100%" maxWidth='1280px' direction={{base: 'column-reverse', md: 'row'}} justify='center' mt='150px' mb='150px' align='center'>
+    <Flex textAlign={{base: 'center', md: 'start'}} width="100%" maxWidth='1280px' direction={{base: 'column-reverse', md: 'row'}} justify='center' mt='150px' mb='150px' align='center'>
         <Box width={{base: '100%', md: '60%'}}>
-            <Heading  pb='20px' style={ubuntuFont.style} className={glitch.glitchWrapper}>
+            <Heading  pb='20px' style={orbitronFont.style} className={glitch.glitchWrapper}>
                 <span className={glitch.glitch} data-text="Trade Like Never Before">Trade Like Never Before</span>
             </Heading>
             <Box fontSize='20px'>

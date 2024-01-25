@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
     <Header />
-    <Box as="main" display='flex' alignItems='center' flexDirection='column'>
+    <Box as="main" display='flex' alignItems='center' justifyContent='center' flexDirection='column'>
       <Intro />
       <GetStarted />
       <Features />
