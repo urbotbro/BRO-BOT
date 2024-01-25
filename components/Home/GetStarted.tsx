@@ -28,7 +28,7 @@ const GetStarted = () => {
         },
     ]
   return (
-    <Flex as={motion.div} id='get-started' direction={{base: 'column', md: 'row'}} align={{base: 'center', md: 'flex-start'}} width="100%" maxWidth='1280px' justify='center' initial={{opacity: 0}} whileInView={{opacity: 1, transition: {duration: 1.5}}}>
+    <Flex as={motion.div} id='get-started' direction={{base: 'column', md: 'row'}} justifyContent='center' align={{base: 'center', md: 'flex-start'}} width="100%" maxWidth='1280px' justify='center' initial={{opacity: 0}} whileInView={{opacity: 1, transition: {duration: 1.5}}}>
         {startOptions.map(elem => <FullLinkCard key={startOptions.indexOf(elem)} title={elem.title} comingSoon={elem.comingSoon} description={elem.description} imgSrc={elem.imgSrc} link={elem.link}  />)}
     </Flex>
   )

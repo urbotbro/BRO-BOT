@@ -8,8 +8,8 @@ const ubuntuFont = Ubuntu({weight: ['300', '400', '500', '700'], subsets: ['lati
 
 const Boost = () => {
     return (
-    <Flex width="100%" maxWidth='1280px' justify='center' mt='150px' mb='150px' align='center'>
-        <Box width='60%'>
+    <Flex textAlign='center' width="100%" maxWidth='1280px' direction={{base: 'column-reverse', md: 'row'}} justify='center' mt='150px' mb='150px' align='center'>
+        <Box width={{base: '100%', md: '60%'}}>
             <Heading  pb='20px' style={ubuntuFont.style} className={glitch.glitchWrapper}>
                 <span className={glitch.glitch} data-text="Trade Like Never Before">Trade Like Never Before</span>
             </Heading>
@@ -17,7 +17,7 @@ const Boost = () => {
                 Dive into the world of BRO Bot, your ultimate Telegram companion. Experience the adrenaline of sniping the hottest launches or effortlessly acquiring live tokens. Crafted for the Ethereum Network, BRO Bot is not just a tool, it&apos;s your gateway to seamless trading. As we evolve, more chains await. Join us, and redefine how you trade. Unleash the power. Don&apos;t just trade, BRO-trade! 🔥
             </Box>
         </Box>
-        <Box width='40%' display='flex' justifyContent='center' alignItems='center'>
+        <Box width={{base: '100%', md: '60%'}} display='flex' justifyContent='center' alignItems='center'>
             <Image src="/Buysell.gif"  alt="Trade Like Never Before" width='90%' />
         </Box>
     </Flex>

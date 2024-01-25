@@ -61,7 +61,7 @@ const Roadmap = () => {
 
   return (
     <Flex mt='150px' mb='150px' width="100%" maxW='1280px' justify='center' align='center' id="roadmap">
-      <Flex>
+      <Flex flexWrap={'wrap'}>
         {journeyAhead.map(elem => 
           <RoadmapCard key={journeyAhead.indexOf(elem)} phases={elem.phases} title={elem.title} />
         )}

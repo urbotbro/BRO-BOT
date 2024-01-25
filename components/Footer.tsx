@@ -11,7 +11,7 @@ const ubuntuFont = Ubuntu({weight: '700', subsets: ['latin']})
 const Footer = () => {
   const date = new Date();
   return (
-    <Flex as='footer' justify='center' direction='column' align='center' bg='black'>
+    <Flex as='footer' justify='center' direction='column' align='center' bg='black' textAlign='center'>
       <Flex direction='column' as='div' width='100%' maxWidth='1280px' mt='150px' mb='150px' justify='center' align='center'>
         <Box width='220px'>
           <Image src='/GIF.gif' alt='Footer Logo' />
@@ -19,7 +19,7 @@ const Footer = () => {
         {/* <Box mt='50px' fontSize='50px' fontWeight='700' mb='20px' letterSpacing='1.5px' className={glitch.glitchWrapper} style={ubuntuFont.style}>
           <span className={glitch.glitch} data-text="Start Trading with BRO BOT">Start Trading with BRO BOT</span>
         </Box> */}
-        <Box mt='50px' fontSize='50px' fontWeight='700' mb='20px' letterSpacing='1.5px' className={newHero.heroContainer} style={ubuntuFont.style}>
+        <Box mt='50px' fontSize={{base: '20px', md: '50px'}} fontWeight='700' mb='20px' letterSpacing={{base: '1px', md: '1.5px'}} className={newHero.heroContainer} style={ubuntuFont.style}>
           <span className={`${newHero.glitch} ${newHero.hero} ${newHero.layers}`} data-text="Start Trading with BRO BOT">Start Trading with BRO BOT</span>
         </Box>
         
