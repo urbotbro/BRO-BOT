@@ -1,5 +1,5 @@
 'use client';
-import { Flex, Box } from "@chakra-ui/react"
+import { Flex, Box, SimpleGrid } from "@chakra-ui/react"
 import { RoadmapCard } from "../Card";
 
 const Roadmap = () => {
@@ -61,11 +61,11 @@ const Roadmap = () => {
 
   return (
     <Flex mt='150px' mb='150px' width="100%" maxW='1280px' justify='center' align='center' id="roadmap">
-      <Flex flexWrap={'wrap'}>
+      <SimpleGrid columns={{base: 1, md: 2, xl:3}} spacing={2}>
         {journeyAhead.map(elem => 
           <RoadmapCard key={journeyAhead.indexOf(elem)} phases={elem.phases} title={elem.title} />
         )}
-      </Flex>
+      </SimpleGrid>
     </Flex>
   )
 }

@@ -20,7 +20,7 @@ const Footer = () => {
         {/* <Box mt='50px' fontSize='50px' fontWeight='700' mb='20px' letterSpacing='1.5px' className={glitch.glitchWrapper} style={ubuntuFont.style}>
           <span className={glitch.glitch} data-text="Start Trading with BRO BOT">Start Trading with BRO BOT</span>
         </Box> */}
-        <Box mt='50px' fontSize={{base: '20px', md: '50px'}} fontWeight='700' mb='20px' letterSpacing={{base: '1px', md: '1.5px'}} className={newHero.heroContainer} style={orbitronFont.style}>
+        <Box mt='50px' fontSize={{base: '20px', md: '50px'}} fontWeight='700' pb='20px' letterSpacing={{base: '1px', md: '1.5px'}} className={newHero.heroContainer} style={orbitronFont.style}>
           <span className={`${newHero.glitch} ${newHero.hero} ${newHero.layers}`} data-text="Start Trading with BRO BOT">Start Trading with BRO BOT</span>
         </Box>
         

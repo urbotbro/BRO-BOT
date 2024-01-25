@@ -74,7 +74,7 @@ export const FullLinkCard = (props: linkList) => {
 
 export const RoadmapCard = (props: roadmapList<string>) => {
   return (
-    <ChakraCard as={motion.div} mb='20px' initial={{opacity: 0}} maxW={{base: 'sm'}} whileInView={{opacity: 1, transition: {duration: .5, staggerChildren: 0.07, delayChildren: 0.2}}}  ml='20px' mr='20px' background='#14191e' color='white' border='0.001px solid #ffffff23'>
+    <ChakraCard as={motion.div} mb='20px' initial={{opacity: 0}} maxW={{base: '100%', md: 'sm'}} whileInView={{opacity: 1, transition: {duration: .5, staggerChildren: 0.07, delayChildren: 0.2}}}  ml='20px' mr='20px' background='#14191e' color='white' border='0.001px solid #ffffff23'>
       <CardHeader>
         <Heading size='lg'pb='10px' pt="10px" style={orbitronFont.style} className={glitch.glitchWrapper}>
           <span className={glitch.glitch} data-text={props.title}>{props.title}</span>

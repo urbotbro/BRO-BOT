@@ -11,10 +11,10 @@ const Boost = () => {
     return (
     <Flex textAlign={{base: 'center', md: 'start'}} width="100%" maxWidth='1280px' direction={{base: 'column-reverse', md: 'row'}} justify='center' mt='150px' mb='150px' align='center'>
         <Box width={{base: '100%', md: '60%'}}>
-            <Heading  pb='20px' style={orbitronFont.style} className={glitch.glitchWrapper}>
-                <span className={glitch.glitch} data-text="Trade Like Never Before">Trade Like Never Before</span>
+            <Heading  pb='20px' style={orbitronFont.style} mt={{base: '30px', md: 'initial'}} className={glitch.glitchWrapper}>
+                <span className={glitch.glitch}  data-text="Trade Like Never Before">Trade Like Never Before</span>
             </Heading>
-            <Box fontSize='20px'>
+            <Box fontSize='20px' pl={{base: '10px', md: 'initial'}}>
                 Dive into the world of BRO Bot, your ultimate Telegram companion. Experience the adrenaline of sniping the hottest launches or effortlessly acquiring live tokens. Crafted for the Ethereum Network, BRO Bot is not just a tool, it&apos;s your gateway to seamless trading. As we evolve, more chains await. Join us, and redefine how you trade. Unleash the power. Don&apos;t just trade, BRO-trade! 🔥
             </Box>
         </Box>
