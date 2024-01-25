@@ -47,7 +47,16 @@ export const FullLinkCard = (props: linkList) => {
   return (
     <ChakraCard maxW='sm' ml='20px' mr='20px' background='#14191e' color='white' border='0.001px solid #ffffff23'>
       <CardBody>
-        <Image borderRadius='lg' width='100%' src={props.imgSrc} alt={props.title}  />
+        {/* <Image borderRadius='lg' width='100%' src={props.imgSrc} alt={props.title}  /> */}
+        <Box display='flex' position='relative' justifyContent='center' alignItems='center' width="100%" minHeight="200px">
+          <Box position='absolute' zIndex='10' display='flex' justifyContent='center' alignItems='center' width="100%" minHeight="200px" sx={{
+          background: `url('${props.imgSrc}') center`,
+          backgroundSize: 'contain',
+          filter: props.comingSoon && 'blur(5px)',
+          // opacity: props.comingSoon ? '.25' : '1',
+          }}></Box>
+          {props.comingSoon ? <Box as="span" zIndex="11" color="#ffffffab" style={ubuntuFont.style}>Coming Soon</Box>: <></>}
+        </Box>
         <Heading size='md' pt='30px' pb='30px' fontSize='30px' style={ubuntuFont.style} className={glitch.glitchWrapper}>
           <span className={glitch.glitch} data-text={props.title}>{props.title}</span>
         </Heading>
