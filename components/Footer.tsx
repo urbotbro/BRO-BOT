@@ -21,7 +21,7 @@ const Footer = () => {
           <span className={glitch.glitch} data-text="Start Trading with BRO BOT">Start Trading with BRO BOT</span>
         </Box> */}
         <Box mt='50px' fontSize={{base: '20px', md: '50px'}} fontWeight='700' pb='20px' letterSpacing={{base: '1px', md: '1.5px'}} className={newHero.heroContainer} style={orbitronFont.style}>
-          <span className={`${newHero.glitch} ${newHero.hero} ${newHero.layers}`} data-text="Start Trading with BRO BOT">Start Trading with BRO BOT</span>
+          <Box as="span" lineHeight='40px' className={`${newHero.glitch} ${newHero.hero} ${newHero.layers}`} data-text="Start Trading with BRO BOT">Start Trading with BRO BOT</Box>
         </Box>
         
         <Box>

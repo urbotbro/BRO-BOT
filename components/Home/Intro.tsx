@@ -18,7 +18,7 @@ const Intro = () => {
                     Harness the unmatched power of the BRO Bot to dominate the trading landscape
                 </Text>
             </Box>
-            <Box width={{base: '100%', md:"40%"}} display='flex' justifyContent='center' alignItems='center'>
+            <Box width={{base: '100%', md:"40%"}} mt={{base: '100px', md: '0'}} display='flex' justifyContent='center' alignItems='center'>
                 <ChakraImage src='/GIF.gif' alt="BroBot Logo" width="350px"/>
                 {/* <Image src='/GIF.gif' alt="BroBot Image" width={50} height={50} /> */}
             </Box>

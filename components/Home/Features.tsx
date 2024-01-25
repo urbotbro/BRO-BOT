@@ -33,7 +33,7 @@ const Features = () => {
 
 
   return (
-    <Flex width="100%" maxWidth='1280px' mt='150px' mb='150px' justify='center' align='center' flexDirection='column'>
+    <Flex width="100%" maxWidth='1280px' mt='150px' mb='150px' justify='center' align='center' flexDirection='column' pl='20px' pr='20px'>
       <Heading alignSelf='flex-start' ml='20px' mt='50px' mb='50px' style={orbitronFont.style} className={glitch.glitchWapper}>
         <span className={glitch.glitch} data-text='Features'>Features</span>
       </Heading>
