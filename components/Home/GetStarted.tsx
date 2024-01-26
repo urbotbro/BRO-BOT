@@ -28,7 +28,7 @@ const GetStarted = () => {
         },
     ]
   return (
-    <SimpleGrid as={motion.div} mt={{base: '100px',}} justifySelf='center' id='get-started' columns={{base: 1, md: 2, lg: 3}} spacing='5' justifyContent={{base: 'center', md: 'flex-start'}} width="100%" maxWidth='1280px' initial={{opacity: 0}} whileInView={{opacity: 1, transition: {duration: 1.5}}}>
+    <SimpleGrid mt={{base: '100px'}} justifySelf='center' id='get-started' columns={{base: 1, md: 2, lg: 3}} spacing='5' justifyContent={{base: 'center', md: 'flex-start'}} width="100%" maxWidth='1280px'>
         {startOptions.map(elem => <FullLinkCard key={startOptions.indexOf(elem)} title={elem.title} comingSoon={elem.comingSoon} description={elem.description} imgSrc={elem.imgSrc} link={elem.link}  />)}
     </SimpleGrid>
   )

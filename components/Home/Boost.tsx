@@ -2,7 +2,7 @@
 
 import { Box, Flex, Heading, Image } from "@chakra-ui/react"
 import { Ubuntu, Orbitron } from "next/font/google";
-import glitch from '@/components/Home/glitch.module.css';
+import newHero from '@/components/Home/second.module.css';
 
 const ubuntuFont = Ubuntu({weight: ['300', '400', '500', '700'], subsets: ['latin']})
 const orbitronFont = Orbitron({weight: ['400', '500', '600', '700'], subsets: ['latin']})
@@ -11,8 +11,8 @@ const Boost = () => {
     return (
     <Flex textAlign={{base: 'center', md: 'start'}} width="100%" maxWidth='1280px' direction={{base: 'column-reverse', md: 'row'}} justify='center' mt='150px' mb='150px' align='center' pl='20px' pr='20px'>
         <Box width={{base: '100%', md: '60%'}}>
-            <Heading  pb='25px' style={orbitronFont.style} mt={{base: '30px', md: 'initial'}} className={glitch.glitchWrapper}>
-                <span className={glitch.glitch}  data-text="Trade Like Never Before">Trade Like Never Before</span>
+            <Heading  pb={{base: '20px', md: '25px' }} style={orbitronFont.style} mb={{base: '30px', md: 'initial'}} mt={{base: '60px', md: 'initial'}} className={newHero.heroContainer}>
+                <span className={`${newHero.glitch} ${newHero.hero} ${newHero.layers}`}  data-text="Trade Like Never Before">Trade Like Never Before</span>
             </Heading>
             <Box fontSize='20px' pl={{base: '10px', md: 'initial'}}>
                 Dive into the world of BRO Bot, your ultimate Telegram companion. Experience the adrenaline of sniping the hottest launches or effortlessly acquiring live tokens. Crafted for the Ethereum Network, BRO Bot is not just a tool, it&apos;s your gateway to seamless trading. As we evolve, more chains await. Join us, and redefine how you trade. Unleash the power. Don&apos;t just trade, BRO-trade! 🔥
