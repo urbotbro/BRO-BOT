@@ -65,7 +65,7 @@ export const FullLinkCard = (props: linkList) => {
           {props.description}
         </Box>
       </CardBody>
-      <CardFooter display='flex' alignItems='center'>{ props.comingSoon ? <Box opacity='.4' display='flex' alignItems='center'> Coming Soon</Box> : <Button as={Link} href={props.link} fontSize="14px" borderRadius='50px' background='#cdf6f8' _hover={{
+      <CardFooter alignItems='center'>{ props.comingSoon ? <Box opacity='.4' display='flex' alignItems='center'> Coming Soon</Box> : <Button as={Link} href={props.link} fontSize="14px" borderRadius='50px' background='#cdf6f8' _hover={{
               background: '#9bf0f5'
             }}>Open {props.title}</Button> }</CardFooter>
     </ChakraCard>
