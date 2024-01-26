@@ -2,19 +2,15 @@
   width: 100%;
   height: 100%;
 }
+
 .div:hover > svg {
   fill: #9bf0f5;
 }
-
-.glitchWrapper {
-  /* width: 100%;
-  height: 100%; */
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: center; */
-  /* text-align: center; */
-  /* background-color: #000000; */
+.menu > svg {
+   height: 100%;
+   width: 100%;
 }
+
 
 .glitch {
   position: relative;
