@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Oxanium } from "next/font/google";
 import "./globals.css";
 import { Providers } from "@/contexts/Chakra-provider";
-import { Box } from '@chakra-ui/react';
 
 const oxaniumFont = Oxanium({weight: ['400', '500', '600', '700'], subsets: ['latin']})
 
@@ -22,9 +21,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Providers>
-        <Box as="body"  display='flex' flexDirection='column' justifyContent='center' alignItems='center' width="100%" className={`${oxaniumFont.className}`} bg="#0c0f12" color='#fff'>{children}</Box>
-      </Providers>
+      <body style={{
+          display:'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', width: "100%", background:"#0c0f12", color: '#fff'
+        }} className={`${oxaniumFont.className}`}>
+        <Providers>
+          {children}
+        </Providers>
+      </body>
     </html>
   );
 }
