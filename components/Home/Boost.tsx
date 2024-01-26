@@ -19,7 +19,7 @@ const Boost = () => {
             </Box>
         </Box>
         <Box width={{base: '100%', md: '60%'}} display='flex' justifyContent='center' alignItems='center'>
-            <Image src="/Buysell.gif"  alt="Trade Like Never Before" width='90%' />
+            <Image src="/Buysell.gif"  alt="Trade Like Never Before" width='80%' />
         </Box>
     </Flex>
     )

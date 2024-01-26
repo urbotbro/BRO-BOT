@@ -12,22 +12,27 @@ const Features = () => {
     {
       title: "🚀 Prime Signals",
       description: "Our core promise is delivering the best trading signals in the industry. We're not just another trading bot; we are THE benchmark when it comes to accurate and timely signals.",
+      detail: null
     },
     {
       title: "🎯 Auto Sniping",
-      description: "With our advanced algorithms, snipe new tokens the moment they hit the market, ensuring you're always ahead of the crowd."
+      description: "With our advanced algorithms, snipe new tokens the moment they hit the market, ensuring you're always ahead of the crowd.",
+      detail: null
     },
     {
       title: "💼 Manual Buying & Selling",
-      description: "Full control in your hands. Decide when to buy or sell based on the impeccable signals provided by BRO Bot."
+      description: "Full control in your hands. Decide when to buy or sell based on the impeccable signals provided by BRO Bot.",
+      detail: null
     },
     {
       title: "⚙️ Limit Orders Perfected",
-      description: "Set your buy and sell limits with precision:"
+      description: "Set your buy and sell limits with precision:",
+      detail: ["Buy Limits: Decide how much ETH to spend with adjustable slippage.", "Sell Limits: Fine-tune your strategy with options like take profit, stop loss, trailing stop loss, and tailored slippage."],
     },
     {
       title: "🚧 Unlaunched Token Orders:",
-      description: "Why wait for the launch? Position yourself early by setting orders for tokens even before they launch."
+      description: "Why wait for the launch? Position yourself early by setting orders for tokens even before they launch.",
+      detail: null
     }
   ]
 
@@ -38,7 +43,7 @@ const Features = () => {
         <span className={glitch.glitch} data-text='Features'>Features</span>
       </Heading>
       <SimpleGrid columns={{base: 1, md: 2,  lg: 2, xl: 3}} spacing={6}>
-        {mainFeatures.map(elem => <Card key={mainFeatures.indexOf(elem)} title={elem.title} description={elem.description} />)}
+        {mainFeatures.map(elem => <Card key={mainFeatures.indexOf(elem)} title={elem.title} description={elem.description} detail={elem.detail} />)}
       </SimpleGrid>
     </Flex>
   )

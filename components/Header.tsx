@@ -23,7 +23,7 @@ const Header = () => {
 
         <Box display={{base: 'none', md:'flex'}} justifyContent='space-between' alignItems='center'>
           <Link href='#get-started' pl='10px' pr='10px' fontSize='15px' style={orbitronFont.style} _hover={{color: '#9bf0f5'}}>Getting Started</Link>
-          <Link href='#' pl='10px' pr='10px' fontSize='15px' style={orbitronFont.style} _hover={{color: '#9bf0f5'}}>Whitepaper</Link>
+          <Link href='/' pl='10px' pr='10px' download='BRO Bot Whitepaper' fontSize='15px' style={orbitronFont.style} _hover={{color: '#9bf0f5'}}>Whitepaper</Link>
           <Link href='#roadmap' pl='10px' pr='10px' fontSize='15px' style={orbitronFont.style} _hover={{color: '#9bf0f5'}}>Roadmap</Link>
           <Link href='#' pl='10px' pr='10px' fontSize='15px' style={orbitronFont.style} _hover={{color: '#9bf0f5'}}>Docs</Link>
         </Box>

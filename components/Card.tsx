@@ -11,6 +11,7 @@ const orbitronFont = Orbitron({weight: ['400', '500', '600', '700'], subsets: ['
 interface featureList<Type> {
     title: Type;
     description: Type;
+    detail: Type[] | null;
 }
 
 interface linkList {
@@ -29,7 +30,7 @@ interface roadmapList<type> {
   phases: phaseList<type>[]
 }
 
-export const Card = ({title, description}: featureList<string>) => {
+export const Card = ({title, description, detail}: featureList<string>) => {
   return (
     <ChakraCard minHeight={{base:'auto', md: '400px'}} background='#14191e' color='white' border='0.001px solid #ffffff23'>
         <CardHeader>
@@ -38,7 +39,15 @@ export const Card = ({title, description}: featureList<string>) => {
             </Heading>
         </CardHeader>
         <CardBody>
-            <Box mb='40px' fontSize='20px' lineHeight='2'>{description}</Box>
+            <Box mb='40px' fontSize='20px' lineHeight='2'>
+              {description}
+              {detail ? 
+                <ul>
+                  {detail.map(elem => (<li key={detail.indexOf(elem)} style={{marginTop:'5px', fontSize: '18px'}}>&bull;{elem}</li>))}
+                </ul>
+              :
+              <></>}
+            </Box>
         </CardBody>
     </ChakraCard>
   )
@@ -80,7 +89,7 @@ export const RoadmapCard = (props: roadmapList<string>) => {
           <span className={glitch.glitch} data-text={props.title}>{props.title}</span>
         </Heading>
       </CardHeader>
-      <CardBody as={motion.div} initial={{opacity: 0.6}} whileInView={{opacity: 1, transition: {duration: .5, staggerChildren: 0.07, delayChildren: 0.2}}}>
+      <CardBody>
         {props.phases.map(elem => 
           <Box border='0.001px solid #ffffff3a' background="#1d242a" padding='10px' mb='10px' borderRadius='5px' key={`${props.phases.indexOf(elem)}${props.phases.indexOf(elem)}`} pt='10px' pb='10px' fontSize='20px'>{elem.subTitle}: {elem.desc}</Box>
         )}
