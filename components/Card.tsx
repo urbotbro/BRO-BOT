@@ -46,7 +46,7 @@ export const Card = ({title, description}: featureList<string>) => {
 
 export const FullLinkCard = (props: linkList) => {
   return (
-    <ChakraCard as={motion.div} initial={{opacity: 0}} whileInView={{opacity: 1, transition: {duration: 1.5}}} minH='650px' ml='20px' mr='20px' mb='20px' background='#14191e' color='white' border='0.001px solid #ffffff23' >
+    <ChakraCard minH='650px' ml='20px' mr='20px' mb='20px' background='#14191e' color='white' border='0.001px solid #ffffff23' >
       <CardBody>
         {/* <Image borderRadius='lg' width='100%' src={props.imgSrc} alt={props.title}  /> */}
         <Box display='flex' position='relative' justifyContent='center' alignItems='center' width="100%" minHeight="200px">

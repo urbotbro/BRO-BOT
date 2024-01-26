@@ -37,7 +37,7 @@ const Features = () => {
       <Heading alignSelf='flex-start' ml='20px' mt='50px' mb='50px' style={orbitronFont.style} className={glitch.glitchWapper}>
         <span className={glitch.glitch} data-text='Features'>Features</span>
       </Heading>
-      <SimpleGrid as={motion.div} initial={{opacity: 0}} whileInView={{opacity: 1, transition: {duration: 1.5}}}   columns={{base: 1, md: 2,  lg: 2, xl: 3}} spacing={6}>
+      <SimpleGrid columns={{base: 1, md: 2,  lg: 2, xl: 3}} spacing={6}>
         {mainFeatures.map(elem => <Card key={mainFeatures.indexOf(elem)} title={elem.title} description={elem.description} />)}
       </SimpleGrid>
     </Flex>
