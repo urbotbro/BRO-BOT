@@ -7,38 +7,38 @@ import { Link } from "@chakra-ui/next-js"
 
 const Webapp = () => {
   return (
-    <Box mt={{base: '100px'}} justifyContent={{base: 'center', md: 'flex-start'}} width="100%" maxWidth='1280px'>
-        <Flex alignItems='center' justify='space-evenly' flexWrap='wrap'>
-            <Box as={Link} href="/#" _hover={{textDecoration:'none'}} display='flex' alignItems='center' mr='15px' background='#0088cc' padding='10px' borderRadius='5px'>
-                <Box className={glitch.menu} height="100%" width='55px' pr='10px'>
+    <Box mt={{base: '100px'}} display='flex' flexDirection='column' alignItems="center" width="100%" maxWidth='1280px' pl='20px' pr='20px'>
+        <Flex alignItems='center' justify={{base: 'space-evenly', md: 'space-evenly'}} flexWrap='wrap' width='100%'>
+            <Box as={Link} href="/#" flexDirection={{base: 'column', md: 'row'}} justifyContent='center' _hover={{textDecoration:'none'}} display='flex' alignItems='center' mr={{base: '0',md: '15px'}} background='#0088cc' padding='10px' borderRadius='5px'>
+                <Box className={glitch.menu} height="100%" width='55px' pr={{base: '0', md:'10px'}}>
                     <FaTelegram />
                 </Box>
-                <Box>
+                <Box display={{base: 'flex', md: 'block'}} flexDirection='column' justifyContent='center' alignItems='center' mt={{base: '10px', md: '0'}}>
                     <Badge fontSize='13px' p='5px' borderRadius='5px'>Available</Badge>
-                    <Box fontSize='20px' textTransform='uppercase' fontWeight='700'>Telegram</Box>
+                    <Box fontSize='20px' textTransform='uppercase' fontWeight='700' mt={{base: '10px', md: '0'}}>Telegram</Box>
                 </Box>
             </Box>
-            <Box display='flex' alignItems='center' mr='15px'>
-                <Box className={glitch.menu} height="100%" width='55px' pr='10px'>
+            <Box display='flex' flexDirection={{base: 'column', md: 'row'}} justifyContent='center' alignItems='center' mr={{base: '0',md: '15px'}}>
+                <Box className={glitch.menu} height="100%" width='55px' pr={{base: '0', md:'10px'}}>
                     <FaGlobe />
                 </Box>
-                <Box>
+                <Box display={{base: 'flex', md: 'block'}} flexDirection='column' justifyContent='center' alignItems='center' mt={{base: '10px', md: '0'}}>
                     <Badge fontSize='13px' colorScheme="green" p='5px' borderRadius='5px'>Soon</Badge>
-                    <Box fontSize='20px' textTransform='uppercase' fontWeight='700'>Webapp</Box>
+                    <Box fontSize='20px' textTransform='uppercase' fontWeight='700' mt={{base: '10px', md: '0'}}>Webapp</Box>
                 </Box>
             </Box>
-            <Box display='flex' alignItems='center' mr='15px'>
-                <Box className={glitch.menu} height="100%" width='55px' pr='10px'>
+            <Box display='flex' flexDirection={{base: 'column', md: 'row'}} justifyContent='center' alignItems='center' mr={{base: '0',md: '15px'}}>
+                <Box className={glitch.menu} height="100%" width='55px' pr={{base: '0', md:'10px'}}>
                     <FaAppStore />
                 </Box>
-                <Box>
+                <Box display={{base: 'flex', md: 'block'}} flexDirection='column' justifyContent='center' alignItems='center' mt={{base: '10px', md: '0'}}>
                     <Badge fontSize='13px' colorScheme="green" p='5px' borderRadius='5px'>Soon</Badge>
-                    <Box fontSize='20px' textTransform='uppercase' fontWeight='700'>
+                    <Box fontSize='20px' textTransform='uppercase' fontWeight='700' mt={{base: '10px', md: '0'}}>
                         App Store
                     </Box>
                 </Box>
             </Box>
-            <Box display='flex' alignItems='center' mr='15px'>
+            <Box display={{base: 'none', md:'flex'}} alignItems='center'  mr={{base: '0',md: '15px'}}>
                 <Box className={glitch.menu} height="100%" width='55px' pr='10px'>
                     <FaGooglePlay />
                 </Box>
@@ -49,14 +49,14 @@ const Webapp = () => {
                     </Box>
                 </Box>
             </Box>
-            <Box height="35px" display='flex' >
-                <Tooltip label='Telegram Community' transition='none' openDelay={500} placement="top" className={glitch.menu} >
-                    <Link href="" className={glitch.menu} height='100%' width='55px'>
+            <Box height="35px" display={{base: 'none', lg: 'flex'}}>
+                <Tooltip label='Telegram Community' padding='10px' textTransform='uppercase' borderRadius='5px' transition='none' openDelay={500} placement="top" className={glitch.menu} >
+                    <Link href="" className={glitch.div} height='100%' width='55px'>
                         <RiTelegramLine />
                     </Link>
                 </Tooltip>
-                <Tooltip label='X Community' transition='none' openDelay={500} placement="top" className={glitch.menu}>
-                    <Link href="" className={glitch.menu} height='100%' width='50px'>
+                <Tooltip label='Twitter Community' padding='10px' textTransform='uppercase' borderRadius='5px' transition='none' openDelay={500} placement="top" className={glitch.menu}>
+                    <Link href="" className={glitch.div} height='100%' width='50px'>
                     <FaXTwitter />
                     </Link>
                 </Tooltip>

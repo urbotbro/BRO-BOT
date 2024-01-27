@@ -29,7 +29,7 @@ const Header = () => {
           <Link href='#roadmap' pl='10px' pr='10px' fontSize='15px' style={orbitronFont.style} _hover={{color: '#9bf0f5'}}>Roadmap</Link>
           <Link href='/' pl='10px' pr='10px' fontSize='15px' style={orbitronFont.style} _hover={{color: '#9bf0f5'}}>Docs</Link>
         </Box>
-        <Box display={{base: 'none', md: 'block'}}>
+        <Box display={{base: 'none', md: 'flex'}}>
           <Popover>
           <PopoverTrigger>
           <Button borderRadius='100px' onClick={() => {toggleTool(!tool)}} style={orbitronFont.style} fontSize='14px' background='#cdf6f8' _hover={{
@@ -39,16 +39,15 @@ const Header = () => {
             </Button>
           </PopoverTrigger>
           <Portal>
-            <PopoverContent background="#161c21" border='0'>
-              {/* <PopoverHeader>Header</PopoverHeader>
-               */}
-               <PopoverBody display='flex' flexDirection='column'>
+            <PopoverContent background="#161c21" border='0' position='relative'>
+              
+              <PopoverBody display='flex' flexDirection='column'>
                 <ChakraLink as={Link} href='#' pt='10px' pb='10px' pl='5px' pr='5px' _hover={{textDecoration: 'none', background: '#1e262d'}} display='flex' alignItems='center'><Box className={glitch.menu} width='25px' height='25px'><FaTelegram /></Box> <Box as='span' ml='10px'>Telegram Bot</Box></ChakraLink>
                 <Divider opacity='.1' />
                 <Box pt='10px' pb='10px' pl='5px' pr='5px' opacity='0.7' _hover={{textDecoration: 'none',}} cursor='default' display='flex' alignItems='center'>
                   Web App <Badge variant='outline' justifySelf='flex-end' alignItems='center' display='flex' justifyContent='center' alignContent='center' ml='10px' colorScheme='green'>Coming Soon</Badge>
                 </Box>
-               </PopoverBody>
+              </PopoverBody>
             </PopoverContent>
           </Portal>
         </Popover>
