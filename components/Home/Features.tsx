@@ -20,8 +20,8 @@ const Features = () => {
       detail: null
     },
     {
-      title: "💼 Manual Buying & Selling",
-      description: "Full control in your hands. Decide when to buy or sell based on the impeccable signals provided by BRO Bot.",
+      title: "💼 BroSwift Swaps",
+      description: "Where security meets speed, ensuring your transactions are not just rapid but also shielded from potential attacks, making every swap a winning move for you.",
       detail: null
     },
     {
@@ -30,15 +30,25 @@ const Features = () => {
       detail: ["Buy Limits: Decide how much ETH to spend with adjustable slippage.", "Sell Limits: Fine-tune your strategy with options like take profit, stop loss, trailing stop loss, and tailored slippage."],
     },
     {
-      title: "🚧 Unlaunched Token Orders:",
-      description: "Why wait for the launch? Position yourself early by setting orders for tokens even before they launch.",
+      title: "Copytrade",
+      description: "Let others do the heavy lifting. Copytrade a profitable trader, or multiple traders simultaneously, while enjoying the same safety features as you would when trading with BRO BOT.",
       detail: null
-    }
+    },
+    {
+      title: "🛡️FortifyShield",
+      description: "Where every trade is guarded by our robust anti-rug and reorg protection, ensuring 90% success rate, Trade with confidence, trade with FortifyShield.",
+      detail: null
+    },
+    {
+      title: "RugGard Pro",
+      description: "Unmatched protection from scams and honeypots. Banish uncertaintied with out BanBan Shield, fortified with cutting-edge SafeSim tech for fail-safe trading.",
+      detail: null
+    },
   ]
 
 
   return (
-    <Flex width="100%" maxWidth='1280px' mt='150px' mb='150px' justify='center' align='center' flexDirection='column' pl='20px' pr='20px'>
+    <Flex width="100%" maxWidth='1280px' mt='150px' mb='150px' justify='center' align='center' flexDirection='column' pl='20px' pr='20px' id='features'>
       <Heading alignSelf='flex-start' ml='20px' mt='50px' mb='50px' style={orbitronFont.style} className={glitch.glitchWapper}>
         <span className={glitch.glitch} data-text='Features'>Features</span>
       </Heading>
