@@ -1,10 +1,12 @@
 .div > svg {
   width: 100%;
   height: 100%;
+  transition: all .2s ease-in-out;
 }
 
 .div:hover > svg {
   fill: #9bf0f5;
+  transition: all .2s ease-in-out;
 }
 .menu > svg {
    height: 100%;

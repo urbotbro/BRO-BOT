@@ -30,17 +30,17 @@ const Features = () => {
       detail: ["Buy Limits: Decide how much ETH to spend with adjustable slippage.", "Sell Limits: Fine-tune your strategy with options like take profit, stop loss, trailing stop loss, and tailored slippage."],
     },
     {
-      title: "Copytrade",
+      title: "🤝 Copytrade",
       description: "Let others do the heavy lifting. Copytrade a profitable trader, or multiple traders simultaneously, while enjoying the same safety features as you would when trading with BRO BOT.",
       detail: null
     },
     {
-      title: "🛡️FortifyShield",
+      title: "🛡️ FortifyShield",
       description: "Where every trade is guarded by our robust anti-rug and reorg protection, ensuring 90% success rate, Trade with confidence, trade with FortifyShield.",
       detail: null
     },
     {
-      title: "RugGard Pro",
+      title: "🔒 RugGard Pro",
       description: "Unmatched protection from scams and honeypots. Banish uncertaintied with out BanBan Shield, fortified with cutting-edge SafeSim tech for fail-safe trading.",
       detail: null
     },

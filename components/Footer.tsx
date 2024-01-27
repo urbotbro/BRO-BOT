@@ -25,7 +25,7 @@ const Footer = () => {
         </Box>
         
         <Box>
-          <Flex justify='center' align='center'>
+          <Flex justify='center' align='center' transition='all 0.2s ease-in-out'>
             <Link href='https://x.com/ur_bot_bro?s=21' target="_blank" width='30px' height='30px' ml='10px' mr='10px' display='flex'justifyContent='center' alignItems="center" className={glitch.div}>
               <FaXTwitter />
             </Link>

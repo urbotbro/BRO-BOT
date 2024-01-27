@@ -6,7 +6,7 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    transition: all .2s ease-in-out;
+    /* transition: color .2s ease-in-out; */
 }
 
 .css-1qq679y {
