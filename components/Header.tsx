@@ -41,33 +41,10 @@ const Header = () => {
             <ChakraLink onClick={() => {toggleTool(false)}} as={Link} href='#' pt='10px' pb='10px' pl='5px' pr='5px' _hover={{textDecoration: 'none', background: '#1e262d'}} display='flex' alignItems='center'><Box className={glitch.menu} width='25px' height='25px'><FaTelegram /></Box> <Box as='span' ml='10px'>Telegram Bot</Box></ChakraLink>
                   <Divider opacity='.1' />
                 <Box pt='10px' pb='10px' pl='5px' pr='5px' opacity='0.7' _hover={{textDecoration: 'none',}} cursor='default' display='flex' alignItems='center'>
-                    Web App <Badge variant='outline' justifySelf='flex-end' alignItems='center' display='flex' justifyContent='center' alignContent='center' ml='10px' colorScheme='green'>Coming Soon</Badge>
+                    BroTrade Hub <Badge variant='outline' justifySelf='flex-end' alignItems='center' display='flex' justifyContent='center' alignContent='center' ml='10px' colorScheme='green'>Coming Soon</Badge>
                   </Box>
           </Box>
-        {/* <Box position='relative' display={{base: 'none', md: 'flex'}}>
-          <Popover>
-          <PopoverTrigger>
-            <Button borderRadius='100px' onClick={() => {toggleTool(!tool)}} style={orbitronFont.style} fontSize='14px' background='#cdf6f8' _hover={{
-              background: '#9bf0f5'
-            }}>
-                <Box as='span' paddingRight='7px'>Start</Box> <FaChevronDown />
-              </Button>
-          </PopoverTrigger>
-          <Portal>
-            <PopoverContent background="#161c21" border='0' position='absolute' right='-45px'>
-              
-              <PopoverBody display='flex' flexDirection='column'>
-                <ChakraLink as={Link} href='#' pt='10px' pb='10px' pl='5px' pr='5px' _hover={{textDecoration: 'none', background: '#1e262d'}} display='flex' alignItems='center'><Box className={glitch.menu} width='25px' height='25px'><FaTelegram /></Box> <Box as='span' ml='10px'>Telegram Bot</Box></ChakraLink>
-                <Divider opacity='.1' />
-                <Box pt='10px' pb='10px' pl='5px' pr='5px' opacity='0.7' _hover={{textDecoration: 'none',}} cursor='default' display='flex' alignItems='center'>
-                  Web App <Badge variant='outline' justifySelf='flex-end' alignItems='center' display='flex' justifyContent='center' alignContent='center' ml='10px' colorScheme='green'>Coming Soon</Badge>
-                </Box>
-              </PopoverBody>
-            </PopoverContent>
-          </Portal>
-        </Popover>
-        </Box> */}
-
+        
           <Box display={{base: 'flex', md: 'none'}} height="100%" width="27px" className={glitch.menu} justifyContent='center' alignItems='center' onClick={() => {changeState(!state)}}>
             {state ? <FaXmark /> : <FaBars />}
           </Box>

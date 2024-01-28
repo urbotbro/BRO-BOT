@@ -13,7 +13,7 @@ const GetStarted = () => {
             link: '/#',
         },
         {
-            title: 'Web App',
+            title: 'BroTrade Hub',
             comingSoon: true,
             description: 'Embark on a seamless trading experience with our innovative Webapp! Delight in familiar Telegram features and a host of extras—effortlessly manage portfolios, establish watchlists, and tailor your interface for a personalized journey through the markets.',
             imgSrc: '/BRO BOT Dash.png',
