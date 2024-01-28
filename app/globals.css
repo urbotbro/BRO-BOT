@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    /* transition: color .2s ease-in-out; */
+}
+
+.css-1qq679y {
+    z-index: 1000 !important;
+    /* transform: none !important; */
+    transition: none !important;
+}
