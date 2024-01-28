@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "BRO BOT",
   description: "Harness the unmatched power of the BRO Bot to dominate the trading landscape",
   icons: {
-    icon: "/Logo.png",
+    icon: "/Logo-min.png",
   }
 };
 
