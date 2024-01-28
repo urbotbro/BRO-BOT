@@ -10,30 +10,30 @@ const Webapp = () => {
     <Box mt={{base: '100px'}} display='flex' flexDirection='column' alignItems="center" width="100%" maxWidth='1280px' pl='20px' pr='20px'>
         <Flex alignItems='center' justify={{base: 'space-evenly', md: 'space-evenly'}} flexWrap='wrap' width='100%'>
             <Box as={Link} href="/#" flexDirection={{base: 'column', md: 'row'}} justifyContent='center' _hover={{textDecoration:'none'}} display='flex' alignItems='center' mr={{base: '0',md: '15px'}} background='#0088cc' padding='10px' borderRadius='5px'>
-                <Box className={glitch.menu} height="100%" width='55px' pr={{base: '0', md:'10px'}}>
+                <Box className={glitch.menu} height="100%" width={{base: '40px', sm: '55px'}} pr={{base: '0', md:'10px'}}>
                     <FaTelegram />
                 </Box>
                 <Box display={{base: 'flex', md: 'block'}} flexDirection='column' justifyContent='center' alignItems='center' mt={{base: '10px', md: '0'}}>
-                    <Badge fontSize='13px' p='5px' borderRadius='5px'>Available</Badge>
-                    <Box fontSize='20px' textTransform='uppercase' fontWeight='700' mt={{base: '10px', md: '0'}}>Telegram</Box>
+                    <Badge fontSize={{base: '10px', sm: '13px'}} p='5px' borderRadius='5px'>Available</Badge>
+                    <Box fontSize={{base: '14px', sm: '17', md: '20px'}} textTransform='uppercase' fontWeight='700' mt={{base: '10px', md: '0'}}>Telegram</Box>
                 </Box>
             </Box>
             <Box display='flex' flexDirection={{base: 'column', md: 'row'}} justifyContent='center' alignItems='center' mr={{base: '0',md: '15px'}}>
-                <Box className={glitch.menu} height="100%" width='55px' pr={{base: '0', md:'10px'}}>
+                <Box className={glitch.menu} height="100%" width={{base: '40px', sm: '55px'}} pr={{base: '0', md:'10px'}}>
                     <FaGlobe />
                 </Box>
                 <Box display={{base: 'flex', md: 'block'}} flexDirection='column' justifyContent='center' alignItems='center' mt={{base: '10px', md: '0'}}>
-                    <Badge fontSize='13px' colorScheme="green" p='5px' borderRadius='5px'>Soon</Badge>
-                    <Box fontSize='20px' textTransform='uppercase' fontWeight='700' mt={{base: '10px', md: '0'}}>Webapp</Box>
+                    <Badge fontSize={{base: '10px', sm: '13px'}} colorScheme="green" p='5px' borderRadius='5px'>Soon</Badge>
+                    <Box fontSize={{base: '14px', sm: '17', md: '20px'}} textTransform='uppercase' fontWeight='700' mt={{base: '10px', md: '0'}}>Webapp</Box>
                 </Box>
             </Box>
             <Box display='flex' flexDirection={{base: 'column', md: 'row'}} justifyContent='center' alignItems='center' mr={{base: '0',md: '15px'}}>
-                <Box className={glitch.menu} height="100%" width='55px' pr={{base: '0', md:'10px'}}>
+                <Box className={glitch.menu} height="100%" width={{base: '40px', sm: '55px'}} pr={{base: '0', md:'10px'}}>
                     <FaAppStore />
                 </Box>
                 <Box display={{base: 'flex', md: 'block'}} flexDirection='column' justifyContent='center' alignItems='center' mt={{base: '10px', md: '0'}}>
-                    <Badge fontSize='13px' colorScheme="green" p='5px' borderRadius='5px'>Soon</Badge>
-                    <Box fontSize='20px' textTransform='uppercase' fontWeight='700' mt={{base: '10px', md: '0'}}>
+                    <Badge fontSize={{base: '10px', sm: '13px'}} colorScheme="green" p='5px' borderRadius='5px'>Soon</Badge>
+                    <Box fontSize={{base: '14px', sm: '17', md: '20px'}} textTransform='uppercase' fontWeight='700' mt={{base: '10px', md: '0'}}>
                         App Store
                     </Box>
                 </Box>

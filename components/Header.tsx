@@ -29,7 +29,8 @@ const Header = () => {
           <Link href='#roadmap' pl='10px' pr='10px' fontSize='15px' style={orbitronFont.style} _hover={{color: '#9bf0f5'}}>Roadmap</Link>
           <Link href='/' pl='10px' pr='10px' fontSize='15px' style={orbitronFont.style} _hover={{color: '#9bf0f5'}}>Docs</Link>
         </Box>
-        <Box display={{base: 'none', md: 'flex'}}>
+        
+        {/* <Box display={{base: 'none', md: 'flex'}}>
           <Popover>
           <PopoverTrigger>
           <Button borderRadius='100px' onClick={() => {toggleTool(!tool)}} style={orbitronFont.style} fontSize='14px' background='#cdf6f8' _hover={{
@@ -51,7 +52,7 @@ const Header = () => {
             </PopoverContent>
           </Portal>
         </Popover>
-        </Box>
+        </Box> */}
 
           <Box display={{base: 'flex', md: 'none'}} height="100%" width="27px" className={glitch.menu} justifyContent='center' alignItems='center' onClick={() => {changeState(!state)}}>
             {state ? <FaXmark /> : <FaBars />}
