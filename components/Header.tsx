@@ -30,7 +30,7 @@ const Header = () => {
           <Link href='/' pl='10px' pr='10px' fontSize='15px' style={orbitronFont.style} _hover={{color: '#9bf0f5'}}>Docs</Link>
         </Box>
         
-        <Box position='relative'>
+        <Box position='relative' display={{base: 'none', md: 'block'}}>
           <Button borderRadius='100px' onClick={() => {toggleTool(!tool)}} style={orbitronFont.style} fontSize='14px' background='#cdf6f8' _hover={{
               background: '#9bf0f5'
             }}>
