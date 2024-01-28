@@ -23,7 +23,7 @@ const Intro = () => {
                 {/* <Image src='/GIF.gif' alt="BroBot Image" width={50} height={50} /> */}
             </Box>
         </Flex>
-        <Box position='absolute' background={`url('/Video.gif') center no-repeat`} left='0' right='0' minH='700px' zIndex='-100' opacity='.2'>
+        <Box position='absolute' background={`url('/Video.gif') center no-repeat`} left='0' right='0' minH='800px' zIndex='-100' opacity='.1' mt='20px'>
         </Box>
     </Flex>
   )
