@@ -11,4 +11,6 @@
 
 .css-1qq679y {
     z-index: 1000 !important;
+    /* transform: none !important; */
+    transition: none !important;
 }

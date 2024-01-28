@@ -37,24 +37,24 @@ const Header = () => {
               <Box as='span' paddingRight='7px'>Start</Box> <FaChevronDown />
           </Button>
           </Box>
-          <Box as='div' zIndex={tool ? 1000 : 0} opacity={tool ? 1 : 0} display={tool ? 'flex': 'none'} flexDirection='column' minWidth='240px' background="#161c21" padding='10px' borderRadius='5px' right='10px' transform='translateY(85px)' position='absolute'>
+          <Box as='div' visibility={tool ? 'visible' : 'hidden' } zIndex={tool ? 1000 : 0} opacity={tool ? 1 : 0} transition={'all .2s ease-in-out'} flexDirection='column' minWidth='240px' background="#161c21" padding='10px' borderRadius='5px' right='10px' transform='translateY(85px)' position='absolute'>
             <ChakraLink onClick={() => {toggleTool(false)}} as={Link} href='#' pt='10px' pb='10px' pl='5px' pr='5px' _hover={{textDecoration: 'none', background: '#1e262d'}} display='flex' alignItems='center'><Box className={glitch.menu} width='25px' height='25px'><FaTelegram /></Box> <Box as='span' ml='10px'>Telegram Bot</Box></ChakraLink>
                   <Divider opacity='.1' />
                 <Box pt='10px' pb='10px' pl='5px' pr='5px' opacity='0.7' _hover={{textDecoration: 'none',}} cursor='default' display='flex' alignItems='center'>
                     Web App <Badge variant='outline' justifySelf='flex-end' alignItems='center' display='flex' justifyContent='center' alignContent='center' ml='10px' colorScheme='green'>Coming Soon</Badge>
                   </Box>
           </Box>
-        {/* <Box display={{base: 'none', md: 'flex'}}>
+        {/* <Box position='relative' display={{base: 'none', md: 'flex'}}>
           <Popover>
           <PopoverTrigger>
-          <Button borderRadius='100px' onClick={() => {toggleTool(!tool)}} style={orbitronFont.style} fontSize='14px' background='#cdf6f8' _hover={{
+            <Button borderRadius='100px' onClick={() => {toggleTool(!tool)}} style={orbitronFont.style} fontSize='14px' background='#cdf6f8' _hover={{
               background: '#9bf0f5'
             }}>
-              <Box as='span' paddingRight='7px'>Start</Box> <FaChevronDown />
-            </Button>
+                <Box as='span' paddingRight='7px'>Start</Box> <FaChevronDown />
+              </Button>
           </PopoverTrigger>
           <Portal>
-            <PopoverContent background="#161c21" border='0' position='relative'>
+            <PopoverContent background="#161c21" border='0' position='absolute' right='-45px'>
               
               <PopoverBody display='flex' flexDirection='column'>
                 <ChakraLink as={Link} href='#' pt='10px' pb='10px' pl='5px' pr='5px' _hover={{textDecoration: 'none', background: '#1e262d'}} display='flex' alignItems='center'><Box className={glitch.menu} width='25px' height='25px'><FaTelegram /></Box> <Box as='span' ml='10px'>Telegram Bot</Box></ChakraLink>
