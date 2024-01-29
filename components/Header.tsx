@@ -51,7 +51,7 @@ const Header = () => {
           </Box>
 
       </Flex>
-      <Box position='fixed' zIndex={state ? 10000 : 0} transition='all .5s ease-in-out' background="#0c0f12" top='0' bottom='0' left='0' right='0' display='flex' visibility={state ? 'visible': 'hidden'} justifyContent='center' alignItems='flex-end' flexDirection='column'>
+      <Box position='fixed' zIndex={state ? 10000 : 0} transition='all .5s ease-in-out' background="#0c0f12" top='0' bottom='0' left='0' right='0' display={{base: 'flex', md: 'none'}} visibility={state ? 'visible': 'hidden'} justifyContent='center' alignItems='flex-end' flexDirection='column'>
         <Link mt='50px' mr='30px' opacity={state ? 1 : 0} onClick={() => {changeState(false)}} href='#get-started' pl='10px' pr='10px' fontSize='20px' style={orbitronFont.style} _hover={{color: '#9bf0f5'}}>Getting Started</Link>
         <Link mt='50px' mr='30px' opacity={state ? 1 : 0} onClick={() => {changeState(false)}} href='#features' pl='10px' pr='10px' fontSize='20px' style={orbitronFont.style} _hover={{color: '#9bf0f5'}}>Features</Link>
         <Link mt='50px' mr='30px' opacity={state ? 1 : 0} onClick={() => {changeState(false)}} href='#roadmap' pl='10px' pr='10px' fontSize='20px' style={orbitronFont.style} _hover={{color: '#9bf0f5'}}>Roadmap</Link>
