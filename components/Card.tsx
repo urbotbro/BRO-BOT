@@ -23,7 +23,7 @@ interface linkList {
 }
 interface phaseList<type> {
   subTitle: type
-  desc: type
+  desc: type | null
 }
 interface roadmapList<type> {
   title: type,
@@ -91,7 +91,7 @@ export const RoadmapCard = (props: roadmapList<string>) => {
       </CardHeader>
       <CardBody>
         {props.phases.map(elem => 
-          <Box border='0.001px solid #ffffff3a' background="#1d242a" padding='10px' mb='10px' borderRadius='5px' key={`${props.phases.indexOf(elem)}${props.phases.indexOf(elem)}`} pt='10px' pb='10px' fontSize='20px'>{elem.subTitle}: {elem.desc}</Box>
+          <Box border='0.001px solid #ffffff3a' background="#1d242a" padding='10px' mb='10px' borderRadius='5px' key={`${props.phases.indexOf(elem)}${props.phases.indexOf(elem)}`} pt='10px' pb='10px' fontSize='20px'>{elem.subTitle}{elem.desc ? <>: {elem.desc}</>: <></>}</Box>
         )}
       </CardBody>
     </ChakraCard>

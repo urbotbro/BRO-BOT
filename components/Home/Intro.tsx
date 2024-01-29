@@ -22,8 +22,9 @@ const Intro = () => {
                 <ChakraImage src='/GIF.gif' alt="BroBot Logo" width="350px"/>
                 {/* <Image src='/GIF.gif' alt="BroBot Image" width={50} height={50} /> */}
             </Box>
-
         </Flex>
+        <Box position='absolute' background={`url('/Video.gif') center no-repeat`} left='0' right='0' minH='800px' zIndex='-100' opacity='.1' mt='20px'>
+        </Box>
     </Flex>
   )
 }

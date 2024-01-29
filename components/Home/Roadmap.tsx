@@ -5,63 +5,40 @@ import { RoadmapCard } from "../Card";
 const Roadmap = () => {
   const journeyAhead = [
     {
-      title: "Kick-Start",
+      title: "Launch Day",
       phases: [
         {
-          subTitle: 'Pulse Signals',
-          desc: 'Alerts on hot pairs.',
+          subTitle: 'Bro Bot Premieres',
+          desc: 'Full Features & Earning Dashboard',
         },
         {
-          subTitle: 'Precision Orders',
-          desc: 'Buy/Sell at just the right time.Alerts on hot pairs.',
+          subTitle: 'Signal Bot & Dashboard',
+          desc: null,
         },
         {
-          subTitle: 'Swift Auto Sell',
-          desc: 'No delays, only profits.',
+          subTitle: 'Earn With Referrals',
+          desc: null,
         },
       ]
     },
     {
-      title: "Next Up",
+      title: "Next",
       phases: [
         {
-          subTitle: 'Web Gateway',
-          desc: 'BRO BOT, now in your browser.',
+          subTitle: 'Beta',
+          desc: 'Bro Trade Hub',
         },
         {
-          subTitle: 'Multi-Realm Trades',
-          desc: 'Spanning across blockchains.',
-        },
-        {
-          subTitle: 'Trade Insights',
-          desc: 'Your trading, deciphered.',
+          subTitle: 'Bro Hub goes Live',
+          desc: null,
         },
       ]
-    },
-    
-    {
-      title: "Horizon's Edge",
-      phases: [
-        {
-          subTitle: 'Omni-Platform',
-          desc: "From mobile to desktop, we've got you.",
-        },
-        {
-          subTitle: 'Wallet Sentinel',
-          desc: 'Every move, noted.',
-        },
-        {
-          subTitle: 'Trade Mimicry',
-          desc: 'Follow the masters, reap like them.',
-        },
-      ]
-    },
-    
+    }
   ]
 
   return (
     <Flex mt='150px' mb='150px' width="100%" maxW='1280px' justify='center' align='center' id="roadmap">
-      <SimpleGrid columns={{base: 1, md: 2, xl:3}} spacing={2}>
+      <SimpleGrid columns={{base: 1, md: 2}} spacing={{base: 2, md: 15 }}>
         {journeyAhead.map(elem => 
           <RoadmapCard key={journeyAhead.indexOf(elem)} phases={elem.phases} title={elem.title} />
         )}

@@ -24,7 +24,7 @@ const Webapp = () => {
                 </Box>
                 <Box display={{base: 'flex', md: 'block'}} flexDirection='column' justifyContent='center' alignItems='center' mt={{base: '10px', md: '0'}}>
                     <Badge fontSize={{base: '10px', sm: '13px'}} colorScheme="green" p='5px' borderRadius='5px'>Soon</Badge>
-                    <Box fontSize={{base: '14px', sm: '17', md: '20px'}} textTransform='uppercase' fontWeight='700' mt={{base: '10px', md: '0'}}>Webapp</Box>
+                    <Box fontSize={{base: '14px', sm: '17', md: '20px'}} textTransform='uppercase' fontWeight='700' mt={{base: '10px', md: '0'}}>BroTrade Hub</Box>
                 </Box>
             </Box>
             <Box display='flex' flexDirection={{base: 'column', md: 'row'}} justifyContent='center' alignItems='center' mr={{base: '0',md: '15px'}}>

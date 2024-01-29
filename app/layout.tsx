@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Oxanium } from "next/font/google";
 import "./globals.css";
 import { Providers } from "@/contexts/Chakra-provider";
+import Loader from "@/components/Home/loader";
+import { useState } from "react";
 
 const oxaniumFont = Oxanium({weight: ['400', '500', '600', '700'], subsets: ['latin']})
 
@@ -9,7 +11,7 @@ export const metadata: Metadata = {
   title: "BRO BOT",
   description: "Harness the unmatched power of the BRO Bot to dominate the trading landscape",
   icons: {
-    icon: "/Logo.png",
+    icon: "/Logo-min.png",
   }
 };
 
