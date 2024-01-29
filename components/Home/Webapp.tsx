@@ -51,12 +51,12 @@ const Webapp = () => {
             </Box>
             <Box height="35px" display={{base: 'none', lg: 'flex'}}>
                 <Tooltip label='Telegram Community' padding='10px' textTransform='uppercase' borderRadius='5px' transition='none' openDelay={500} placement="top" className={glitch.menu} >
-                    <Link href="" className={glitch.div} height='100%' width='55px'>
+                    <Link href="https://t.me/bro_bot_token" className={glitch.div} height='100%' width='55px'>
                         <RiTelegramLine />
                     </Link>
                 </Tooltip>
                 <Tooltip label='Twitter Community' padding='10px' textTransform='uppercase' borderRadius='5px' transition='none' openDelay={500} placement="top" className={glitch.menu}>
-                    <Link href="" className={glitch.div} height='100%' width='50px'>
+                    <Link href="https://x.com/ur_bot_bro" className={glitch.div} height='100%' width='50px'>
                     <FaXTwitter />
                     </Link>
                 </Tooltip>
