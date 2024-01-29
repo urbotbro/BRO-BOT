@@ -14,11 +14,11 @@ const Intro = () => {
                 <Heading fontSize={{base: '33px', md: '40px', lg: '45px', xl: '55px'}} pb='20px' className={newHero.heroContainer} style={orbitronFont.style}>
                     <Text className={`${newHero.glitch} ${newHero.hero} ${newHero.layers}`} data-text="BRO Bot: Your Ultimate Trading Ally">BRO Bot: Your Ultimate Trading Ally</Text>
                 </Heading>
-                <Text fontSize={{base: '20', md: '25px'}} style={orbitronFont.style}>
+                <Text fontSize={{base: '20px', md: '25px'}} mt={{base: '20px', sm:"0"}} lineHeight={{base: '160%', sm: '0'}} style={orbitronFont.style}>
                     Harness the unmatched power of the BRO Bot to dominate the trading landscape
                 </Text>
             </Box>
-            <Box width={{base: '90%', md:"40%"}} mt={{base: '100px', md: '0'}} mb={{base: '20px', md:'0'}} display='flex' justifyContent='center' alignItems='center'>
+            <Box width={{base: '90%', md:"40%"}} mt={{base: '100px', md: '0'}} mb={{base: '20px', md:'0'}} display={{base: 'none', sm:'flex'}} justifyContent='center' alignItems='center'>
                 <ChakraImage src='/GIF.gif' alt="BroBot Logo" width="350px"/>
                 {/* <Image src='/GIF.gif' alt="BroBot Image" width={50} height={50} /> */}
             </Box>
