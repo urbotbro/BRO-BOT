@@ -7,13 +7,13 @@ import { FaBars, FaXmark, FaTelegram } from 'react-icons/fa6';
 import { FaChevronDown } from "react-icons/fa";
 import glitch from '@/components/Home/glitch.module.css'
 import tooltip from '@/components/Home/tooltip.module.css';
-
+import Loader from './Home/loader';
 const ubuntuFont = Ubuntu({weight: ['300', '400', '500', '700'], subsets: ['latin']})
 const orbitronFont = Orbitron({weight: ['400', '500', '600', '700'], subsets: ['latin']})
 
 const Header = () => {
   const [tool, toggleTool] = useState(false);
-  const [state, changeState] = useState(false)
+  const [state, changeState] = useState(false);
 
 
   return (
