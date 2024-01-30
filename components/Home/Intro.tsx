@@ -14,7 +14,7 @@ const Intro = () => {
                 <Heading fontSize={{base: '33px', md: '40px', lg: '45px', xl: '55px'}} pb='20px' className={newHero.heroContainer} style={orbitronFont.style}>
                     <Text className={`${newHero.glitch} ${newHero.hero} ${newHero.layers}`} data-text="BRO Bot: Your Ultimate Trading Ally">BRO Bot: Your Ultimate Trading Ally</Text>
                 </Heading>
-                <Text fontSize={{base: '20px', md: '25px'}} mt={{base: '20px', sm:"0"}} lineHeight={{base: '160%', sm: '0'}} style={orbitronFont.style}>
+                <Text fontSize={{base: '20px', md: '25px'}} mt={{base: '20px', sm:"0"}} lineHeight={{base: '160%', sm: 'initial'}} style={orbitronFont.style}>
                     Harness the unmatched power of the BRO Bot to dominate the trading landscape
                 </Text>
             </Box>
