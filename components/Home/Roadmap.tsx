@@ -32,6 +32,10 @@ const Roadmap = () => {
           subTitle: 'Bro Hub goes Live',
           desc: null,
         },
+        {
+          subTitle: 'Bro Launchpad',
+          desc: null,
+        },
       ]
     }
   ]
