@@ -15,14 +15,14 @@ const GetStarted = () => {
         {
             title: 'BroTrade Hub',
             comingSoon: true,
-            description: "Bro Trade Hub is a cutting-edge trading ecosystem, blending AI insights, one-click trading, and community wisdom. It's designed for seamless crypto transactions, offering users a dynamic platform for smart, secure, and community-driven trading experiences. Welcome to the future of crypto trading.",
+            description: 'Bro Trade Hub is a cutting-edge trading ecosystem, blending AI insights, one-click trading, and community wisdom. It is designed for seamless crypto transactions, offering users a dynamic platform for smart, secure, and community-driven trading experiences. Welcome to the future of crypto trading.',
             imgSrc: '/BRO BOT Dash.png',
             link: '/#',
         },
         {
             title: 'Bro Launchpad',
             comingsoon: true,
-            description: "step into Bro Launchpad, your portal to the future of cryptocurrency. Here, access to groundbreaking projects awaits you, offering a first look at tomorrow's crypto giants. This is where opportunity meets potential, inviting you to be part of the next big wave in the crypto space. Join Bro Launchpad and turn possibilities into realities. Welcome to where your crypto journey takes off.",
+            description: 'step into Bro Launchpad, your portal to the future of cryptocurrency. Here, access to groundbreaking projects awaits you, offering a first look at crypto giants. This is where opportunity meets potential, inviting you to be part of the next big wave in the crypto space. Join Bro Launchpad and turn possibilities into realities. Welcome to where your crypto journey takes off.',
             imgsrc: '/BRO BOT Dash.png',
             link: '/#',
         },
