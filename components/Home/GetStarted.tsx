@@ -15,7 +15,7 @@ const GetStarted = () => {
         {
             title: 'BroTrade Hub',
             comingSoon: true,
-            description: 'Embark on a seamless trading experience with our innovative Webapp! Delight in familiar Telegram features and a host of extras—effortlessly manage portfolios, establish watchlists, and tailor your interface for a personalized journey through the markets.',
+            description: 'Bro Trade Hub is a cutting-edge trading ecosystem, blending AI insights, one-click trading, and community wisdom. It's designed for seamless crypto transactions, offering users a dynamic platform for smart, secure, and community-driven trading experiences. Welcome to the future of crypto trading.',
             imgSrc: '/BRO BOT Dash.png',
             link: '/#',
         },
