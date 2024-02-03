@@ -1,5 +1,5 @@
 'use client';
-import { Box, Flex, SimpleGrid } from "@chakra-ui/react";
+import { Box, Flex, SimpleGrid, Text } from "@chakra-ui/react";
 import { FullLinkCard } from "../Card";
 import { motion } from 'framer-motion';
 
@@ -13,9 +13,9 @@ const GetStarted = () => {
             link: '/#',
         },
         {
-            title: 'Bro Launchpad',
+            title: 'BroTrade Hub',
             comingsoon: true,
-            description: 'step into Bro Launchpad, your portal to the future of cryptocurrency. Here, access to groundbreaking projects awaits you, offering a first look at crypto giants. This is where opportunity meets potential, inviting you to be part of the next big wave in the crypto space. Join Bro Launchpad and turn possibilities into realities. Welcome to where your crypto journey takes off.',
+            description: 'Bro Trade Hub is a cutting-edge trading ecosystem, blending AI insights, one-click trading, and community wisdom. It is designed for seamless crypto transactions, offering users a dynamic platform for smart, secure, and community-driven trading experiences. Welcome to the future of crypto trading.',
             imgsrc: '/BRO BOT Dash.png',
             link: '/#',
         },
@@ -26,12 +26,30 @@ const GetStarted = () => {
             imgSrc: '/BRO BOT Dash.png',
             link: 'https://dashboard.itsurbro.com/',
         },
-    ]
-  return (
-    <SimpleGrid mt={{base: '100px'}} justifySelf='center' id='get-started' columns={{base: 1, md: 2, lg: 3}} spacing='5' justifyContent={{base: 'center', md: 'flex-start'}} width="100%" maxWidth='1280px'>
-        {startOptions.map(elem => <FullLinkCard key={startOptions.indexOf(elem)} title={elem.title} comingSoon={elem.comingSoon} description={elem.description} imgSrc={elem.imgSrc} link={elem.link}  />)}
-    </SimpleGrid>
-  )
+        {
+            title: 'Bro Launch Pad',
+            comingSoon: true,
+            description: 'Step into the world of Bro Launchpad, where the future of crypto takes flight. It\'s not just a platform; it\'s your golden ticket to the most exciting, up-and-coming crypto projects. Imagine getting first dibs on the next big thing in the crypto universe. With Bro Launchpad, that\'s exactly what you get—a front-row seat to innovation and the chance to grow with the giants of tomorrow. Join us, and let\'s discover the potential together. Welcome aboard Bro Launchpad, where your crypto dreams can soar.',
+            imgSrc: '/BRO BOT Dash.png',
+            link: '/#',
+        },
+    ];
+
+    return (
+        <Box width="100%" maxWidth="1280px" mx="auto" mt="40px">
+            <Flex direction="column" align="center" justify="center" mb="40px">
+                <Text fontSize="5xl" fontWeight="bold" mb="20px">Bro Launch Pad</Text>
+                <Text fontSize="xl" maxW="560px" textAlign="center">
+                    Welcome to the Bro Launch Pad, your gateway to the latest and most innovative trading tools and features. Get started with our top picks below!
+                </Text>
+            </Flex>
+            <SimpleGrid mt="20px" justifySelf="center" id="get-started" columns={{base: 1, md: 2, lg: 3}} spacing="5" justifyContent={{base: "center", md: "flex-start"}}>
+                {startOptions.map((elem, index) => (
+                    <FullLinkCard key={index} title={elem.title} comingSoon={elem.comingSoon} description={elem.description} imgSrc={elem.imgSrc} link={elem.link} />
+                ))}
+            </SimpleGrid>
+        </Box>
+    );
 }
 
-export default GetStarted
+export default GetStarted;
