@@ -44,6 +44,10 @@ const Header = () => {
                 <Box pt='10px' pb='10px' pl='5px' pr='5px' opacity='0.7' _hover={{textDecoration: 'none',}} cursor='default' display='flex' alignItems='center'>
                     BroTrade Hub <Badge variant='outline' justifySelf='flex-end' alignItems='center' display='flex' justifyContent='center' alignContent='center' ml='10px' colorScheme='green'>Coming Soon</Badge>
                   </Box>
+                 <Divider opacity='.1' />
+                <Box pt='10px' pb='10px' pl='5px' pr='5px' opacity='0.7' _hover={{textDecoration: 'none',}} cursor='default' display='flex' alignItems='center'>
+                    Bro Launchpad <Badge variant='outline' justifySelf='flex-end' alignItems='center' display='flex' justifyContent='center' alignContent='center' ml='10px' colorScheme='green'>Coming Soon</Badge>
+                  </Box>
           </Box>
         
           <Box display={{base: 'flex', md: 'none'}} height="100%" width="27px" className={glitch.menu} justifyContent='center' alignItems='center' onClick={() => {changeState(!state)}}>
