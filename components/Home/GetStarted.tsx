@@ -14,9 +14,9 @@ const GetStarted = () => {
         },
         {
             title: 'BroTrade Hub',
-            comingsoon: true,
+            comingSoon: true, // Corrected to ensure consistency and proper casing
             description: 'Bro Trade Hub is a cutting-edge trading ecosystem, blending AI insights, one-click trading, and community wisdom. It is designed for seamless crypto transactions, offering users a dynamic platform for smart, secure, and community-driven trading experiences. Welcome to the future of crypto trading.',
-            imgsrc: '/BRO BOT Dash.png',
+            imgSrc: '/BRO BOT Dash.png', // Corrected casing
             link: '/#',
         },
         {
@@ -30,7 +30,7 @@ const GetStarted = () => {
             title: 'Bro Launch Pad',
             comingSoon: true,
             description: 'Step into the world of Bro Launchpad, where the future of crypto takes flight. It\'s not just a platform; it\'s your golden ticket to the most exciting, up-and-coming crypto projects. Imagine getting first dibs on the next big thing in the crypto universe. With Bro Launchpad, that\'s exactly what you get—a front-row seat to innovation and the chance to grow with the giants of tomorrow. Join us, and let\'s discover the potential together. Welcome aboard Bro Launchpad, where your crypto dreams can soar.',
-            imgSrc: '/BRO BOT Dash.png',
+            imgSrc: '/BRO BOT Dash.png', // Ensured correct property name
             link: '/#',
         },
     ];
