@@ -15,8 +15,7 @@ const Boost = () => {
                 <span className={`${newHero.glitch} ${newHero.hero} ${newHero.layers}`}  data-text="Trade Like Never Before">Trade Like Never Before</span>
             </Heading>
             <Box fontSize='20px' pl={{base: '10px', md: 'initial'}}>
-                Dive into the world of BRO BOT, your ultimate Telegram companion. Experience the adrenaline of sniping the hottest launches or effortlessly acquiring live tokens. Crafted for the Ethereum Network, BRO BOT is not just a tool, it&apos;s your gateway to seamless trading. As we evolve, more chains await. Join us, and redefine how you trade. Unleash the power. Don&apos;t just trade, BRO-Trade! 🔥
-            </Box>
+                Bro isn/’t just another platform; it/’s your trading companion, your mentor in the maze of crypto. Here, you/’ll find Bro Bot, Signal Bot, an innovative Launchpad, and a Trade Hub—all designed to make your trading experience as enriching as it is profitable. With Bro, you/’re not just making trades; you/’re embarking on a journey with a friend who/’s got your back, every step of the way. Welcome to Bro, where every trade tells a story, and success is a shared journey. With Bro, you/’re not following trends; you/’re setting them.
         </Box>
         <Box width={{base: '100%', md: '60%'}} display='flex' justifyContent='center' alignItems='center'>
             <Image src="/Buysell.gif"  alt="Trade Like Never Before" width='80%' />
