@@ -15,16 +15,16 @@ const Webapp = () => {
                 </Box>
                 <Box display={{base: 'flex', md: 'block'}} flexDirection='column' justifyContent='center' alignItems='center' mt={{base: '5px', md: '0'}}>
                     <Badge fontSize={{base: '8px', sm: '11px'}} p='2px' borderRadius='5px'>Available</Badge>
-                    <Box fontSize={{base: '11px', sm: '14', md: '17px'}} textTransform='uppercase' fontWeight='700' mt={{base: '5px', md: '0'}}>Telegram</Box>
+                    <Box fontSize={{base: '11px', sm: '14', md: '17px'}} textTransform='uppercase' fontWeight='700' mt={{base: '5px', md: '0'}}>BRO BOT</Box>
                 </Box>
             </Box>
             <Box display='flex' flexDirection={{base: 'column', md: 'row'}} justifyContent='center' alignItems='center' mr={{base: '0',md: '15px'}}>
-                <Box className={glitch.menu} height="100%" width={{base: '40px', sm: '55px'}} pr={{base: '0', md:'10px'}}>
+                <Box className={glitch.menu} height="85%" width={{base: '30px', sm: '45px'}} pr={{base: '0', md:'80px'}}>
                     <FaGlobe />
                 </Box>
-                <Box display={{base: 'flex', md: 'block'}} flexDirection='column' justifyContent='center' alignItems='center' mt={{base: '10px', md: '0'}}>
-                    <Badge fontSize={{base: '10px', sm: '13px'}} colorScheme="green" p='5px' borderRadius='5px'>Soon</Badge>
-                    <Box fontSize={{base: '14px', sm: '17', md: '20px'}} textTransform='uppercase' fontWeight='700' mt={{base: '10px', md: '0'}}>BroTrade Hub</Box>
+                <Box display={{base: 'flex', md: 'block'}} flexDirection='column' justifyContent='center' alignItems='center' mt={{base: '5px', md: '0'}}>
+                    <Badge fontSize={{base: '8px', sm: '11px'}} colorScheme="green" p='2px' borderRadius='5px'>Soon</Badge>
+                    <Box fontSize={{base: '11px', sm: '14', md: '17px'}} textTransform='uppercase' fontWeight='700' mt={{base: '5px', md: '0'}}>BroTrade Hub</Box>
                 </Box>
              </Box>
             <Box display='flex' flexDirection={{base: 'column', md: 'row'}} justifyContent='center' alignItems='center' mr={{base: '0',md: '15px'}}>
