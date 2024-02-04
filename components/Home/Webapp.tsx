@@ -19,7 +19,7 @@ const Webapp = () => {
                 </Box>
             </Box>
             <Box display='flex' flexDirection={{base: 'column', md: 'row'}} justifyContent='center' alignItems='center' mr={{base: '0',md: '15px'}}>
-                <Box className={glitch.menu} height="85%" width={{base: '30px', sm: '45px'}} pr={{base: '0', md:'80px'}}>
+                <Box className={glitch.menu} height="90%" width={{base: '35px', sm: '50px'}} pr={{base: '0', md:'9px'}}>
                     <FaGlobe />
                 </Box>
                 <Box display={{base: 'flex', md: 'block'}} flexDirection='column' justifyContent='center' alignItems='center' mt={{base: '5px', md: '0'}}>
