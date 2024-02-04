@@ -53,7 +53,7 @@ const Webapp = () => {
                 </Box>
                 <Box>
                     <Badge fontSize='11px' colorScheme="green" p='2px' borderRadius='5px'>Soon</Badge>
-                    <Box fontSize='17px' textTransform='uppercase' fontWeight='700'>
+                    <Box fontSize='14px' textTransform='uppercase' fontWeight='700'>
                         Play Store
                     </Box>
                 </Box>
