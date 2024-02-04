@@ -14,8 +14,8 @@ const Webapp = () => {
                     <FaTelegram />
                 </Box>
                 <Box display={{base: 'flex', md: 'block'}} flexDirection='column' justifyContent='center' alignItems='center' mt={{base: '5px', md: '0'}}>
-                    <Badge fontSize={{base: '5px', sm: '8px'}} p='2px' borderRadius='3px'>Available</Badge>
-                    <Box fontSize={{base: '8px', sm: '10', md: '12px'}} textTransform='uppercase' fontWeight='700' mt={{base: '3px', md: '0'}}>BRO BOT</Box>
+                    <Badge fontSize={{base: '6px', sm: '9px'}} p='2px' borderRadius='4px'>Available</Badge>
+                    <Box fontSize={{base: '9px', sm: '11', md: '13px'}} textTransform='uppercase' fontWeight='700' mt={{base: '4px', md: '0'}}>BRO BOT</Box>
                </Box>
             </Box>
             <Box as={Link} href="/#" flexDirection={{ base: 'column', md: 'row' }} justifyContent='center' _hover={{ textDecoration: 'none' }} display='flex' alignItems='center' mr={{ base: '0', md: '15px' }} background='#0088cc' padding='5px' borderRadius='5px'>
