@@ -18,12 +18,6 @@ const Webapp = () => {
                     <Box fontSize={{base: '11px', sm: '14', md: '17px'}} textTransform='uppercase' fontWeight='700' mt={{base: '5px', md: '0'}}>BRO BOT</Box>
                </Box>
             </Box>
-               </Box>
-                <Box display={{base: 'flex', md: 'block'}} flexDirection='column' justifyContent='center' alignItems='center' mt={{base: '5px', md: '0'}}>
-                    <Badge fontSize={{base: '8px', sm: '11px'}} p='2px' borderRadius='5px'>Available</Badge>
-                    <Box fontSize={{base: '11px', sm: '14', md: '17px'}} textTransform='uppercase' fontWeight='700' mt={{base: '5px', md: '0'}}>Signal Bot</Box>
-               </Box>
-            </Box>
             <Box display='flex' flexDirection={{base: 'column', md: 'row'}} justifyContent='center' alignItems='center' mr={{base: '0',md: '15px'}}>
                 <Box className={glitch.menu} height="90%" width={{base: '35px', sm: '50px'}} pr={{base: '0', md:'9px'}}>
                     <FaGlobe />
