@@ -1,41 +1,32 @@
 'use client';
-import { Flex, Box, Text, Image as ChakraImage, Heading, Badge, Tooltip, Link } from "@chakra-ui/react";
-import { FaTelegram, FaGlobe, FaRocket, FaAppStore, FaGooglePlay, FaTwitter } from "react-icons/fa";
-import { RiTelegramLine } from "react-icons/ri";
-import glitch from "@/components/Home/glitch.module.css";
+import { Flex, Box, Text, Image as ChakraImage, Heading } from "@chakra-ui/react";
+import { Ubuntu, Orbitron } from "next/font/google";
+import newHero from'@/components/Home/second.module.css';
 
-const HomePage = () => {
+const ubuntuFont = Ubuntu({weight: ['300', '400', '500', '700'], subsets: ['latin']})
+const orbitronFont = Orbitron({weight: ['400', '500', '600', '700'], subsets: ['latin']})
+
+const Intro = () => {
   return (
-    <>
-      <Flex as='section' width='100%' justify='center' align='center' py='40px'>
-        <Box width="100%" maxWidth="1280px" display='flex' flexDirection={{ base: 'column-reverse', md: 'row' }} justifyContent='center' alignItems="center" minH='700px'>
-          <Box width={{ base: '100%', md: "60%" }} textAlign={{ base: 'center', md: 'left' }} p='20px'>
-            <Heading as='h1' size='xl' mb='4' className={glitch.heroContainer}>
-              BRO BOT: Your Ultimate Trading Ally
-            </Heading>
-            <Text fontSize='lg'>
-              Harness the unmatched power of the BRO BOT to dominate the trading landscape.
-            </Text>
-          </Box>
-          <Box flexShrink={0} mt={{ base: '20px', md: '0' }} display='flex' justifyContent='center' alignItems='center'>
-            <ChakraImage src='/GIF.gif' alt="BroBot Logo" boxSize='350px' />
-          </Box>
-        </Box>
-      </Flex>
-
-      <Box mt={{ base: '50px', md: '100px' }} px='20px'>
-        <Flex justify='center' wrap='wrap' maxWidth='1280px' mx='auto'>
-          {/* Example Box for BRO BOT with FaTelegram */}
-          <Box textAlign='center' p='5' m='2' bg='blue.500' borderRadius='md'>
-            <FaTelegram size='50px' />
-            <Text mt='2'>BRO BOT</Text>
-            <Badge colorScheme='green'>Available</Badge>
-          </Box>
-          {/* Repeat similar structure for other icons and descriptions */}
+    <Flex as='section' width='100%' justify='center' align='center'>
+        <Flex as='section' width="100%" direction={{base: 'column-reverse', md: 'row'}} maxWidth="1280px" justifyContent='center' align="center" minH='700px' pl='20px' pr='20px'>
+            <Box width={{base: '100%', md:"60%"}} textAlign={{base: 'center', md: 'start'}} display={{base: 'flex', md: 'block'}} flexDirection={{base: 'column'}}>
+                <Heading fontSize={{base: '33px', md: '40px', lg: '45px', xl: '55px'}} pb='20px' className={newHero.heroContainer} style={orbitronFont.style}>
+                    <Text className={`${newHero.glitch} ${newHero.hero} ${newHero.layers}`} data-text="BRO BOT: Your Ultimate Trading Ally">BRO BOT: Your Ultimate Trading Ally</Text>
+                </Heading>
+                <Text fontSize={{base: '20px', md: '25px'}} mt={{base: '20px', sm:"0"}} lineHeight={{base: '160%', sm: 'initial'}} style={orbitronFont.style}>
+                    Harness the unmatched power of the BRO BOT to dominate the trading landscape
+                </Text>
+            </Box>
+            <Box width={{base: '90%', md:"40%"}} mt={{base: '100px', md: '0'}} mb={{base: '20px', md:'0'}} display={{base: 'none', sm:'flex'}} justifyContent='center' alignItems='center'>
+                <ChakraImage src='/GIF.gif' alt="BroBot Logo" width="350px"/>
+                {/* <Image src='/GIF.gif' alt="BroBot Image" width={50} height={50} /> */}
+            </Box>
         </Flex>
-      </Box>
-    </>
-  );
-};
+        <Box position='absolute' background={`url('/Video.gif') center no-repeat`} left='0' right='0' minH='800px' zIndex='-100' opacity='.1' mt='20px'>
+        </Box>
+    </Flex>
+  )
+}
 
-export default HomePage;
+export default Intro
