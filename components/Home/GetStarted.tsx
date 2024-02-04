@@ -27,7 +27,7 @@ const GetStarted = () => {
             link: 'https://dashboard.itsurbro.com/',
         },
         {
-            title: 'Bro Launch Pad',
+            title: 'Bro Launchpad',
             comingSoon: true,
             description: 'Step into the world of Bro Launchpad, where the future of crypto takes flight. It\'s not just a platform; it\'s your golden ticket to the most exciting, up-and-coming crypto projects. Imagine getting first dibs on the next big thing in the crypto universe. With Bro Launchpad, that\'s exactly what you get—a front-row seat to innovation and the chance to grow with the giants of tomorrow. Join us, and let\'s discover the potential together. Welcome aboard Bro Launchpad, where your crypto dreams can soar.',
             imgSrc: '/BRO BOT Dash.png', // Ensured correct property name
