@@ -9,13 +9,13 @@ const Webapp = () => {
   return (
     <Box mt={{base: '100px'}} display='flex' flexDirection='column' alignItems="center" width="100%" maxWidth='1280px' pl='20px' pr='20px'>
         <Flex alignItems='center' justify={{base: 'space-evenly', md: 'space-evenly'}} flexWrap='wrap' width='100%'>
-            <Box as={Link} href="/#" flexDirection={{base: 'column', md: 'row'}} justifyContent='center' _hover={{textDecoration:'none'}} display='flex' alignItems='center' mr={{base: '0',md: '15px'}} background='#0088cc' padding='8px' borderRadius='5px'>
-                <Box className={glitch.menu} height="90%" width={{base: '35px', sm: '50px'}} pr={{base: '0', md:'10px'}}>
+            <Box as={Link} href="/#" flexDirection={{base: 'column', md: 'row'}} justifyContent='center' _hover={{textDecoration:'none'}} display='flex' alignItems='center' mr={{base: '0',md: '15px'}} background='#0088cc' padding='5px' borderRadius='5px'>
+                <Box className={glitch.menu} height="85%" width={{base: '30px', sm: '45px'}} pr={{base: '0', md:'8px'}}>
                     <FaTelegram />
                 </Box>
-                <Box display={{base: 'flex', md: 'block'}} flexDirection='column' justifyContent='center' alignItems='center' mt={{base: '8px', md: '0'}}>
-                    <Badge fontSize={{base: '9px', sm: '12px'}} p='4px' borderRadius='5px'>Available</Badge>
-                    <Box fontSize={{base: '13px', sm: '16', md: '19px'}} textTransform='uppercase' fontWeight='700' mt={{base: '8px', md: '0'}}>Telegram</Box>
+                <Box display={{base: 'flex', md: 'block'}} flexDirection='column' justifyContent='center' alignItems='center' mt={{base: '5px', md: '0'}}>
+                    <Badge fontSize={{base: '8px', sm: '11px'}} p='2px' borderRadius='5px'>Available</Badge>
+                    <Box fontSize={{base: '11px', sm: '14', md: '17px'}} textTransform='uppercase' fontWeight='700' mt={{base: '5px', md: '0'}}>Telegram</Box>
                 </Box>
             </Box>
             <Box display='flex' flexDirection={{base: 'column', md: 'row'}} justifyContent='center' alignItems='center' mr={{base: '0',md: '15px'}}>
