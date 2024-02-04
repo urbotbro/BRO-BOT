@@ -12,10 +12,10 @@ const Intro = () => {
         <Flex as='section' width="100%" direction={{base: 'column-reverse', md: 'row'}} maxWidth="1280px" justifyContent='center' align="center" minH='700px' pl='20px' pr='20px'>
             <Box width={{base: '100%', md:"60%"}} textAlign={{base: 'center', md: 'start'}} display={{base: 'flex', md: 'block'}} flexDirection={{base: 'column'}}>
                 <Heading fontSize={{base: '33px', md: '40px', lg: '45px', xl: '55px'}} pb='20px' className={newHero.heroContainer} style={orbitronFont.style}>
-                    <Text className={`${newHero.glitch} ${newHero.hero} ${newHero.layers}`} data-text="BRO BOT: Your Ultimate Trading Ally">BRO BOT: Your Ultimate Trading Ally</Text>
+                    <Text className={`${newHero.glitch} ${newHero.hero} ${newHero.layers}`} data-text="Bro:Your Trading,Our Technology">Bro:Your Trading,Our Technology</Text>
                 </Heading>
                 <Text fontSize={{base: '20px', md: '25px'}} mt={{base: '20px', sm:"0"}} lineHeight={{base: '160%', sm: 'initial'}} style={orbitronFont.style}>
-                    Harness the unmatched power of the BRO BOT to dominate the trading landscape
+                    Your all-in-one crypto ecosystem. Launching, trading, and signals united under one hub - everything you need with Bro.
                 </Text>
             </Box>
             <Box width={{base: '90%', md:"40%"}} mt={{base: '100px', md: '0'}} mb={{base: '20px', md:'0'}} display={{base: 'none', sm:'flex'}} justifyContent='center' alignItems='center'>
