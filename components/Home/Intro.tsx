@@ -3,10 +3,8 @@ import { FaTelegram, FaGlobe, FaRocket, FaAppStore, FaGooglePlay, FaTwitter } fr
 import { RiTelegramLine } from "react-icons/ri";
 import glitch from "@/components/Home/glitch.module.css";
 import { Ubuntu, Orbitron } from "next/font/google";
-
 const ubuntuFont = Ubuntu({ weight: ['300', '400', '500', '700'], subsets: ['latin'] });
 const orbitronFont = Orbitron({ weight: ['400', '500', '600', '700'], subsets: ['latin'] });
-
 const Intro = () => {
   return (
     <Flex as='section' width='100%' justify='center' align='center'>
@@ -16,7 +14,7 @@ const Intro = () => {
             <Text className={`${glitch.glitch} ${glitch.hero} ${glitch.layers}`} data-text="BRO BOT: Your Ultimate Trading Ally">BRO BOT: Your Ultimate Trading Ally</Text>
           </Heading>
           <Text fontSize={{ base: '20px', md: '25px' }} mt={{ base: '20px', sm: "0" }} lineHeight={{ base: '160%', sm: 'initial' }} style={orbitronFont.style}>
-            Harness the unmatched power of the BRO BOT to dominate the trading landscape
+            Harness the unmatched power of the BRO BOT to dominate the trading landscape.
           </Text>
         </Box>
         <Box width={{ base: '90%', md: "40%" }} mt={{ base: '100px', md: '0' }} mb={{ base: '20px', md: '0' }} display={{ base: 'none', sm: 'flex' }} justifyContent='center' alignItems='center'>
@@ -125,19 +123,16 @@ const Webapp = () => {
             backgroundRepeat: 'no-repeat'
         }}></Box>
         <Box zIndex='11' fontSize='25px' fontWeight='700'>Coming Soon</Box>
-
-        </Flex>
+      </Flex>
     </Box>
- );
+  );
 };
 
-const HomePage = () => {
+export default function HomePage() {
   return (
     <>
       <Intro />
       <Webapp />
     </>
   );
-};
-
-export default HomePage;
+}
