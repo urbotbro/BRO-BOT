@@ -20,7 +20,6 @@ const Header = () => {
   return (
     <Flex as='header' justifyContent='center' align='center' background='#0c0f12' color='white' position='fixed' top='0' width="100%" zIndex='1000' pl='10px' pr='10px'>
       <Flex as='div' position='sticky' maxWidth='1280px' width="100%" justify='space-between' align='center' paddingTop='20px' paddingBottom='20px' pl='20px' pr='20px'>
-        <Box position="relative" height="100%" width="80px">
           <Box position="relative" width="80px" height="80px" overflow="hidden" marginLeft="10px" marginTop="10px">
              <Image 
                 src='/Logo-min.png' 
