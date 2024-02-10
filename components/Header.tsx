@@ -21,7 +21,7 @@ const Header = () => {
     <Flex as='header' justifyContent='center' align='center' background='#0c0f12' color='white' position='fixed' top='0' width="100%" zIndex='1000' pl='10px' pr='10px'>
       <Flex as='div' position='sticky' maxWidth='1280px' width="100%" justify='space-between' align='center' paddingTop='20px' paddingBottom='20px' pl='20px' pr='20px'>
         <Box position="relative" height="100%" width="80px">
-          <Box position="absolute" top="50%" left="0" transform="translateY(-50%)" width="80px" height="80px">
+          <Box position="absolute" top="30%" left="0" transform="translateY(-50%)" width="90px" height="90px">
             <Image 
               src='/Logo-min.png' 
               alt="BRO" 
