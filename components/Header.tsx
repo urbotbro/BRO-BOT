@@ -31,7 +31,7 @@ const Header = () => {
           zIndex='1000'
           padding='10px'
     >
-      <Box width="100px" height="100px" position='relative'> {/* Increase the size of the logo by adjusting these values */}
+      <Box width="100px" height="100px" position='relative'>
         <Image src='/Logo-min.png' alt="BRO" width="100%" height="100%" objectFit="contain" position='absolute' top='50%' left='0' transform='translate(0, -50%)' />
       </Box>
 
