@@ -31,6 +31,7 @@ const Header = () => {
           pr='10px' 
           height='80px'> {/* Adjust the height as needed */}
       <Image src='/Logo-min.png' alt="BRO" width='80px' height='80px' objectFit="contain" />
+     </Box>
 
         <Box display={{base: 'none', md:'flex'}} justifyContent='space-between' alignItems='center'>
           <Link href='#get-started' pl='10px' pr='10px' fontSize='15px' style={orbitronFont.style} _hover={{color: '#9bf0f5'}}>Getting Started</Link>
