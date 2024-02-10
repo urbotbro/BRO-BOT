@@ -18,11 +18,22 @@ const Header = () => {
 
 
   return (
-    <Flex as='header' justifyContent='center' align='center' background='#0c0f12' color='white' position='fixed' top='0' width="100%" zIndex='1000' pl='10px' pr='10px'>
-      <Flex as='div' position='sticky' maxWidth='1280px' width="100%" justify='space-between' align='center' paddingTop='20px' paddingBottom='20px' pl='20px' pr='20px'>
-         <Box>
-          <Image src='/Logo-min.png' alt="BRO" width={50} height={50} />
-        </Box>
+    <Flex as='header'
+          justifyContent='space-between'
+          alignItems='center'
+          background='#0c0f12'
+          color='white'
+          position='fixed'
+          top='0'
+          left='0'
+          right='0'
+          width="100%"
+          zIndex='1000'
+          padding='10px'
+    >
+      <Box width="100px" height="100px" position='relative'> {/* Increase the size of the logo by adjusting these values */}
+        <Image src='/Logo-min.png' alt="BRO" width="100%" height="100%" objectFit="contain" position='absolute' top='50%' left='0' transform='translate(0, -50%)' />
+      </Box>
 
 
         <Box display={{base: 'none', md:'flex'}} justifyContent='space-between' alignItems='center'>
