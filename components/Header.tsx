@@ -18,31 +18,10 @@ const Header = () => {
 
 
   return (
-    <Flex
-      as='header'
-      align='center' // This will vertically center your items in the header
-      background='#0c0f12'
-      color='white'
-      position='fixed'
-      top='0'
-      left='0'
-      right='0'
-      width="100%"
-      zIndex='1000'
-      // Removed pl and pr here to allow the logo to be at the very edge
-    >
-      <Flex
-        maxWidth='1280px'
-        width="100%"
-        justify='flex-start'
-        align='center'
-        paddingTop='20px'
-        paddingBottom='20px'
-        paddingLeft='20px'
-        paddingRight='20px'
-      >
-        <Box>
-          <Image src='/Logo-min.png' alt="BRO" width={80} height={80} objectFit="contain" />
+    <Flex as='header' justifyContent='center' align='center' background='#0c0f12' color='white' position='fixed' top='0' width="100%" zIndex='1000' pl='10px' pr='10px'>
+      <Flex as='div' position='sticky' maxWidth='1280px' width="100%" justify='space-between' align='center' paddingTop='20px' paddingBottom='20px' pl='20px' pr='20px'>
+         <Box>
+          <Image src='/Logo-min.png' alt="BRO" width={50} height={50} />
         </Box>
 
 
