@@ -18,20 +18,12 @@ const Header = () => {
 
 
   return (
-    <Flex as='header' 
-          justifyContent='flex-start' 
-          alignItems='center' 
-          background='#0c0f12' 
-          color='white' 
-          position='fixed' 
-          top='0' 
-          width="100%" 
-          zIndex='1000' 
-          pl='10px' 
-          pr='10px' 
-          height='80px'> {/* Adjust the height as needed */}
-      <Image src='/Logo-min.png' alt="BRO" width='80px' height='80px' objectFit="contain" />
-     </Box>
+    <Flex as='header' justifyContent='center' align='center' background='#0c0f12' color='white' position='fixed' top='0' width="100%" zIndex='1000' pl='10px' pr='10px'>
+      <Flex as='div' position='sticky' maxWidth='1280px' width="100%" justify='space-between' align='center' paddingTop='20px' paddingBottom='20px' pl='20px' pr='20px'>
+         <Box>
+          <Image src='/Logo-min.png' alt="BRO" width={50} height={50} />
+        </Box>
+
 
         <Box display={{base: 'none', md:'flex'}} justifyContent='space-between' alignItems='center'>
           <Link href='#get-started' pl='10px' pr='10px' fontSize='15px' style={orbitronFont.style} _hover={{color: '#9bf0f5'}}>Getting Started</Link>
