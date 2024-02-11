@@ -18,11 +18,11 @@ const Header = () => {
 
 
   return (
-     <Flex as='header' justifyContent='center' align='center' background='#0c0f12' color='white' position='fixed' top='0' width="100%" zIndex='1000' pl='10px' pr='10px'>
-      <Flex as='div' position='sticky' maxWidth='1280px' width="100%" justify='space-between' align='center' paddingTop='10px' paddingBottom='10px' pl='20px' pr='20px'>
-          <Box width="110px" height="110px" position="relative" overflow="hidden">
-            <Image src='/Logo-min.png' alt="BRO" objectFit="contain" boxSize="100%"/>
-          </Box>
+    <Flex as='header' justifyContent='center' align='center' background='#0c0f12' color='white' position='fixed' top='0' width="100%" zIndex='1000' pl='10px' pr='10px'>
+      <Flex as='div' position='sticky' maxWidth='1280px' width="100%" justify='space-between' align='center' paddingTop='20px' paddingBottom='20px' pl='20px' pr='20px'>
+         <Box width="50px" height="50px" position="relative" overflow="visible">
+           <Image src='/Logo-min.png' alt="BRO" position="absolute" left="50%" top="50%" transform="translate(-50%, -50%)" width="110px" height="auto" objectFit="contain" />
+         </Box>
 
 
         <Box display={{base: 'none', md:'flex'}} justifyContent='space-between' alignItems='center'>
