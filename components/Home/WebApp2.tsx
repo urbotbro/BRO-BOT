@@ -24,7 +24,7 @@ const Webapp2 = () => {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        afterChange: (current) => setCurrentSlide(current),
+        afterChange: (current: number) => setCurrentSlide(current),
     };
 
     return (
