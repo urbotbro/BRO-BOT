@@ -7,6 +7,7 @@ import Signal from "@/components/Home/Signal";
 import Footer from "@/components/Footer";
 import { Box } from "@chakra-ui/react";
 import Boost from "@/components/Home/Boost";
+import Sliders from "@/components/Home/Slider";
 import Webapp2 from "@/components/Home/WebApp2";
 import GetStarted from "@/components/Home/GetStarted";
 import Loader from "@/components/Home/loader";
@@ -24,7 +25,8 @@ export default function Home() {
     <Header />
       <Box as="main" display='flex' alignItems='center' justifyContent='center' flexDirection='column'>
         <Intro />
-        <Webapp2/>
+        <Sliders/>
+        {/* <Webapp2/> */}
         <GetStarted />
         <Features />
         <Signal />

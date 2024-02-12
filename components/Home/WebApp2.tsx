@@ -28,7 +28,7 @@ const Webapp2 = () => {
     };
 
     return (
-        <Box width="100%" maxWidth="1280px" mx="auto" mt="40px" border='0.0001px solid #ffffff37' padding='20px' borderRadius='10px' >
+        <Box mt={{base: '100px'}}  maxWidth="1280px" mx="auto" border='0.0001px solid #ffffff37' padding='20px' borderRadius='10px' >
             <Slider {...settings}>
                 {imageOptions.map((elem, index) => (
                     <Box key={index}>
