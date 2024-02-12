@@ -1,41 +1,49 @@
-import { Box, Flex, SimpleGrid, Button } from "@chakra-ui/react"
+import { Box, Flex, Button } from "@chakra-ui/react";
 import Link from "next/link";
+import { useState } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { ImageCard } from "../Card";
-import glitch from '@/components/Home/glitch.module.css'
+import glitch from '@/components/Home/glitch.module.css';
 import { Orbitron } from "next/font/google";
 
-const orbitronFont = Orbitron({weight: ['400', '500', '600', '700'], subsets: ['latin']})
+const orbitronFont = Orbitron({weight: ['400', '500', '600', '700'], subsets: ['latin']});
 
 const Webapp2 = () => {
+    const [currentSlide, setCurrentSlide] = useState(0);
     const imageOptions = [
-        {
-            imgSrc: '/BRO BOT Trade.png', 
-        },
-        {
-            imgSrc: '/BRO BOT Bridge.png',
-        },
-        {
-            imgSrc: '/BRO BOT Launch.png',
-        },
+        { imgSrc: '/BRO BOT Trade.png' },
+        { imgSrc: '/BRO BOT Bridge.png' },
+        { imgSrc: '/BRO BOT Launch.png' },
     ];
 
-  return (
-    <Box width="100%" maxWidth="1280px" mx="auto" mt="40px">
-            <Flex direction="column" align="center" justify="center" mb="40px">
-            </Flex>
-            <SimpleGrid mt="20px" ml='20px' mr='20px' justifySelf="center" border='0.0001px solid #ffffff37' padding='10px' borderRadius='10px' columns={{base: 1, md: 2, lg: 3}} spacing="5" justifyContent={{base: "center", md: "flex-start"}}>
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        afterChange: (current) => setCurrentSlide(current),
+    };
+
+    return (
+        <Box width="100%" maxWidth="1280px" mx="auto" mt="40px" border='0.0001px solid #ffffff37' padding='20px' borderRadius='10px' >
+            <Slider {...settings}>
                 {imageOptions.map((elem, index) => (
-                    <ImageCard key={index} imgSrc={elem.imgSrc} />
+                    <Box key={index}>
+                        <ImageCard imgSrc={elem.imgSrc} />
+                    </Box>
                 ))}
-            </SimpleGrid>
+            </Slider>
             <Box display='flex' alignItems='center' justifyContent='center' pt='20px' pb='20px' fontSize='18px'>
                 <span className={glitch.glitch}>For More Visit </span>
                 <Button as={Link}  href="https://tradewithbro.com" fontSize="18px" _hover={{
-              background: '#9bf0f5'
-            }}>tradewithbro.com</Button> 
-      </Box>
+                    background: '#9bf0f5'
+                }}>tradewithbro.com</Button> 
+            </Box>
         </Box>
-  )
-}
+    );
+};
 
-export default Webapp2
+export default Webapp2;
