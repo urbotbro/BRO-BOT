@@ -43,7 +43,7 @@ const Sliders = () => {
                     </Slider>
                 </Box>
             </Flex>
-            <Box display='flex' alignItems='center' justifyContent='center' pt='30px' pb='20px' fontSize='18px'>
+            <Box display='flex' alignItems='center' justifyContent='center' pt='80px' pb='20px' fontSize='18px'>
                 <span className={glitch.glitch}>For More Visit </span>
                 <Button as={Link} href="https://tradewithbro.com" fontSize="18px" _hover={{
                     background: '#9bf0f5'

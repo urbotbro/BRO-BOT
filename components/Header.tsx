@@ -18,8 +18,8 @@ const Header = () => {
 
 
   return (
-    <Flex as='header' justifyContent='center' align='center'  color='white' position='fixed' top='0' width="100%" zIndex='1000' pl='5px' pr='10px'>
-      <Flex as='div' position='sticky' maxWidth='1280px' width="100%" justify='space-between' align='center' paddingTop='10px' paddingBottom='10px' pl='5px' pr='20px'>
+    <Flex as='header' justifyContent='space-between' align='center'  color='white' position='fixed' top='0' width="100%" zIndex='1000' pl='5px' pr='5px'>
+      <Flex as='div' position='sticky' maxWidth='1280px' width="100%" justify='space-between' align='center' paddingTop='10px' paddingBottom='10px' pl='5px' pr='5px'>
          <Box>
           <Image src='/Logo-min.png' alt="BRO" width={75} height={75} />
         </Box>
@@ -44,14 +44,18 @@ const Header = () => {
           <Divider opacity='.1' />
              <ChakraLink onClick={() => {toggleTool(false)}} as={Link} href='#' pt='10px' pb='10px' pl='5px' pr='5px' _hover={{textDecoration: 'none', background: '#1e262d'}} display='flex' alignItems='center'><Box className={glitch.menu} width='25px' height='25px'><FaTelegram /></Box> <Box as='span' ml='10px'>Signal BOT</Box></ChakraLink>
           <Divider opacity='.1' />
-                  <Divider opacity='.1' />
+            <ChakraLink onClick={() => {toggleTool(false)}} as={Link} href='https://tradewithbro.com' pt='10px' pb='10px' pl='5px' pr='5px' _hover={{textDecoration: 'none', background: '#1e262d'}} display='flex' alignItems='center'><Box className={glitch.menu} width='25px' height='25px'><FaTelegram /></Box> <Box as='span' ml='10px'>BroTrade Hub</Box></ChakraLink>
+          <Divider opacity='.1' />
+             <ChakraLink onClick={() => {toggleTool(false)}} as={Link} href='https://tradewithbro.com/pages/launch.html' pt='10px' pb='10px' pl='5px' pr='5px' _hover={{textDecoration: 'none', background: '#1e262d'}} display='flex' alignItems='center'><Box className={glitch.menu} width='25px' height='25px'><FaTelegram /></Box> <Box as='span' ml='10px'>Bro Launchpad</Box></ChakraLink>
+          
+                  {/* <Divider opacity='.1' />
                 <Box pt='10px' pb='10px' pl='5px' pr='5px' opacity='0.7' _hover={{textDecoration: 'none',}} cursor='default' display='flex' alignItems='center'>
                     BroTrade Hub <Badge variant='outline' justifySelf='flex-end' alignItems='center' display='flex' justifyContent='center' alignContent='center' ml='10px' colorScheme='green'>Coming Soon</Badge>
                   </Box>
                  <Divider opacity='.1' />
                 <Box pt='10px' pb='10px' pl='5px' pr='5px' opacity='0.7' _hover={{textDecoration: 'none',}} cursor='default' display='flex' alignItems='center'>
                     Bro Launchpad <Badge variant='outline' justifySelf='flex-end' alignItems='center' display='flex' justifyContent='center' alignContent='center' ml='10px' colorScheme='green'>Coming Soon</Badge>
-                  </Box>
+                  </Box> */}
           </Box>
         
           <Box display={{base: 'flex', md: 'none'}} height="100%" width="27px" className={glitch.menu} justifyContent='center' alignItems='center' onClick={() => {changeState(!state)}}>
