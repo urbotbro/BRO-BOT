@@ -28,7 +28,7 @@ const Webapp2 = () => {
                     <ImageCard key={index} imgSrc={elem.imgSrc} />
                 ))}
             </SimpleGrid>
-            <Box ml='20px' pt='20px' pb='20px' fontSize='18px'>
+            <Box display='flex' alignItems='center' justifyContent='center' pt='20px' pb='20px' fontSize='18px'>
                 <span className={glitch.glitch}>For More Visit </span>
                 <Button as={Link}  href="tradewithbro.com" fontSize="18px" _hover={{
               background: '#9bf0f5'

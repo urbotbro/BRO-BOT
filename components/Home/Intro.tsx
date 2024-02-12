@@ -372,7 +372,7 @@ const Intro = () => {
         justifyContent="center"
         alignItems="center"
         width="100%"
-        mt="40px"
+        mt="10px"
       >
         <Tooltip
           label="Telegram Community"
