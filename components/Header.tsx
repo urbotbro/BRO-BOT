@@ -18,10 +18,10 @@ const Header = () => {
 
 
   return (
-    <Flex as='header' justifyContent='center' align='center'  color='white' position='fixed' top='0' width="100%" zIndex='1000' pl='10px' pr='10px'>
-      <Flex as='div' position='sticky' maxWidth='1280px' width="100%" justify='space-between' align='center' paddingTop='10px' paddingBottom='10px' pl='20px' pr='20px'>
+    <Flex as='header' justifyContent='center' align='center'  color='white' position='fixed' top='0' width="100%" zIndex='1000' pl='5px' pr='10px'>
+      <Flex as='div' position='sticky' maxWidth='1280px' width="100%" justify='space-between' align='center' paddingTop='10px' paddingBottom='10px' pl='5px' pr='20px'>
          <Box>
-          <Image src='/Logo-min.png' alt="BRO" width={70} height={70} />
+          <Image src='/Logo-min.png' alt="BRO" width={75} height={75} />
         </Box>
 
 
