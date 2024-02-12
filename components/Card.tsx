@@ -62,7 +62,7 @@ export const ImageCard = (props: imageList) => {
   return (
     <ChakraCard background='transparent'>
       <CardBody>
-        <Box display='flex' position='relative' justifyContent='center' alignItems='center' width="100%" minHeight={{base: '300px', md: "600px"}}>         
+        <Box display='flex' position='relative' justifyContent='center' alignItems='center' width="100%" minHeight="600px">         
           <Box position='absolute' zIndex='10' display='flex' justifyContent='center' alignItems='center' width="95%" height="90%" sx={{
             background: `url('${props.imgSrc}') center`,
             backgroundSize: 'cover',
