@@ -65,7 +65,7 @@ export const ImageCard = (props: imageList) => {
         <Box display='flex' position='relative' justifyContent='center' alignItems='center' width="100%" minHeight="600px">         
           <Box position='absolute' zIndex='10' display='flex' justifyContent='center' alignItems='center' width="95%" height="90%" sx={{
             background: `url('${props.imgSrc}') center`,
-            backgroundSize: 'cover',
+            backgroundSize: 'contain',
             // filter:'blur(5px)',
             backgroundRepeat: 'no-repeat'
         }}></Box> 
