@@ -33,8 +33,7 @@ const orbitronFont = Orbitron({
 
 const Intro = () => {
   return (
-    <>
-      <Flex as="section" width="100%" justify="center" align="center">
+      <Flex as="section" direction="column"  width="100%" justify="center" align="center">
         <Flex
           as="section"
           width="100%"
@@ -87,19 +86,7 @@ const Intro = () => {
             {/* <Image src='/GIF.gif' alt="BroBot Image" width={50} height={50} /> */}
           </Box>
         </Flex>
-
-        <Box
-          position="absolute"
-          background={`url('/Video.gif') center no-repeat`}
-          left="0"
-          right="0"
-          minH="800px"
-          zIndex="-100"
-          opacity=".1"
-          mt="20px"
-        ></Box>
-      </Flex>
-      <Flex
+        <Flex
         alignItems="center"
         justify={{ base: "space-evenly", md: "space-evenly" }}
         flexWrap="wrap"
@@ -426,7 +413,17 @@ const Intro = () => {
           </Link>
         </Tooltip>
       </Box>
-    </>
+        <Box
+          position="absolute"
+          background={`url('/Video.gif') center no-repeat`}
+          left="0"
+          right="0"
+          minH="800px"
+          zIndex="-100"
+          opacity=".1"
+          mt="20px"
+        ></Box>
+      </Flex>
   );
 };
 

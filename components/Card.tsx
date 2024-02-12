@@ -21,6 +21,11 @@ interface linkList {
   imgSrc: string
   link: string
 }
+
+interface imageList {
+  imgSrc: string
+}
+
 interface phaseList<type> {
   subTitle: type
   desc: type | null
@@ -53,6 +58,21 @@ export const Card = ({title, description, detail}: featureList<string>) => {
   )
 }
 
+export const ImageCard = (props: imageList) => {
+  return (
+    <ChakraCard background='transparent'>
+      <CardBody>
+        <Box display='flex' position='relative' justifyContent='center' alignItems='center' width="100%" minHeight="200px">
+          <Box position='absolute' zIndex='10' display='flex' justifyContent='center' alignItems='center' width="100%" minHeight="200px" sx={{
+          background: `url('${props.imgSrc}') center no-repeat`,
+          backgroundSize: 'contain',
+          }}></Box>
+          </Box>
+      </CardBody>
+    </ChakraCard>
+  )
+}
+
 export const FullLinkCard = (props: linkList) => {
   return (
     <ChakraCard minH='650px' ml='20px' mr='20px' mb='20px' background='#14191e' color='white' border='0.001px solid #ffffff23' >
@@ -60,7 +80,7 @@ export const FullLinkCard = (props: linkList) => {
         {/* <Image borderRadius='lg' width='100%' src={props.imgSrc} alt={props.title}  /> */}
         <Box display='flex' position='relative' justifyContent='center' alignItems='center' width="100%" minHeight="200px">
           <Box position='absolute' zIndex='10' display='flex' justifyContent='center' alignItems='center' width="100%" minHeight="200px" sx={{
-          background: `url('${props.imgSrc}') center`,
+          background: `url('${props.imgSrc}') center no-repeat`,
           backgroundSize: 'contain',
           filter: props.comingSoon && 'blur(5px)',
           // opacity: props.comingSoon ? '.25' : '1',
