@@ -40,7 +40,7 @@ const Webapp2 = () => {
                 <span className={glitch.glitch}>For More Visit </span>
                 <Button as={Link}  href="https://tradewithbro.com" fontSize="18px" _hover={{
                     background: '#9bf0f5'
-                }}>tradewithbro.com</Button> 
+                }}>TradeWithBro</Button> 
             </Box>
         </Box>
     );
