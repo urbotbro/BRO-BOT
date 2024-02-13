@@ -102,7 +102,7 @@ const Intro = () => {
           display="flex"
           alignItems="center"
           mr={{ base: "0", md: "15px" }}
-          background="#fda007"
+          background="#0088cc"
           padding="5px"
           borderRadius="5px"
           color="black"
@@ -113,7 +113,7 @@ const Intro = () => {
             width={{ base: "30px", sm: "45px" }}
             pr={{ base: "0", md: "8px" }}
           >
-            <FaTelegram color="black"/>
+            <FaTelegram/>
           </Box>
           <Box
             display={{ base: "flex", md: "block" }}
@@ -126,7 +126,6 @@ const Intro = () => {
               fontSize={{ base: "8px", sm: "11px" }}
               p="2px"
               borderRadius="5px"
-              color="black"
             >
               Available on launch day
             </Badge>
@@ -135,7 +134,6 @@ const Intro = () => {
               textTransform="uppercase"
               fontWeight="700"
               mt={{ base: "5px", md: "0" }}
-              color="black" 
             >
               BRO SNIPER BOT
             </Box>
@@ -150,9 +148,9 @@ const Intro = () => {
           display="flex"
           alignItems="center"
           mr={{ base: "0", md: "15px" }}
-          background="#fda007"
+          background="#0088cc"
           padding="5px"
-          borderRadius="5px"
+          borderRadius="5px" 
         >
           <Box
             className={glitch.menu}
@@ -160,7 +158,7 @@ const Intro = () => {
             width={{ base: "30px", sm: "45px" }}
             pr={{ base: "0", md: "8px" }}
           >
-            <FaTelegram />
+            <FaTelegram/>
           </Box>
           <Box
             display={{ base: "flex", md: "block" }}
@@ -180,7 +178,7 @@ const Intro = () => {
               fontSize={{ base: "11px", sm: "14", md: "17px" }}
               textTransform="uppercase"
               fontWeight="700"
-              mt={{ base: "5px", md: "0" }}
+              mt={{ base: "5px", md: "0" }} 
             >
               Signal Bot
             </Box>
