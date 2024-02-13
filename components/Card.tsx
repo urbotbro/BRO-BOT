@@ -1,4 +1,4 @@
-import { ChakraCard, CardBody, CardHeader, Box, CardFooter, Button, Heading } from "@chakra-ui/react";
+import { Card, CardBody, CardHeader, Box, CardFooter, Button, Heading } from "@chakra-ui/react";
 import Link from "next/link";
 import { Ubuntu, Orbitron } from "next/font/google";
 import { motion } from 'framer-motion';
@@ -15,7 +15,7 @@ interface linkList {
   link: string;
 }
 
-export const FullLinkCard = (props: linkList) => {
+export const FullLinkCard = (props: linkList) => 
   // Mapping titles to their new button texts
   const buttonTextMapping: { [key: string]: string } = {
     'BRO Sniper Bot': 'Available Launch Day',
@@ -27,8 +27,8 @@ export const FullLinkCard = (props: linkList) => {
   // Determine the button text based on the card title
   const buttonText = buttonTextMapping[props.title] || `Open ${props.title}`;
 
-  return (
-    <ChakraCard minH='650px' ml='20px' mr='20px' mb='20px' background='#14191e' color='white' border='0.001px solid #ffffff23'>
+   return (
+    <Card minH='650px' ml='20px' mr='20px' mb='20px' background='#14191e' color='white' border='0.001px solid #ffffff23'>
       <CardBody>
         <Box display='flex' position='relative' justifyContent='center' alignItems='center' width="100%" minHeight="200px">
           <Box position='absolute' zIndex='10' display='flex' justifyContent='center' alignItems='center' width="100%" minHeight="200px" sx={{
