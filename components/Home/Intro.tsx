@@ -102,7 +102,7 @@ const Intro = () => {
           display="flex"
           alignItems="center"
           mr={{ base: "0", md: "15px" }}
-          background="FFA500"
+          background="#68562c"
           padding="5px"
           borderRadius="5px"
         >
