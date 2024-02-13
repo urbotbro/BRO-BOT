@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 const GetStarted = () => {
     const startOptions = [
         {
-            title: 'BRO SNIPER Bot',
+            title: 'BRO Sniper Bot',
             comingSoon: false,
             description: 'Elevate your trading game with the BRO Telegram Bot – your intelligent companion in the world of finance. Enhance your gains, execute trades swiftly, seize opportunities early, and monitor real-time profits.',
             imgSrc: '/BRO SNIPER BOT.png',
@@ -20,7 +20,7 @@ const GetStarted = () => {
             link: 'https://tradewithbro.com',
         },
         {
-            title: 'Dashboard',
+            title: 'Dashboards',
             comingSoon: false,
             description: 'Token holders can seize a portion of revenue by utilizing this dashboard. Furthermore, you have the option to generate a referral link and collect rewards for successful referrals.',
             imgSrc: '/BRO BOT Dash.png',
