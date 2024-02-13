@@ -99,7 +99,7 @@ export const FullLinkCard = ({ title, comingSoon, description, imgSrc, link }: L
       case "Bro Launchpads":
         return "Coming Soon";
       case "Dashboards":
-        return "Available on Launch Day";
+        return "Open Dashboards";
       default:
         return `Open ${title}`;
     }
