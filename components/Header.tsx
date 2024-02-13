@@ -79,8 +79,8 @@ const Header = () => {
             <FaXmark />
         </Box>
         <Box position='relative' display='block' width='100%' justifySelf='center' mt='50px'>
-          <Button borderRadius='0' minH='60px' display='flex' justifyContent='flex-end' alignItems='center' width='100%' onClick={() => {toggleSmallTool(!smallTool)}} style={orbitronFont.style} fontSize='20px' background='#cdf6f8' _hover={{
-              background: '#9bf0f5'
+          <Button borderRadius='0' minH='60px' display='flex' justifyContent='flex-end' alignItems='center' width='100%' onClick={() => {toggleSmallTool(!smallTool)}} style={orbitronFont.style} fontSize='20px' background='#fda007' _hover={{
+              background: '#fda007'
             }}>
               <Box mr="25px" display='flex' justifyContent='flex-end' alignItems='center'>
               <Box as='span' paddingRight='7px'>Start</Box> <FaChevronDown />
