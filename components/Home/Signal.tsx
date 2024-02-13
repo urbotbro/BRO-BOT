@@ -42,5 +42,3 @@ const Signal = () => {
 }
 
 export default Signal;
-
-export default Signal
