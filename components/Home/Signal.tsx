@@ -10,7 +10,7 @@ const Signal = () => {
   return (
     <Flex width="100%" maxWidth='1280px' justify='center' mt='150px' mb='150px' align='center'>
       <Flex width={{base: '90%', md: "90%"}} justify='space-between' direction={{base: 'column-reverse', md: 'row'}} textAlign={{base:'center', md: 'start'}} align='center' background='#fda007' padding={{base: '20px 20px', md: '30px 80px'}} borderRadius='10px'>
-      <Box width={{base:'100%', md: '50%'}}>
+      <Box width={{base:'100%', md: '50%'}} color="black">
         <Heading pt='20px' pb='20px' fontSize={{base: '25px', sm: '30', md:'40px'}} style={orbitronFont.style} className={glitch.glitchWrapper} color="black">
           <span className={glitch.glitch} data-text="Bro Signals">Bro Signals</span>
         </Heading>
