@@ -69,12 +69,12 @@ const Webapp = () => {
             </Box>
             <Box height="35px" display={{base: 'none', lg: 'flex'}}>
                 <Tooltip label='Telegram Community' padding='10px' textTransform='uppercase' borderRadius='5px' transition='none' openDelay={500} placement="top" className={glitch.menu} >
-                    <Link href="https://t.me/bro_bot_token" className={glitch.div} height='100%' width='55px'>
+                    <Link href="https://t.me/bro_portal" className={glitch.div} height='100%' width='55px'>
                         <RiTelegramLine />
                     </Link>
                 </Tooltip>
                 <Tooltip label='Twitter Community' padding='10px' textTransform='uppercase' borderRadius='5px' transition='none' openDelay={500} placement="top" className={glitch.menu}>
-                    <Link href="https://x.com/ur_bot_bro" className={glitch.div} height='100%' width='50px'>
+                    <Link href="https://x.com/tradewithbro" className={glitch.div} height='100%' width='50px'>
                     <FaXTwitter />
                     </Link>
                 </Tooltip>
@@ -93,9 +93,9 @@ const Webapp = () => {
                 </Tooltip>
             </Box> */}
         <Flex mt='50px' flexDirection='column' alignItems="center"  border='0.0001px solid #ffffff37' padding='20px' borderRadius='10px' display='flex' position='relative' width="100%" minHeight={{base: '300px', md: "600px"}}>
-            {/* <Image src="/BRO BOT Dash.png" alt="Image" /> */}
+            {/* <Image src="/BRO SNIPER BOT.png" alt="Image" /> */}
         <Box position='absolute' zIndex='10' display='flex' justifyContent='center' alignItems='center' width="95%" height="90%" sx={{
-            background: `url('/BRO BOT Trade.png') center`,
+            background: `url('/BRO SNIPER BOT.png') center`,
             backgroundSize: 'cover',
             // filter:'blur(5px)',
             backgroundRepeat: 'no-repeat'
