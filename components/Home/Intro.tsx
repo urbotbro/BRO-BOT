@@ -105,7 +105,6 @@ const Intro = () => {
           background="#0088cc"
           padding="5px"
           borderRadius="5px"
-          color="black"
         >
           <Box
             className={glitch.menu}
