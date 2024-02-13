@@ -13,8 +13,8 @@ const orbitronFont = Orbitron({weight: ['400', '500', '600', '700'], subsets: ['
 const Webapp2 = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
     const imageOptions = [
-        { imgSrc: '/BRO BOT Trade.png' },
         { imgSrc: '/BRO BOT Bridge.png' },
+        { imgSrc: '/BRO BOT Trade.png' },
         { imgSrc: '/BRO BOT Launch.png' },
     ];
 
