@@ -15,13 +15,13 @@ const Signal = () => {
           pt='20px' 
           pb='20px' 
           fontSize={{ base: '25px', sm: '30', md: '40px' }} 
-          style={{...orbitronFont.style, color: 'black !important'}} // Apply the color black with !important to the Heading
+          style={{...orbitronFont.style, color: 'black !important'}}
           className={glitch.glitchWrapper}
         >
           <span 
             className={glitch.glitch} 
             data-text="Bro Signals" 
-            style={{ color: 'black !important' }} // Apply the color black with !important to the span
+            style={{ color: 'black !important' }}
          >
             Bro Signals
           </span>
