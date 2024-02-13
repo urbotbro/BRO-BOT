@@ -105,6 +105,7 @@ const Intro = () => {
           background="#fda007"
           padding="5px"
           borderRadius="5px"
+          color="black"
         >
           <Box
             className={glitch.menu}
@@ -112,7 +113,7 @@ const Intro = () => {
             width={{ base: "30px", sm: "45px" }}
             pr={{ base: "0", md: "8px" }}
           >
-            <FaTelegram />
+            <FaTelegram color="black"/>
           </Box>
           <Box
             display={{ base: "flex", md: "block" }}
@@ -125,6 +126,7 @@ const Intro = () => {
               fontSize={{ base: "8px", sm: "11px" }}
               p="2px"
               borderRadius="5px"
+              color="black"
             >
               Available on launch day
             </Badge>
@@ -133,6 +135,7 @@ const Intro = () => {
               textTransform="uppercase"
               fontWeight="700"
               mt={{ base: "5px", md: "0" }}
+              color="black" 
             >
               BRO SNIPER BOT
             </Box>
