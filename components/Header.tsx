@@ -33,8 +33,8 @@ const Header = () => {
         </Box>
         
         <Box position='relative' display={{base: 'none', md: 'block'}}>
-          <Button borderRadius='100px' onClick={() => {toggleTool(!tool)}} style={orbitronFont.style} fontSize='14px' background='#cdf6f8' _hover={{
-              background: '#9bf0f5'
+          <Button borderRadius='100px' onClick={() => {toggleTool(!tool)}} style={orbitronFont.style} fontSize='14px' background='#fda007' _hover={{
+              background: '#fda007'
             }}>
               <Box as='span' paddingRight='7px'>Start</Box> <FaChevronDown />
           </Button>
