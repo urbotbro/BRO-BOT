@@ -126,7 +126,7 @@ const Intro = () => {
               p="2px"
               borderRadius="5px"
             >
-              Available
+              Available on launch day
             </Badge>
             <Box
               fontSize={{ base: "11px", sm: "14", md: "17px" }}
@@ -134,7 +134,7 @@ const Intro = () => {
               fontWeight="700"
               mt={{ base: "5px", md: "0" }}
             >
-              BRO BOT
+              BRO SNIPER BOT
             </Box>
           </Box>
         </Box>
@@ -171,7 +171,7 @@ const Intro = () => {
               p="2px"
               borderRadius="5px"
             >
-              Available
+              Available on launch day
             </Badge>
             <Box
               fontSize={{ base: "11px", sm: "14", md: "17px" }}
@@ -337,7 +337,7 @@ const Intro = () => {
             className={glitch.menu}
           >
             <Link
-              href="https://t.me/bro_bot_token"
+              href="https://t.me/bro_portal"
               className={glitch.div}
               height="100%"
               width="55px"
@@ -356,7 +356,7 @@ const Intro = () => {
             className={glitch.menu}
           >
             <Link
-              href="https://x.com/ur_bot_bro"
+              href="https://x.com/tradewithbro"
               className={glitch.div}
               height="100%"
               width="50px"
@@ -385,7 +385,7 @@ const Intro = () => {
           className={glitch.menu}
         >
           <Link
-            href="https://t.me/bro_bot_token"
+            href="https://t.me/bro_portal"
             className={glitch.div}
             height="100%"
             width="55px"
@@ -404,7 +404,7 @@ const Intro = () => {
           className={glitch.menu}
         >
           <Link
-            href="https://x.com/ur_bot_bro"
+            href="https://x.com/tradewithbro"
             className={glitch.div}
             height="100%"
             width="50px"
