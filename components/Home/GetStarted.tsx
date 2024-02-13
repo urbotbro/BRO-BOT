@@ -9,7 +9,7 @@ const GetStarted = () => {
             title: 'BRO SNIPER Bot',
             comingSoon: false,
             description: 'Elevate your trading game with the BRO Telegram Bot – your intelligent companion in the world of finance. Enhance your gains, execute trades swiftly, seize opportunities early, and monitor real-time profits.',
-            imgSrc: '/BRO BOT Dash.png',
+            imgSrc: '/BRO SNIPER BOT.png',
             link: '/#',
         },
         {
