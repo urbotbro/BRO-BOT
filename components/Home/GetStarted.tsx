@@ -14,7 +14,7 @@ const GetStarted = () => {
         },
         {
             title: 'BroTrade Hub',
-            comingSoon: false, // Corrected to ensure consistency and proper casing
+            comingSoon: false,
             description: 'Bro Trade Hub is a cutting-edge trading ecosystem, blending AI insights, one-click trading, and community wisdom. It is designed for seamless crypto transactions, offering users a dynamic platform for smart, secure, and community-driven trading experiences. Welcome to the future of crypto trading.',
             imgSrc: '/BRO BOT Trade.png', // Corrected casing
             link: 'https://tradewithbro.com',
