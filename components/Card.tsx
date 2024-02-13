@@ -125,8 +125,8 @@ export const FullLinkCard = ({ title, comingSoon, description, imgSrc, link }: L
       </CardBody>
       <CardFooter alignItems="center">
         {!comingSoon && (
-          <Button as={Link} href={link} fontSize="14px" borderRadius="50px" background="#cdf6f8" _hover={{
-            background: "#9bf0f5",
+          <Button as={Link} href={link} fontSize="14px" borderRadius="50px" background="#fda007" _hover={{
+            background: "#fda007",
           }}>
             {buttonText}
           </Button>
