@@ -37,7 +37,7 @@ const Footer = () => {
 
       </Flex>
         <Box fontSize='12px' color="#ffffff68" mb='10px'>
-          Copyright &copy;{date.getFullYear()} BRO BOT. All rights reserved.
+          Copyright &copy;{date.getFullYear()} BRO. All rights reserved.
         </Box>
     </Flex>
   )
