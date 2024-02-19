@@ -21,7 +21,7 @@ const Header = () => {
     <Flex as='header' justifyContent='space-between' align='center'  color='white' position='fixed' top='0' width="100%" zIndex='1000' pl='5px' pr='5px'>
       <Flex as='div' position='sticky' maxWidth='2280px' width="100%" justify='space-between' align='center' paddingTop='10px' paddingBottom='10px' pl='5px' pr='5px'>
          <Box>
-          <Image src='/Logo-min.png' alt="BRO" width={75} height={75} />
+          <Image src='/Logo-min.png' alt="BRO" width={95} height={95} />
         </Box>
 
 
@@ -33,8 +33,8 @@ const Header = () => {
         </Box>
         
         <Box position='relative' display={{base: 'none', md: 'block'}}>
-          <Button borderRadius='100px' onClick={() => {toggleTool(!tool)}} style={orbitronFont.style} fontSize='14px' background='#cdf6f8' _hover={{
-              background: '#9bf0f5'
+          <Button borderRadius='100px' onClick={() => {toggleTool(!tool)}} style={orbitronFont.style} fontSize='14px' background='#fda007' _hover={{
+              background: '#fda007'
             }}>
               <Box as='span' paddingRight='7px'>Start</Box> <FaChevronDown />
           </Button>
@@ -79,8 +79,8 @@ const Header = () => {
             <FaXmark />
         </Box>
         <Box position='relative' display='block' width='100%' justifySelf='center' mt='50px'>
-          <Button borderRadius='0' minH='60px' display='flex' justifyContent='flex-end' alignItems='center' width='100%' onClick={() => {toggleSmallTool(!smallTool)}} style={orbitronFont.style} fontSize='20px' background='#cdf6f8' _hover={{
-              background: '#9bf0f5'
+          <Button borderRadius='0' minH='60px' display='flex' justifyContent='flex-end' alignItems='center' width='100%' onClick={() => {toggleSmallTool(!smallTool)}} style={orbitronFont.style} fontSize='20px' background='#fda007' _hover={{
+              background: '#fda007'
             }}>
               <Box mr="25px" display='flex' justifyContent='flex-end' alignItems='center'>
               <Box as='span' paddingRight='7px'>Start</Box> <FaChevronDown />

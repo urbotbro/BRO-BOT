@@ -112,7 +112,7 @@ const Intro = () => {
             width={{ base: "30px", sm: "45px" }}
             pr={{ base: "0", md: "8px" }}
           >
-            <FaTelegram />
+            <FaTelegram/>
           </Box>
           <Box
             display={{ base: "flex", md: "block" }}
@@ -149,7 +149,7 @@ const Intro = () => {
           mr={{ base: "0", md: "15px" }}
           background="#0088cc"
           padding="5px"
-          borderRadius="5px"
+          borderRadius="5px" 
         >
           <Box
             className={glitch.menu}
@@ -157,7 +157,7 @@ const Intro = () => {
             width={{ base: "30px", sm: "45px" }}
             pr={{ base: "0", md: "8px" }}
           >
-            <FaTelegram />
+            <FaTelegram/>
           </Box>
           <Box
             display={{ base: "flex", md: "block" }}
@@ -177,7 +177,7 @@ const Intro = () => {
               fontSize={{ base: "11px", sm: "14", md: "17px" }}
               textTransform="uppercase"
               fontWeight="700"
-              mt={{ base: "5px", md: "0" }}
+              mt={{ base: "5px", md: "0" }} 
             >
               Signal Bot
             </Box>

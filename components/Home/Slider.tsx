@@ -14,8 +14,8 @@ const Sliders = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
 
     const imageOptions = [
-        { imgSrc: '/BRO BOT Trade.png' },
         { imgSrc: '/BRO BOT Bridge.png' },
+        { imgSrc: '/BRO BOT Trade.png' },
         { imgSrc: '/BRO BOT Launch.png' },
     ];
 
@@ -45,10 +45,20 @@ const Sliders = () => {
             </Flex>
             <Box display='flex' alignItems='center' justifyContent='center' pt='80px' pb='20px' fontSize='18px'>
                 <span className={glitch.glitch}>For More Visit </span>
-                <Button as={Link} href="https://tradewithbro.com" fontSize="18px" _hover={{
-                    background: '#9bf0f5'
-                }}>tradewithbro.com</Button>
-            </Box>
+                <Button
+                  as={Link}
+                  href="https://tradewithbro.com"
+                  fontSize="18px"
+                  background="#fda007"
+                  color="black"
+                  _hover={{
+                    background: '#fda007',
+                    color: "black"
+                  }}
+                 >
+                  TradeWithBro
+                </Button>
+             </Box>
         </Box>
     )
 }
