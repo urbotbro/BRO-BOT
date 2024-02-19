@@ -22,9 +22,7 @@ const Webapp = () => {
         minHeight={{ base: '300px', md: "700px" }}
       >
         <video
-          src='/BRO Video Final.mp4'
-          autoPlay
-          loop
+          src="/BRO Video Final.mp4"
           style={{
             position: 'absolute',
             borderRadius:'10px',
@@ -34,14 +32,17 @@ const Webapp = () => {
             objectFit: 'cover',
             margin: '5px',
           }}
+          autoPlay
+          muted
+          loop
         />
       </Flex>
       <Box display='flex' alignItems='center' justifyContent='center' pt='80px' pb='20px' fontSize='18px'>
-        <span className={glitch.glitch}>For More Visit </span>
-        <Button as={Link} href="https://tradewithbro.com" fontSize="18px" _hover={{
-          background: '#9bf0f5'
-        }}>tradewithbro.com</Button>
-      </Box>
+                <span className={glitch.glitch}>For More Visit </span>
+                <Button as={Link} href="https://tradewithbro.com" fontSize="18px" _hover={{
+                    background: '#9bf0f5'
+                }}>tradewithbro.com</Button>
+            </Box>
     </Flex>
   );
 };
