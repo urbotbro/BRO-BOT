@@ -9,7 +9,7 @@ const Webapp = () => {
           backgroundSize: 'cover', 
           backgroundRepeat: 'no-repeat'
         }}> */}
-          <Image src="/BROVideoFinal.gif" alt="BROVideoFinal" borderRadius='10px' width='100%' />
+          <Image src="/BroVideoFinal.gif" alt="BROVideoFinal" borderRadius='10px' width='100%' />
         {/* </Box> */}
       </Flex>
     </Box>
