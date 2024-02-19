@@ -34,9 +34,6 @@ const Webapp = () => {
             objectFit: 'cover',
             margin: '5px',
           }}
-          sx={{
-            aspectRatio: '16/9'
-          }}
         />
       </Flex>
       <Box display='flex' alignItems='center' justifyContent='center' pt='80px' pb='20px' fontSize='18px'>
