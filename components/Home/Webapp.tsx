@@ -22,7 +22,9 @@ const Webapp = () => {
         minHeight={{ base: '300px', md: "700px" }}
       >
         <video
-          src="/BRO Video Final.mp4"
+          src='/BRO Video Final.mp4'
+          autoPlay
+          loop
           style={{
             position: 'absolute',
             borderRadius:'10px',
@@ -32,10 +34,9 @@ const Webapp = () => {
             objectFit: 'cover',
             margin: '5px',
           }}
-          autoPlay
-          muted
-          loop
-          playsInline
+          sx={{
+            aspectRatio: '16/9'
+          }}
         />
       </Flex>
       <Box display='flex' alignItems='center' justifyContent='center' pt='80px' pb='20px' fontSize='18px'>
