@@ -23,7 +23,7 @@ const GetStarted = () => {
             title: 'Dashboards',
             comingSoon: false,
             description: 'Token holders can seize a portion of revenue by utilizing this dashboard. Furthermore, you have the option to generate a referral link and collect rewards for successful referrals.',
-            imgSrc: '/BRO BOT Dash.png',
+            imgSrc: '/BRO BOT Dash.PNG',
             link: 'https://dashboard.itsurbro.com/',
         },
         {
