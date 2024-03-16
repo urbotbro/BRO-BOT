@@ -29,7 +29,7 @@ const Roadmap = () => {
           desc: 'Bro Trade Hub',
         },
         {
-          subTitle: 'Bro Hub goes Live',
+          subTitle: 'Bro Trade Hub goes Live',
           desc: null,
         },
         {
