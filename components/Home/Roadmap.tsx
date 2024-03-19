@@ -58,9 +58,9 @@ const Roadmap = () => {
        </SimpleGrid>
        <Button as="a" href="/BRO Bot Whitepaper.pdf" target="_blank" fontSize="18px" _hover={{
          background: '#fda007'
-       }}>
-        Whitepaper
-       </Button> 
+       }} rel="noopener noreferrer">
+         Whitepaper
+        </Button>
     </Flex>
   )
 }
