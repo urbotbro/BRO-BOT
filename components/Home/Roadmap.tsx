@@ -56,7 +56,7 @@ const Roadmap = () => {
           <RoadmapCard key={journeyAhead.indexOf(elem)} phases={elem.phases} title={elem.title} />
         )}
       </SimpleGrid>
-      <Button as={Link}  href="../public/BRO Bot Whitepaper.pdf" fontSize="18px" _hover={{
+      <Button as={Link}  href="/BRO Bot Whitepaper.pdf" fontSize="18px" _hover={{
                     background: '#fda007'
                 }}>Whitepaper</Button> 
     </Flex>
