@@ -1,6 +1,12 @@
 'use client';
-import { Flex, Box, SimpleGrid } from "@chakra-ui/react"
+import { Flex, Heading, SimpleGrid, Button } from "@chakra-ui/react"
 import { RoadmapCard } from "../Card";
+import { Orbitron } from "next/font/google";
+import glitch from '@/components/Home/glitch.module.css'
+import Link from "next/link";
+
+
+const orbitronFont = Orbitron({weight: ['400', '500', '600', '700'], subsets: ['latin']})
 
 const Roadmap = () => {
   const journeyAhead = [
@@ -41,12 +47,18 @@ const Roadmap = () => {
   ]
 
   return (
-    <Flex mt='150px' mb='150px' width="100%" maxW='1280px' justify='center' align='center' id="roadmap">
+    <Flex mt='150px' mb='150px' width="100%" maxW='1280px' flexDirection='column' justify='center' align='center' id="roadmap">
+      <Heading alignSelf='center' ml='20px' mt='50px' mb='50px' style={orbitronFont.style} className={glitch.glitchWapper}>
+        <span className={glitch.glitch} data-text='Roadmap'>Roadmap</span>
+      </Heading>
       <SimpleGrid columns={{base: 1, md: 2}} spacing={{base: 2, md: 15 }}>
         {journeyAhead.map(elem => 
           <RoadmapCard key={journeyAhead.indexOf(elem)} phases={elem.phases} title={elem.title} />
         )}
       </SimpleGrid>
+      <Button as={Link}  href="../public/BRO Bot Whitepaper.pdf" fontSize="18px" _hover={{
+                    background: '#fda007'
+                }}>Whitepaper</Button> 
     </Flex>
   )
 }
