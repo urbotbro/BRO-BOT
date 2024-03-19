@@ -11,7 +11,7 @@ const orbitronFont = Orbitron({weight: ['400', '500', '600', '700'], subsets: ['
 const Roadmap = () => {
   const journeyAhead = [
     {
-      title: "Launch Day",
+      title: "Phase 1 - Launch Day",
       phases: [
         {
           subTitle: 'Bro Bot Premieres',
@@ -28,7 +28,7 @@ const Roadmap = () => {
       ]
     },
     {
-      title: "Next",
+      title: "Phase 2- Next",
       phases: [
         {
           subTitle: 'Beta',
