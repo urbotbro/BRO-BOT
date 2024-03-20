@@ -12,6 +12,7 @@ import Webapp from "@/components/Home/Webapp";
 import GetStarted from "@/components/Home/GetStarted";
 import Loader from "@/components/Home/loader";
 import { useState, useEffect } from "react";
+import Tokenomics from "@/components/Home/tokenomics";
 
 export default function Home() {
   const [load, setLoad] = useState(true);
@@ -30,6 +31,7 @@ export default function Home() {
         <GetStarted />
         <Features />
         <Signal />
+        <Tokenomics/>
         <Roadmap />
         <Boost />
       </Box>
