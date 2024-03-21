@@ -49,14 +49,13 @@ const Tokenomics = () => {
           <span style={{color:"#fda007"}}>Total Supply:</span> 1 Million BRO tokens <br />
           <span style={{color:"#fda007"}}>Team Allocation:</span> 100,000 tokens
             <br />
-            5% locked for 8 years, accessible over 3 years with revenue sharing for commitment. <br />
-            Another 5% locked for 2 years, then released over 3 years without revenue sharing for motivation.
+             locked for 5 years without revenue sharing for motivation.released quatarly every year.
             <br />
-            <span style={{color:"#fda007"}}>Presale:</span> 233,500 tokens via fair launch.
+            <span style={{color:"#fda007"}}>Presale:</span> 168,407 tokens via fair launch.
             <br />
-            <span style={{color:"#fda007"}}>LP allocation:</span> 17,000 tokens, locked for 2 years for market stability.
+            <span style={{color:"#fda007"}}>LP allocation:</span> 81,593 tokens, locked for 1 years for market stability.
             <br />
-            <span style={{color:"#fda007"}}>Treasury:</span> 649,500 tokens for BRO Bonus, 2-year vesting, quarterly unlocks, re-locking unused tokens for sustainability.
+            <span style={{color:"#fda007"}}>Treasury:</span> 650,000 tokens for BRO Bonus, 5-year vesting, quarterly unlocks, re-locking unused tokens for sustainability.
             <br />
             <span style={{color:"#fda007"}}>Revenue:</span> 45% of bot transaction fees to revenue dashboard
             <br />
