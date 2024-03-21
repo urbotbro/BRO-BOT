@@ -46,24 +46,25 @@ const Tokenomics = () => {
       >
         <Box width={{ base: "100%", md: "60%" }}>
           <Box fontSize="20px" pl={{ base: "10px", md: "initial" }}>
-          Total Supply: 1,000,000 Tokens <br />
-            Team: 80,000 Tokens (8%)
+          <span style={{color:"#fda007"}}>Total Supply:</span> 1 Million BRO tokens <br />
+          <span style={{color:"#fda007"}}>Team Allocation:</span> 100,000 tokens
             <br />
-            Liquidity Pool (LP): 90,000 Tokens (9%) <br />
-            Fair Launch: 830,000 Tokens (83%)
+            5% locked for 8 years, accessible over 3 years with revenue sharing for commitment. <br />
+            Another 5% locked for 2 years, then released over 3 years without revenue sharing for motivation.
             <br />
-            Unsold tokens: Committed to being burned to reduce supply and
-            enhance value.
+            <span style={{color:"#fda007"}}>Presale:</span> 233,500 tokens via fair launch.
             <br />
-            Buy tax 2%
+            <span style={{color:"#fda007"}}>LP allocation:</span> 17,000 tokens, locked for 2 years for market stability.
             <br />
-            Sell tax 4%
+            <span style={{color:"#fda007"}}>Treasury:</span> 649,500 tokens for BRO Bonus, 2-year vesting, quarterly unlocks, re-locking unused tokens for sustainability.
             <br />
-            Buy tax 2% goes to lp
+            <span style={{color:"#fda007"}}>Revenue:</span> 45% of bot transaction fees to revenue dashboard
             <br />
-            and Sell tax 2% rev share holder and 2% development and team
+            <span style={{color:"#fda007"}}>2% Sell tax</span> for revenue share
             <br />
-            Team token vesting preiod of 2 year
+            <span style={{color:"#fda007"}}>2% Sell tax</span> for team and development
+            <br/>
+            <span style={{color:"#fda007"}}>2% Buy tax</span> for LP injection
           </Box>
         </Box>
         <Box
