@@ -49,7 +49,7 @@ const Tokenomics = () => {
           <span style={{color:"#fda007"}}>Total Supply:</span> 1 Million BRO tokens <br />
           <span style={{color:"#fda007"}}>Team Allocation:</span> 100,000 tokens
             <br />
-             locked for 5 years without revenue sharing for motivation.released quatarly every year.
+             locked for 5 years without revenue sharing for motivation.quarterly unlocks.
             <br />
             <span style={{color:"#fda007"}}>Presale:</span> 168,407 tokens via fair launch.
             <br />
