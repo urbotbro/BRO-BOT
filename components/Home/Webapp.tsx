@@ -24,6 +24,7 @@ const Webapp = () => {
           TradeWithBro
         </Button> 
      </Box>
+</Box>
 
   );
 };
