@@ -92,7 +92,7 @@ const CountdownTimer = () => {
           </Button>
         )}
         <Heading mt="4px">
-              Presale starts in
+                starts in
             </Heading>
         {timeLeft.days !== undefined && timeLeft.days > 0 && (
           <Flex flexDirection="row" justify="cenetr" align="center" mt="8px">
