@@ -14,11 +14,11 @@ const Roadmap = () => {
       title: "Phase 1 - Launch Day",
       phases: [
         {
-          subTitle: 'Bro Bot Premieres',
+          subTitle: 'Bro Sniper Bot Premieres',
           desc: 'Full Features & Earning Dashboard',
         },
         {
-          subTitle: 'Signal Bot & Dashboard',
+          subTitle: 'Signal Bot',
           desc: null,
         },
         {
