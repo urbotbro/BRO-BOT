@@ -91,6 +91,9 @@ const CountdownTimer = () => {
             Presale
           </Button>
         )}
+        <Heading mt="4px">
+              Presale starts in
+            </Heading>
         {timeLeft.days !== undefined && timeLeft.days > 0 && (
           <Flex flexDirection="row" justify="cenetr" align="center" mt="8px">
             <Heading mt="4px" background="#fda007" padding="4px" mr="1px" ml="1px" borderRadius="10px">
