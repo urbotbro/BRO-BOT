@@ -6,6 +6,7 @@ import {
   Image as ChakraImage,
   Heading,
   Badge, 
+  Button,
   Tooltip,
 } from "@chakra-ui/react";
 import { Ubuntu, Orbitron } from "next/font/google";
@@ -21,6 +22,7 @@ import {
 import { RiTelegramLine } from "react-icons/ri";
 import glitch from "@/components/Home/glitch.module.css";
 import { Link } from "@chakra-ui/next-js";
+import CountdownTimer from "./CountdownTimer";
 
 const ubuntuFont = Ubuntu({
   weight: ["300", "400", "500", "700"],
@@ -73,6 +75,7 @@ const Intro = () => {
               Your all-in-one crypto ecosystem. Launching, trading, and signals
               united under one hub - everything you need with Bro.
             </Text>
+            <CountdownTimer/>
           </Box>
           <Box
             width={{ base: "90%", md: "40%" }}
