@@ -56,11 +56,20 @@ const Roadmap = () => {
           <RoadmapCard key={journeyAhead.indexOf(elem)} phases={elem.phases} title={elem.title} />
         )}
        </SimpleGrid>
-       <Button as="a" href="/BRO Whitepaper.pdf" target="_blank" fontSize="18px" _hover={{
-         background: '#fda007'
-       }} rel="noopener noreferrer">
-         Whitepaper
-        </Button>
+       <Button
+         as="a"
+         href="/BRO Whitepaper.pdf"
+         target="_blank"
+         fontSize="18px"
+         background="#fda007" // Set the default background color
+         _hover={{
+            background: '#fda007' // Keep the hover color the same
+        }}
+       rel="noopener noreferrer"
+      >
+       Whitepaper
+       </Button>
+
     </Flex>
   )
 }
