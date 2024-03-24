@@ -16,9 +16,9 @@ const Webapp = () => {
            as={Link}
            href="https://tradewithbro.com"
            fontSize="18px"
-           background="#fda007" // Set the default background color to #fda007
+           background="#fda007"
            _hover={{
-              background: '#fda007' // Keeps the hover color the same
+              background: '#fda007'
            }}
          >
           TradeWithBro
