@@ -1,57 +1,86 @@
 import { useState, useEffect } from 'react';
-import { Button } from '@chakra-ui/react';
+import { Button, Flex, Heading } from "@chakra-ui/react";
+import { Ubuntu, Orbitron } from "next/font/google";
+import glitch from '@/components/Home/glitch.module.css';
 
-const CountdownTimer: React.FC = () => {
-  const calculateTimeLeft = () => {
-    const difference = +new Date('2024-04-02') - +new Date();
-    let timeLeft: { [key: string]: number } = {};
+const ubuntuFont = Ubuntu({ weight: ['300', '400', '500', '700'], subsets: ['latin'] });
+const orbitronFont = Orbitron({ weight: ['400', '500', '600', '700'], subsets: ['latin'] });
 
-    if (difference > 0) {
-      timeLeft = {
-        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-        minutes: Math.floor((difference / 1000 / 60) % 60),
-        seconds: Math.floor((difference / 1000) % 60)
-      };
-    }
+interface TimeLeft {
+  days?: number;
+  hours?: number;
+  minutes?: number;
+  seconds?: number;
+}
 
-    return timeLeft;
-  };
-
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+const CountdownTimer = () => {
+  const [timeLeft, setTimeLeft] = useState<TimeLeft>({});
 
   useEffect(() => {
-    const timer = setTimeout(() => {
+    const timer = setInterval(() => {
       setTimeLeft(calculateTimeLeft());
     }, 1000);
 
-    return () => clearTimeout(timer);
-  });
+    return () => clearInterval(timer);
+  }, []);
 
-  const formatTime = (time: number) => {
-    return time.toString().padStart(2, '0');
-  };
+  function calculateTimeLeft(): TimeLeft {
+    const targetDate = new Date("April 2, 2024 00:00:00").getTime();
+    const now = new Date().getTime();
+    const difference = targetDate - now;
+
+    if (difference > 0) {
+      return {
+        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+        minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
+        seconds: Math.floor((difference % (1000 * 60)) / 1000)
+      };
+    } else {
+      return {};
+    }
+  }
+
+  function formatTime(value: number): string {
+    return value.toString().padStart(2, '0');
+  }
 
   return (
-    <div>
-      <Button
-        as="a"
-        href="https://www.pinksale.finance/launchpad/0x696d9fDe0ad616fd463E5c5D2c67F75f8D7c8F22?chain=ETH&refId=0x37950C488Cd8f0f58AA661B7560D1Ba03a608b93"
-        target="_blank"
-        mt={{ base: '20px', sm: '4px' }}
-        mr={{base: '4px', sm: '2px'}}
-        fontSize="18px"
-        _hover={{ background: '#fda007' }}
-        rel="noopener noreferrer"
+    <Flex
+      mb="150px"
+      width="100%"
+      maxW="1280px"
+      flexDirection="column"
+      justify="center"
+      align="center"
+    >
+      <Heading
+        alignSelf="center"
+        ml="20px"
+        mb="20px"
+        style={orbitronFont.style}
+        className={glitch.glitchWapper}
+        color='#fda007'
       >
-        Presale
-      </Button> 
-      {formatTime(timeLeft.days)}:
-      {formatTime(timeLeft.hours)}:
-      {formatTime(timeLeft.minutes)}:
-      {formatTime(timeLeft.seconds)}
-      {timeLeft.days || timeLeft.hours || timeLeft.minutes || timeLeft.seconds }
-    </div>
+        <span className={glitch.glitch} color='#fda007' data-text="Join our Presale">
+          Join our Presale
+        </span>
+      </Heading>
+      <Flex
+        flexDirection="column"
+        justify="center"
+        align="center"
+      >
+        {timeLeft.days !== undefined && timeLeft.days >= 0 && (
+          <Button as="a" href="https://www.pinksale.finance/launchpad/0x696d9fDe0ad616fd463E5c5D2c67F75f8D7c8F22?chain=ETH&refId=0x37950C488Cd8f0f58AA661B7560D1Ba03a608b93" target="_blank" fontSize="18px" _hover={{ background: '#fda007' }} rel="noopener noreferrer">
+            Presale
+          </Button>
+        )}
+        {timeLeft.days !== undefined && timeLeft.days > 0 && (
+          <Heading color='#fda007' mt='4px'>{formatTime(timeLeft.days || 0)}:{formatTime(timeLeft.hours || 0)}:{formatTime(timeLeft.minutes || 0)}:{formatTime(timeLeft.seconds || 0)}</Heading>
+        )}
+      </Flex>
+    </Flex>
   );
 };
 

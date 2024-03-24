@@ -75,7 +75,6 @@ const Intro = () => {
               Your all-in-one crypto ecosystem. Launching, trading, and signals
               united under one hub - everything you need with Bro.
             </Text>
-            <CountdownTimer/>
           </Box>
           <Box
             width={{ base: "90%", md: "40%" }}
@@ -89,6 +88,8 @@ const Intro = () => {
             {/* <Image src='/GIF.gif' alt="BroBot Image" width={50} height={50} /> */}
           </Box>
         </Flex>
+        
+        <CountdownTimer/>
         <Flex
         alignItems="center"
         justify={{ base: "space-evenly", md: "space-evenly" }}
