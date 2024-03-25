@@ -54,7 +54,7 @@ const Header = () => {
           </Box>
           <Divider opacity='.1' />
           <Box pt='10px' pb='10px' pl='5px' pr='5px' opacity='0.7' _hover={{ textDecoration: 'none', }} cursor='default' display='flex' alignItems='center'>
-            Signal Bot <Badge variant='outline' justifySelf='flex-end' alignItems='center' display='flex' justifyContent='center' alignContent='center' ml='10px' colorScheme='yellow'>Available On Launch Day</Badge>
+            Signal Bot <a href="https://t.me/brosignal_bot" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}> <Badge variant='outline' justifySelf='flex-end' alignItems='center' display='flex' justifyContent='center' alignContent='center' ml='10px' colorScheme='yellow'>Available On Launch Day</Badge>
           </Box>
           <Divider opacity='.1' />
           <Box pt='10px' pb='10px' pl='5px' pr='5px' opacity='0.7' _hover={{ textDecoration: 'none', }} cursor='default' display='flex' alignItems='center'>
