@@ -99,7 +99,7 @@ const Intro = () => {
       >
         <Box
           as={Link}
-          href="/#"
+          href="https://t.me/snipewithbro_bot"
           flexDirection={{ base: "column", md: "row" }}
           justifyContent="center"
           _hover={{ textDecoration: "none" }}
@@ -130,7 +130,7 @@ const Intro = () => {
               p="2px"
               borderRadius="5px"
             >
-              Available on launch day
+              Available
             </Badge>
             <Box
               fontSize={{ base: "11px", sm: "14", md: "17px" }}
@@ -144,7 +144,7 @@ const Intro = () => {
         </Box>
         <Box
           as={Link}
-          href="/#"
+          href="https://t.me/brosignal_bot"
           flexDirection={{ base: "column", md: "row" }}
           justifyContent="center"
           _hover={{ textDecoration: "none" }}
@@ -175,7 +175,7 @@ const Intro = () => {
               p="2px"
               borderRadius="5px"
             >
-              Available on launch day
+              Available
             </Badge>
             <Box
               fontSize={{ base: "11px", sm: "14", md: "17px" }}
