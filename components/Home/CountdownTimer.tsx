@@ -19,37 +19,36 @@ interface TimeLeft {
   seconds?: number;
 }
 
-const CountdownTimer = () => {
+const CountdownTimer: React.FC = () => {
   const [timeLeft, setTimeLeft] = useState<TimeLeft>({});
 
   useEffect(() => {
-    const updateTimer = () => {
+    const timer = setInterval(() => {
       setTimeLeft(calculateTimeLeft());
-    };
+    }, 1000);
 
     return () => clearInterval(timer);
   }, []);
 
   function calculateTimeLeft(): TimeLeft {
-      const targetDate = new Date(Date.UTC(2024, 3, 2, 11, 0, 0));
-      const now = new Date();
-      const utcNow = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), now.getUTCHours(), now.getUTCMinutes(), now.getUTCSeconds());
-      const difference = targetDate.getTime() - utcNow;
+    const targetDate = Date.UTC(2024, 3, 2, 11, 0, 0); 
+    const now = new Date().getTime();
+    const difference = targetDate - now;
 
-      if (difference > 0) {
-        return {
-          days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-          hours: Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
-          minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
-          seconds: Math.floor((difference % (1000 * 60)) / 1000),
-        };
-      } else {
-        return {};
-      }
+    if (difference > 0) {
+      return {
+        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+        minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
+        seconds: Math.floor((difference % (1000 * 60)) / 1000),
+      };
+    } else {
+      return {};
     }
+  }
 
   function formatTime(value: number): string {
-    return value.toString().padStart(2, "0");
+    return value.toString().padStart(2, '0');
   }
 
   return (
