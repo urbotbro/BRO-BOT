@@ -10,7 +10,7 @@ const GetStarted = () => {
             comingSoon: false,
             description: 'Elevate your trading game with the BRO Telegram Bot – your intelligent companion in the world of finance. Enhance your gains, execute trades swiftly, seize opportunities early, and monitor real-time profits.',
             imgSrc: '/BRO SNIPER BOT.png',
-            link: '/#',
+            link: 'https://t.me/snipewithbro_bot',
         },
         {
             title: 'BroTrade Hub',
