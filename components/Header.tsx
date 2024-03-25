@@ -50,7 +50,8 @@ const Header = () => {
           <Divider opacity='.1' />
              <ChakraLink onClick={() => {toggleTool(false)}} as={Link} href='https://tradewithbro.com/pages/launch.html' pt='10px' pb='10px' pl='5px' pr='5px' _hover={{textDecoration: 'none', background: '#1e262d'}} display='flex' alignItems='center'><Box className={glitch.menu} width='25px' height='25px'><FaTelegram /></Box> <Box as='span' ml='10px'>Bro Launchpad</Box></ChakraLink> */}
           <Box pt='10px' pb='10px' pl='5px' pr='5px' opacity='0.7' _hover={{ textDecoration: 'none' }} cursor='default' display='flex' alignItems='center'>
-                   <a href="https://t.me/snipewithbro_bot" target="_blank" rel="noopener noreferrer" className="signalBotLink">
+                   <a href="https://t.me/snipewithbro_bot" target="_blank" rel="noopener noreferrer" className="sniperBotLink">
+                      <FaTelegram style={{ marginRight: '10px' }} />
                      Sniper Bot
                     <Badge variant='outline' className="hoverBadge" colorScheme='yellow'>Available</Badge>
                   </a>
@@ -58,7 +59,7 @@ const Header = () => {
           <Divider opacity='.1' />
           <Box pt='10px' pb='10px' pl='5px' pr='5px' opacity='0.7' _hover={{ textDecoration: 'none' }} cursor='default' display='flex' alignItems='center'>
                    <a href="https://t.me/brosignal_bot" target="_blank" rel="noopener noreferrer" className="signalBotLink">
-                     <Box width='25px' height='25px'><FaTelegram /></Box>
+                     <FaTelegram style={{ marginRight: '10px' }} />
                      Signal Bot
                     <Badge variant='outline' className="hoverBadge" colorScheme='yellow'>Available</Badge>
                   </a>
