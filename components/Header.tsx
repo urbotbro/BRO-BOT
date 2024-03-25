@@ -58,7 +58,7 @@ const Header = () => {
           <Divider opacity='.1' />
           <Box pt='10px' pb='10px' pl='5px' pr='5px' opacity='0.7' _hover={{ textDecoration: 'none' }} cursor='default' display='flex' alignItems='center'>
                    <a href="https://t.me/brosignal_bot" target="_blank" rel="noopener noreferrer" className="signalBotLink">
-                     <FaTelegram style={{ marginRight: '10px' }} />
+                     <Box width='25px' height='25px'><FaTelegram /></Box>
                      Signal Bot
                     <Badge variant='outline' className="hoverBadge" colorScheme='yellow'>Available</Badge>
                   </a>
