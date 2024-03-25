@@ -53,7 +53,6 @@ const Header = () => {
                    <a href="https://t.me/snipewithbro_bot" target="_blank" rel="noopener noreferrer" className="sniperBotLink">
                       <FaTelegram style={{ marginRight: '10px' }} />
                      Sniper Bot
-                    <Badge variant='outline' className="hoverBadge" colorScheme='yellow'>Available</Badge>
                   </a>
                </Box>
           <Divider opacity='.1' />
@@ -61,7 +60,6 @@ const Header = () => {
                    <a href="https://t.me/brosignal_bot" target="_blank" rel="noopener noreferrer" className="signalBotLink">
                      <FaTelegram style={{ marginRight: '10px' }} />
                      Signal Bot
-                    <Badge variant='outline' className="hoverBadge" colorScheme='yellow'>Available</Badge>
                   </a>
                </Box>
           <Divider opacity='.1' />
