@@ -31,7 +31,7 @@ const CountdownTimer: React.FC = () => {
   }, []);
 
   function calculateTimeLeft(): TimeLeft {
-    const targetDate = Date.UTC(2024, 3, 2, 14, 0, 0); 
+    const targetDate = Date.UTC(2024, 3, 1, 14, 0, 0); 
     const now = new Date().getTime();
     const difference = targetDate - now;
 
