@@ -94,10 +94,10 @@ export const FullLinkCard = ({ title, comingSoon, description, imgSrc, link }: L
   const buttonText = (() => {
     switch (title) {
       case "BRO Sniper Bot":
-        return "Available On Launch Day";
+        return "Available";
       case "BroTrade Hub":
       case "Bro Launchpads":
-        return "Coming Soon";
+        return "Soon";
       case "Dashboards":
         return "Open Dashboards";
       default:

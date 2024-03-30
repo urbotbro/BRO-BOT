@@ -14,11 +14,11 @@ const Roadmap = () => {
       title: "Phase 1 - Launch Day",
       phases: [
         {
-          subTitle: 'Bro Bot Premieres',
+          subTitle: 'Bro Sniper Bot Premieres',
           desc: 'Full Features & Earning Dashboard',
         },
         {
-          subTitle: 'Signal Bot & Dashboard',
+          subTitle: 'Signal Bot',
           desc: null,
         },
         {
@@ -56,11 +56,20 @@ const Roadmap = () => {
           <RoadmapCard key={journeyAhead.indexOf(elem)} phases={elem.phases} title={elem.title} />
         )}
        </SimpleGrid>
-       <Button as="a" href="/BRO Whitepaper.pdf" target="_blank" fontSize="18px" _hover={{
-         background: '#fda007'
-       }} rel="noopener noreferrer">
-         Whitepaper
-        </Button>
+       <Button
+         as="a"
+         href="/BRO Whitepaper.pdf"
+         target="_blank"
+         fontSize="18px"
+         background="#fda007" // Set the default background color
+         _hover={{
+            background: '#fda007' // Keep the hover color the same
+        }}
+       rel="noopener noreferrer"
+      >
+       Whitepaper
+     </Button>
+
     </Flex>
   )
 }

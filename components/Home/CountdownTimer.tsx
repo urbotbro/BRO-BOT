@@ -19,7 +19,7 @@ interface TimeLeft {
   seconds?: number;
 }
 
-const CountdownTimer = () => {
+const CountdownTimer: React.FC = () => {
   const [timeLeft, setTimeLeft] = useState<TimeLeft>({});
 
   useEffect(() => {
@@ -31,16 +31,14 @@ const CountdownTimer = () => {
   }, []);
 
   function calculateTimeLeft(): TimeLeft {
-    const targetDate = new Date("April 2, 2024 00:00:00").getTime();
+    const targetDate = Date.UTC(2024, 3, 1, 14, 0, 0); 
     const now = new Date().getTime();
     const difference = targetDate - now;
 
     if (difference > 0) {
       return {
         days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        hours: Math.floor(
-          (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-        ),
+        hours: Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
         minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
         seconds: Math.floor((difference % (1000 * 60)) / 1000),
       };
@@ -50,7 +48,7 @@ const CountdownTimer = () => {
   }
 
   function formatTime(value: number): string {
-    return value.toString().padStart(2, "0");
+    return value.toString().padStart(2, '0');
   }
 
   return (
@@ -85,14 +83,16 @@ const CountdownTimer = () => {
             href="https://www.pinksale.finance/launchpad/0x696d9fDe0ad616fd463E5c5D2c67F75f8D7c8F22?chain=ETH&refId=0x37950C488Cd8f0f58AA661B7560D1Ba03a608b93"
             target="_blank"
             fontSize="18px"
+            background="#fda007" 
             _hover={{ background: "#fda007" }}
             rel="noopener noreferrer"
           >
-            Presale
-          </Button>
+          Presale
+         </Button>
+
         )}
         <Heading mt="4px">
-              Presale starts in
+                starts in
             </Heading>
         {timeLeft.days !== undefined && timeLeft.days > 0 && (
           <Flex flexDirection="row" justify="cenetr" align="center" mt="8px">
