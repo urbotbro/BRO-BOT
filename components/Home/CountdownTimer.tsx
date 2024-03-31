@@ -1,18 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Flex, Heading, Button, Text, Box } from '@chakra-ui/react';
-import { Ubuntu, Orbitron } from "next/font/google";
 import NextLink from 'next/link';
-import glitchStyles from '@/components/Home/glitch.module.css'; // Adjust path as needed
+import glitchStyles from '@/components/Home/glitch.module.css';
 
 
-const ubuntuFont = Ubuntu({
-  weight: ["300", "400", "500", "700"],
-  subsets: ["latin"],
-});
-const orbitronFont = Orbitron({
-  weight: ["400", "500", "600", "700"],
-  subsets: ["latin"],
-});
+const orbitronFontStyle = {
+  fontFamily: 'Orbitron, sans-serif',
+  fontWeight: '700',
+};
 
 
 const TimerBox: React.FC<{ unit: string; time: string }> = ({ unit, time }) => (
@@ -67,7 +62,7 @@ const CountdownTimer: React.FC = () => {
         color="white"
         textAlign="center"
         style={orbitronFontStyle}
-        className={glitchStyles.glitch} // Make sure the glitch class applies the effect
+        className={glitchStyles.glitch}
       >
         Join our Presale
       </Heading>
@@ -77,7 +72,7 @@ const CountdownTimer: React.FC = () => {
         </Button>
       </NextLink>
       <Text fontSize="xl" mb="4">
-        Presale starts in
+        starts in
       </Text>
       <Flex direction="row" wrap="nowrap" overflowX="auto">
         <TimerBox unit="days" time={formatTime(timeLeft.days)} />
