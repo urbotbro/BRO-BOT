@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Flex, Heading, Button, Text, Box } from '@chakra-ui/react';
+import { Ubuntu, Orbitron } from "next/font/google";
 import NextLink from 'next/link';
 import glitchStyles from '@/components/Home/glitch.module.css';
 
