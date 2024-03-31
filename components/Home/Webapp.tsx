@@ -7,7 +7,7 @@ const Webapp = () => {
     <Box mt={{ base: '100px' }} display='flex' flexDirection='column' alignItems="center" width="100%" maxWidth='1280px' pl='20px' pr='20px'>
       <Flex mt='50px' flexDirection='column' alignItems="center" border='0.0001px solid #ffffff37' padding='20px' borderRadius='10px' position='relative' width="100%" minHeight={{ base: '200px', md: "600px" }}>
         
-               <Image src="/bropresale.mp4" alt="bropresale" borderRadius='10px' width='100%' />
+               <Image src="/BroooPresale.gif" alt="BroooPresale" borderRadius='10px' width='100%' />
 
         
       </Flex>
