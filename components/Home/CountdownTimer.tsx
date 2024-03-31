@@ -53,7 +53,7 @@ const CountdownTimer: React.FC = () => {
       maxW="1280px"
       px={{ base: "4", md: "8" }}
     >
-      <Heading as="h2" size="xl" color="white" textAlign="center" className={glitchStyles.glitch} mb="4">
+      <Heading as="h2" size="xl" style={orbitronFont.style} color="white" textAlign="center" className={glitch.glitchWapper} mb="4">
         Join our Presale
       </Heading>
       <NextLink href="https://www.pinksale.finance/launchpad/0x696d9fDe0ad616fd463E5c5D2c67F75f8D7c8F22?chain=ETH&refId=0x37950C488Cd8f0f58AA661B7560D1Ba03a608b93" passHref>
