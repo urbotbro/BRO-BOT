@@ -1,8 +1,7 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Flex, Heading, Button, Text, Box } from '@chakra-ui/react';
 import NextLink from 'next/link';
-import glitchStyles from '@/components/Home/glitch.module.css'; // Adjust this import path as necessary.
-
+import glitchStyles from '@/components/Home/glitch.module.css'; 
 // Define a type for the TimerBox props
 type TimerBoxProps = {
   unit: string;
@@ -15,6 +14,16 @@ const TimerBox: React.FC<TimerBoxProps> = ({ unit, time }) => (
     <Text fontSize="sm">{unit}</Text>
   </Box>
 );
+
+// Assuming that orbitronFont.style is defined in your project, and imported
+// If not, replace with actual CSS or style object for the Orbitron font
+const orbitronFont = {
+  style: {
+    fontFamily: 'Orbitron, sans-serif',
+    fontWeight: '700',
+    // Add other styles if necessary
+  },
+};
 
 const CountdownTimer: React.FC = () => {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
@@ -57,8 +66,8 @@ const CountdownTimer: React.FC = () => {
         as="h2"
         size="xl"
         mb="4"
-        style={orbitronFont.style} 
-        className={glitchStyles.glitchWrapper} 
+        style={orbitronFont.style}
+        className={glitch.glitchWapper}
         color="white"
         textAlign="center"
       >
@@ -70,7 +79,7 @@ const CountdownTimer: React.FC = () => {
         </Button>
       </NextLink>
       <Text fontSize="xl" mb="4">
-          starts in
+        Presale starts in
       </Text>
       <Flex direction="row" wrap="nowrap" overflowX="auto">
         <TimerBox unit="days" time={formatTime(timeLeft.days)} />
