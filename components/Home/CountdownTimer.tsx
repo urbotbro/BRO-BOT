@@ -4,12 +4,13 @@ import { Ubuntu, Orbitron } from "next/font/google";
 import glitch from "@/components/Home/glitch.module.css";
 
 const ubuntuFont = Ubuntu({
-  weight: ["300", "400", "500", "700"],
-  subsets: ["latin"],
+  weight: ['300', '400', '500', '700'],
+  subsets: ['latin'],
 });
+
 const orbitronFont = Orbitron({
-  weight: ["400", "500", "600", "700"],
-  subsets: ["latin"],
+  weight: ['400', '500', '600', '700'],
+  subsets: ['latin'],
 });
 
 interface TimeLeft {
@@ -31,7 +32,7 @@ const CountdownTimer: React.FC = () => {
   }, []);
 
   function calculateTimeLeft(): TimeLeft {
-    const targetDate = new Date(Date.UTC(2024, 3, 1, 14, 0, 0)).getTime();
+    const targetDate = new Date(Date.UTC(2024, 3, 1, 14, 0, 0)).getTime(); // Adjust target date/time as needed
     const now = new Date().getTime();
     const difference = targetDate - now;
 
