@@ -31,7 +31,7 @@ const CountdownTimer: React.FC = () => {
   }, []);
 
   function calculateTimeLeft(): TimeLeft {
-    const targetDate = Date.UTC(2024, 3, 1, 14, 0, 0); 
+    const targetDate = new Date(Date.UTC(2024, 3, 1, 14, 0, 0)).getTime(); 
     const now = new Date().getTime();
     const difference = targetDate - now;
 
@@ -46,6 +46,22 @@ const CountdownTimer: React.FC = () => {
       return {};
     }
   }
+
+  return (
+    <div>
+      {timeLeft.days !== undefined ? (
+        <>
+          <p>Days: {timeLeft.days}</p>
+          <p>Hours: {timeLeft.hours}</p>
+          <p>Minutes: {timeLeft.minutes}</p>
+          <p>Seconds: {timeLeft.seconds}</p>
+        </>
+      ) : (
+        <p>The presale has started!</p>
+      )}
+    </div>
+  );
+};
 
   function formatTime(value: number): string {
     return value.toString().padStart(2, '0');
