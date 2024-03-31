@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
-import { Flex, Heading, Button, Text } from "@chakra-ui/react";
+import { Flex, Heading, Button, Text, Box } from "@chakra-ui/react";
 import NextLink from "next/link";
-import glitchStyles from "@/components/Home/glitch.module.css"; // Make sure this path is correct.
+import glitchStyles from "@/components/Home/glitch.module.css"; // Verify this path
 
 const CountdownTimer: React.FC = () => {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
   useEffect(() => {
-    const targetDate = new Date(Date.UTC(2024, 3, 1, 14, 0, 0)).getTime();
+    const targetDate = new Date(Date.UTC(2024, 3, 1, 14, 0, 0)).getTime(); // April 1st, 2 PM UTC
     const timer = setInterval(() => {
       const now = new Date().getTime();
       const difference = targetDate - now;
@@ -38,35 +38,38 @@ const CountdownTimer: React.FC = () => {
       mb="150px"
       width="100%"
       maxW="1280px"
+      px={{ base: "4", md: "8" }}
     >
-      <Heading
-        as="h2"
-        size="xl"
-        mb="4"
-        className={`${glitchStyles.glitch} ${glitchStyles.whiteText}`}
-      >
-        Join our Presale
-      </Heading>
+      <Box className={glitchStyles.glitch} mb="4">
+        <Heading as="h2" size="xl" color="white" textAlign="center">
+          Join our Presale
+        </Heading>
+      </Box>
       <NextLink href="https://www.pinksale.finance/launchpad/0x696d9fDe0ad616fd463E5c5D2c67F75f8D7c8F22?chain=ETH&refId=0x37950C488Cd8f0f58AA661B7560D1Ba03a608b93" passHref>
-        <Button
-          as="a"
-          mb="4"
-          target="_blank"
-          rel="noopener noreferrer"
-          backgroundColor="#FFC2FF"
-          _hover={{ bg: "#e6b3ff" }}
-        >
+        <Button as="a" mb="4" target="_blank" rel="noopener noreferrer" backgroundColor="#FFC2FF">
           Presale
         </Button>
       </NextLink>
       <Text fontSize="xl" mb="4">
        starts in
       </Text>
-      <Flex>
-        <Text fontSize="2xl" mx={2} px={2} py={1} borderRadius="md" bg="#fda007">{formatTime(timeLeft.days)} days</Text>
-        <Text fontSize="2xl" mx={2} px={2} py={1} borderRadius="md" bg="#fda007">{formatTime(timeLeft.hours)} hours</Text>
-        <Text fontSize="2xl" mx={2} px={2} py={1} borderRadius="md" bg="#fda007">{formatTime(timeLeft.minutes)} minutes</Text>
-        <Text fontSize="2xl" mx={2} px={2} py={1} borderRadius="md" bg="#fda007">{formatTime(timeLeft.seconds)} seconds</Text>
+      <Flex justify="center" wrap="wrap">
+        <Box mx="2" my="1" px="4" py="2" borderRadius="md" bg="#fda007">
+          <Text fontSize="2xl">{formatTime(timeLeft.days)}</Text>
+          <Text fontSize="sm">days</Text>
+        </Box>
+        <Box mx="2" my="1" px="4" py="2" borderRadius="md" bg="#fda007">
+          <Text fontSize="2xl">{formatTime(timeLeft.hours)}</Text>
+          <Text fontSize="sm">hours</Text>
+        </Box>
+        <Box mx="2" my="1" px="4" py="2" borderRadius="md" bg="#fda007">
+          <Text fontSize="2xl">{formatTime(timeLeft.minutes)}</Text>
+          <Text fontSize="sm">minutes</Text>
+        </Box>
+        <Box mx="2" my="1" px="4" py="2" borderRadius="md" bg="#fda007">
+          <Text fontSize="2xl">{formatTime(timeLeft.seconds)}</Text>
+          <Text fontSize="sm">seconds</Text>
+        </Box>
       </Flex>
     </Flex>
   );
