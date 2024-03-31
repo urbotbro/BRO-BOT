@@ -2,20 +2,25 @@ import React, { useState, useEffect } from 'react';
 import { Flex, Heading, Button, Text, Box } from '@chakra-ui/react';
 import { Ubuntu, Orbitron } from "next/font/google";
 import NextLink from 'next/link';
-import glitchStyles from '@/components/Home/glitch.module.css';
+import glitchStyles from '@/components/Home/glitch.module.css'; // Adjust path as needed
 
-// TimerBox component
+
+const ubuntuFont = Ubuntu({
+  weight: ["300", "400", "500", "700"],
+  subsets: ["latin"],
+});
+const orbitronFont = Orbitron({
+  weight: ["400", "500", "600", "700"],
+  subsets: ["latin"],
+});
+
+
 const TimerBox: React.FC<{ unit: string; time: string }> = ({ unit, time }) => (
   <Box textAlign="center" mx="1" px="4" py="2" borderRadius="md" bg="#fda007">
     <Text fontSize="2xl">{time}</Text>
     <Text fontSize="sm">{unit}</Text>
   </Box>
 );
-
-const orbitronFontStyle = {
-  fontFamily: '"Orbitron", sans-serif',
-  fontWeight: '700',
-};
 
 // CountdownTimer component
 const CountdownTimer: React.FC = () => {
@@ -60,9 +65,9 @@ const CountdownTimer: React.FC = () => {
         size="xl"
         mb="4"
         color="white"
-        style={orbitronFontStyle}
         textAlign="center"
-        className={glitchStyles.glitchWrapper} 
+        style={orbitronFontStyle}
+        className={glitchStyles.glitch} // Make sure the glitch class applies the effect
       >
         Join our Presale
       </Heading>
@@ -72,7 +77,7 @@ const CountdownTimer: React.FC = () => {
         </Button>
       </NextLink>
       <Text fontSize="xl" mb="4">
-         starts in
+        Presale starts in
       </Text>
       <Flex direction="row" wrap="nowrap" overflowX="auto">
         <TimerBox unit="days" time={formatTime(timeLeft.days)} />
