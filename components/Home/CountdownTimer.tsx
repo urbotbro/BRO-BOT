@@ -54,19 +54,15 @@ const CountdownTimer: React.FC = () => {
       px={{ base: "4", md: "8" }}
     >
       <Heading
-        alignSelf="center"
-        ml="20px"
-        mb="20px"
-        style={orbitronFont.style}
-        className={glitch.glitchWapper}
-        color="#fda007"
+        as="h2"
+        size="xl"
+        mb="4"
+        style={orbitronFont.style} 
+        className={glitchStyles.glitchWrapper} 
+        color="white"
+        textAlign="center"
       >
-        <span
-          className={glitch.glitch}
-          color="#fda007"
-          data-text="Join our Presale"
-        >
-          Join our Presale
+        Join our Presale
       </Heading>
       <NextLink href="https://www.pinksale.finance/launchpad/0x696d9fDe0ad616fd463E5c5D2c67F75f8D7c8F22?chain=ETH&refId=0x37950C488Cd8f0f58AA661B7560D1Ba03a608b93" passHref>
         <Button as="a" backgroundColor="#FFC2FF" mb="4" target="_blank" rel="noopener noreferrer">
