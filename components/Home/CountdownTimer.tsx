@@ -38,16 +38,39 @@ const CountdownTimer: React.FC = () => {
       width="100%"
       maxW="1280px"
     >
-      <Heading as="h2" size="xl" mb="4" color="#fda007">
-        Join our Presale
+      <Heading
+        alignSelf="center"
+        ml="20px"
+        mb="20px"
+        style={orbitronFont.style}
+        className={glitch.glitchWapper}
+        color="#fda007"
+      >
+        <span
+          className={glitch.glitch}
+          color="#fda007"
+          data-text="Join our Presale"
+        >
+          Join our Presale
+        </span>
       </Heading>
-      <NextLink href="https://www.pinksale.finance/launchpad/0x696d9fDe0ad616fd463E5c5D2c67F75f8D7c8F22?chain=ETH&refId=0x37950C488Cd8f0f58AA661B7560D1Ba03a608b93" passHref>
-        <Button as="a" colorScheme="orange" mb="4" target="_blank" rel="noopener noreferrer">
+      <Flex flexDirection="column" justify="center" align="center">
+        {timeLeft.days !== undefined && timeLeft.days >= 0 && (
+          <Button
+            as="a"
+            href="https://www.pinksale.finance/launchpad/0x696d9fDe0ad616fd463E5c5D2c67F75f8D7c8F22?chain=ETH&refId=0x37950C488Cd8f0f58AA661B7560D1Ba03a608b93"
+            target="_blank"
+            fontSize="18px"
+            background="#fda007" 
+            _hover={{ background: "#fda007" }}
+            rel="noopener noreferrer"
+          >
           Presale
-        </Button>
-      </NextLink>
-      <Text fontSize="xl" mb="4">
-        Presale starts in
+         </Button>
+
+        )}
+        <Heading mt="4px">
+                starts in
       </Text>
       <Flex>
         <Text fontSize="2xl" mx={2} px={2} py={1} borderRadius="md" bg="#fda007">{formatTime(timeLeft.days)} days</Text>
