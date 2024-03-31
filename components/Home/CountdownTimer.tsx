@@ -67,7 +67,6 @@ const CountdownTimer: React.FC = () => {
           data-text="Join our Presale"
         >
           Join our Presale
-        </span>
       </Heading>
       <NextLink href="https://www.pinksale.finance/launchpad/0x696d9fDe0ad616fd463E5c5D2c67F75f8D7c8F22?chain=ETH&refId=0x37950C488Cd8f0f58AA661B7560D1Ba03a608b93" passHref>
         <Button as="a" backgroundColor="#FFC2FF" mb="4" target="_blank" rel="noopener noreferrer">
