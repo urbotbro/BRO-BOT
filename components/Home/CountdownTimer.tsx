@@ -87,7 +87,7 @@ const CountdownTimer: React.FC = () => {
           <>
             <Button
               as="a"
-              href="https://www.pinksale.finance/launchpad/0x696d9fDe0ad616fd463E5c5D2c67F75f8D7c8F22?chain=ETH&refId=0x37950C488Cd8f0f58AA661B7560D1Ba03a608b93"
+              href="https://www.pinksale.finance/launchpad/ethereum/0x777447297014832b38DB68b470e4b1AdF1092D2e?refId=0x37950C488Cd8f0f58AA661B7560D1Ba03a608b93"
               target="_blank"
               fontSize="18px"
               background="#FDB9C8"
