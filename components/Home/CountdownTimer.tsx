@@ -18,32 +18,7 @@ const PresaleComponent: React.FC = () => {
       justify="center"
       align="center"
     >
-      <Heading
-        alignSelf="center"
-        ml="20px"
-        mb="20px"
-        style={orbitronFont.style}
-        className={glitchStyles.glitchWrapper}
-        color="#fda007"
-      >
-        <span
-          className={glitchStyles.glitch}
-          data-text="Join our Presale"
-        >
-          Join our Presale
-        </span>
-      </Heading>
-      <Button
-        as="a"
-        href="https://www.pinksale.finance/launchpad/ethereum/0x777447297014832b38DB68b470e4b1AdF1092D2e?refId=0x37950C488Cd8f0f58AA661B7560D1Ba03a608b93"
-        target="_blank"
-        fontSize="18px"
-        background="#FDB9C8"
-        _hover={{ background: "#FDB9C8" }}
-        rel="noopener noreferrer"
-      >
-        Presale
-      </Button>
+   
     </Flex>
   );
 };
