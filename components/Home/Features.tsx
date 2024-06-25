@@ -20,7 +20,7 @@ const Features = () => {
       detail: null
     },
     {
-      title: "💼 BroSwift Swaps",
+      title: "💼 PandaBroSwift Swaps",
       description: "Where security meets speed, ensuring your transactions are not just rapid but also shielded from potential attacks, making every swap a winning move for you.",
       detail: null
     },
@@ -31,7 +31,7 @@ const Features = () => {
     },
     {
       title: "🤝 Copytrade",
-      description: "Let others do the heavy lifting. Copytrade a profitable trader, or multiple traders simultaneously, while enjoying the same safety features as you would when trading with BRO BOT.",
+      description: "Let others do the heavy lifting. Copytrade a profitable trader, or multiple traders simultaneously, while enjoying the same safety features as you would when trading with PandaBRO BOT.",
       detail: null
     },
     {
