@@ -12,17 +12,17 @@ const Webapp = () => {
         
       </Flex>
       <Box display='flex' alignItems='center' justifyContent='center' pt='30px' pb='20px' fontSize='18px'>
-         <span className={glitch.glitch}>For More Visit </span>
+         <span className={glitch.glitch}></span>
          <Button
            as={Link}
-           href="https://tradewithbro.com"
+           href=""
            fontSize="18px"
            background="#fda007"
            _hover={{
               background: '#fda007'
            }}
          >
-          TradeWithBro
+          PandaBro Exchange
         </Button> 
      </Box>
 </Box>
