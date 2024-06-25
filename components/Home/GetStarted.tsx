@@ -33,6 +33,13 @@ const GetStarted = () => {
             imgSrc: '/BRO BOT Launch.png',
             link: '',
         },
+        {
+            title: 'Panda Base',
+            comingSoon: false,
+            description: 'COMING SOON ',
+            imgSrc: '',
+            link: '',
+        },
     ];
 
     return (
