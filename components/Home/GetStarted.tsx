@@ -35,8 +35,8 @@ const GetStarted = () => {
         },
         {
             title: 'Panda Base',
-            comingSoon: false,
-            description: 'COMING SOON ',
+            comingSoon: true,
+            description: ' ',
             imgSrc: '',
             link: '',
         },
