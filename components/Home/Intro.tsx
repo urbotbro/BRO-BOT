@@ -61,9 +61,9 @@ const Intro = () => {
             >
               <Text
                 className={`${newHero.glitch} ${newHero.hero} ${newHero.layers}`}
-                data-text="BRO:Your Trading,Our Technology"
+                data-text="PandaBro:Your Trading,Our Technology"
               >
-                BRO:Your Trading,Our Technology
+                PandaBro:Your Trading,Our Technology
               </Text>
             </Heading>
             <Text
@@ -73,7 +73,7 @@ const Intro = () => {
               style={orbitronFont.style}
             >
               Your all-in-one crypto ecosystem. Launching, trading, and signals
-              united under one hub - everything you need with Bro.
+              united under one hub - everything you need with PandaBro.
             </Text>
           </Box>
           <Box
@@ -99,7 +99,7 @@ const Intro = () => {
       >
         <Box
           as={Link}
-          href="https://t.me/snipewithbro_bot"
+          href=""
           flexDirection={{ base: "column", md: "row" }}
           justifyContent="center"
           _hover={{ textDecoration: "none" }}
@@ -138,13 +138,13 @@ const Intro = () => {
               fontWeight="700"
               mt={{ base: "5px", md: "0" }}
             >
-              BRO SNIPER BOT
+               SNIPER BOT
             </Box>
           </Box>
         </Box>
         <Box
           as={Link}
-          href="https://t.me/brosignal_bot"
+          href=""
           flexDirection={{ base: "column", md: "row" }}
           justifyContent="center"
           _hover={{ textDecoration: "none" }}
@@ -223,7 +223,7 @@ const Intro = () => {
               fontWeight="700"
               mt={{ base: "5px", md: "0" }}
             >
-              BroTrade Hub
+              PandaBroTrade Hub
             </Box>
           </Box>
         </Box>
@@ -263,7 +263,7 @@ const Intro = () => {
               fontWeight="700"
               mt={{ base: "5px", md: "0" }}
             >
-              Bro Launchpads
+              PandaBro Launchpads
             </Box>
           </Box>
         </Box>
