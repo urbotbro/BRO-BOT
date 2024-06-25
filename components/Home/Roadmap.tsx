@@ -14,7 +14,7 @@ const Roadmap = () => {
       title: "Phase 1 - Launch Day",
       phases: [
         {
-          subTitle: 'Bro Sniper Bot Premieres',
+          subTitle: ' Sniper Bot Premieres',
           desc: 'Full Features & Earning Dashboard',
         },
         {
@@ -32,14 +32,14 @@ const Roadmap = () => {
       phases: [
         {
           subTitle: 'Beta',
-          desc: 'Bro Trade Hub',
+          desc: 'PandaBro Trade Hub',
         },
         {
-          subTitle: 'Bro Trade Hub goes Live',
+          subTitle: 'PandaBro Trade Hub goes Live',
           desc: null,
         },
         {
-          subTitle: 'Bro Launchpad',
+          subTitle: 'PandaBro Launchpad',
           desc: null,
         },
       ]
