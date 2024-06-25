@@ -341,7 +341,7 @@ const Intro = () => {
             className={glitch.menu}
           >
             <Link
-              href="https://t.me/bro_portal"
+              href=""
               className={glitch.div}
               height="100%"
               width="55px"
@@ -360,7 +360,7 @@ const Intro = () => {
             className={glitch.menu}
           >
             <Link
-              href="https://x.com/tradewithbro"
+              href=""
               className={glitch.div}
               height="100%"
               width="50px"
@@ -389,7 +389,7 @@ const Intro = () => {
           className={glitch.menu}
         >
           <Link
-            href="https://t.me/bro_portal"
+            href=""
             className={glitch.div}
             height="100%"
             width="55px"
@@ -408,7 +408,7 @@ const Intro = () => {
           className={glitch.menu}
         >
           <Link
-            href="https://x.com/tradewithbro"
+            href=""
             className={glitch.div}
             height="100%"
             width="50px"
