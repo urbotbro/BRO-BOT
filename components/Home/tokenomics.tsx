@@ -2,6 +2,8 @@
 import { Flex, Heading, Box, Image } from "@chakra-ui/react";
 import { Orbitron } from "next/font/google";
 import glitch from "@/components/Home/glitch.module.css";
+import React from "react";
+import { motion } from "framer-motion";
 
 const orbitronFont = Orbitron({
   weight: ["400", "500", "600", "700"],
