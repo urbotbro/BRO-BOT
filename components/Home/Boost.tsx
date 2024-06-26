@@ -13,7 +13,7 @@ const Boost = () => {
                     <span className={`${newHero.glitch} ${newHero.hero} ${newHero.layers}`} data-text="Trade Like Never Before">Trade Like Never Before</span>
                 </Heading>
                 <Box fontSize='20px' pl={{base: '10px', md: 'initial'}}>
-                    PandaBro isn’t just another platform; it’s your trading companion, your mentor in the maze of crypto. Here, you’ll find PandaBro Bot, Signal Bot, an innovative Launchpad, and a Trade Hub—all designed to make your trading experience as enriching as it is profitable. With PandaBro, you’re not just making trades; you’re embarking on a journey with a friend who’s got your back, every step of the way. Welcome to pandaBro, where every trade tells a story, and success is a shared journey. With PandaBro, you’re not following trends; you’re setting them.
+                    Bro isn’t just another platform; it’s your trading companion, your mentor in the maze of crypto. Here, you’ll find Bro Bot, Signal Bot, an innovative Launchpad, and a Trade Hub—all designed to make your trading experience as enriching as it is profitable. With Bro, you’re not just making trades; you’re embarking on a journey with a friend who’s got your back, every step of the way. Welcome to Bro, where every trade tells a story, and success is a shared journey. With Bro, you’re not following trends; you’re setting them.
                 </Box>
             </Box>
             <Box width={{base: '100%', md: '60%'}} display='flex' justifyContent='center' alignItems='center'>
