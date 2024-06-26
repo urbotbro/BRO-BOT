@@ -61,9 +61,9 @@ const Intro = () => {
             >
               <Text
                 className={`${newHero.glitch} ${newHero.hero} ${newHero.layers}`}
-                data-text="PandaBro:Your Trading,Our Technology"
+                data-text="BRO:Your Trading,Our Technology"
               >
-                PandaBro:Your Trading,Our Technology
+                BRO:Your Trading,Our Technology
               </Text>
             </Heading>
             <Text
@@ -73,7 +73,7 @@ const Intro = () => {
               style={orbitronFont.style}
             >
               Your all-in-one crypto ecosystem. Launching, trading, and signals
-              united under one hub - everything you need with PandaBro.
+              united under one hub - everything you need with BRO.
             </Text>
           </Box>
           <Box
@@ -223,7 +223,7 @@ const Intro = () => {
               fontWeight="700"
               mt={{ base: "5px", md: "0" }}
             >
-              PandaBroTrade Hub
+              BROTrade Hub
             </Box>
           </Box>
         </Box>
@@ -263,7 +263,7 @@ const Intro = () => {
               fontWeight="700"
               mt={{ base: "5px", md: "0" }}
             >
-              PandaBro Launchpads
+              BRO Launchpads
             </Box>
           </Box>
         </Box>
