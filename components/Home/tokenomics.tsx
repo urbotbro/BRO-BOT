@@ -1,99 +1,81 @@
-import React from "react";
-import { motion } from "framer-motion";
+"use client";
+import { Flex, Heading, Box, Image } from "@chakra-ui/react";
+import { Orbitron } from "next/font/google";
+import glitch from "@/components/Home/glitch.module.css";
+
+const orbitronFont = Orbitron({
+  weight: ["400", "500", "600", "700"],
+  subsets: ["latin"],
+});
 
 const Tokenomics = () => {
   return (
-    <>
-      <section id="token" className="border-b-2 border-[#FF4B90] bg-white">
-        <motion.div
-          initial={{ opacity: 0, scaleY: 0 }}
-          whileInView={{ opacity: 1, scaleY: 1 }}
-          transition={{ duration: 0.9, delay: 0.3 }}
-          viewport={{ once: true }}
-          className="container px-6 py-16 mx-auto lg:py-24"
+    <Flex
+      mt="150px"
+      mb="150px"
+      width="100%"
+      maxW="1280px"
+      flexDirection="column"
+      justify="center"
+      align="center"
+      id="tokenomics"
+    >
+      <Heading
+        alignSelf="center"
+        ml="20px"
+        mt="50px"
+        mb="20px"
+        style={orbitronFont.style}
+        className={glitch.glitchWapper}
+      >
+        <span className={glitch.glitch} data-text="Tokenomics">
+          Tokenomics
+        </span>
+      </Heading>
+      <Flex
+        textAlign={{ base: "center", md: "start" }}
+        width="100%"
+        maxWidth="1280px"
+        direction={{ base: "column-reverse", md: "row" }}
+        justify="center"
+        mt="60px"
+        mb="150px"
+        align="center"
+        pl="20px"
+        pr="20px"
+      >
+        <Box width={{ base: "100%", md: "60%" }}>
+          <Box fontSize="20px" pl={{ base: "10px", md: "initial" }}>
+          <span style={{color:"#fda007"}}>Total Supply:</span> 1 Million BRO tokens <br />
+          <span style={{color:"#fda007"}}>Team Allocation:</span> 100,000 tokens
+            <br />
+             locked for 5 years without revenue sharing for motivation.quarterly unlocks.
+            <br />
+            <span style={{color:"#fda007"}}>Presale:</span> 168,407 tokens via fair launch.
+            <br />
+            <span style={{color:"#fda007"}}>LP allocation:</span> 81,593 tokens, locked for 1 years for market stability.
+            <br />
+            <span style={{color:"#fda007"}}>Treasury:</span> 650,000 tokens for BRO Bonus, 5-year vesting, quarterly unlocks, re-locking unused tokens for sustainability.
+            <br />
+            <span style={{color:"#fda007"}}>Revenue:</span> 45% of bot transaction fees to revenue dashboard
+            <br />
+            <span style={{color:"#fda007"}}>2% Sell tax</span> for revenue share
+            <br />
+            <span style={{color:"#fda007"}}>2% Sell tax</span> for team and development
+            <br/>
+            <span style={{color:"#fda007"}}>2% Buy tax</span> for LP injection
+          </Box>
+        </Box>
+        <Box
+          width={{ base: "100%", md: "60%" }}
+          display="flex"
+          justifyContent="center"
+          alignItems="center"
         >
-          <div className="grid mx-auto lg:grid-cols-2 max-w-[1300px] w-full items-center gap-8">
-            <div className="grid gap-8 mx-auto lg:gap-16">
-              <h1 className="mx-auto text-3xl font-days lg:text-[52px]">
-                Tokenomics
-              </h1>
-              <img className=" max-w-[400px] w-full mx-auto" src="/chart.png" />
-            </div>
-            <div className="grid items-center w-full mx-auto gap-11 ">
-              <div className="grid grid-cols-2 gap-8 mx-auto lg:gap-16">
-                <div className="grid gap-12">
-                  <div className="space-y-3 ">
-                    <h1 className=" font-light font-inter text-xl md:text-2xl">
-                      Presale
-                    </h1>
-                    <div className="bg-[#E6E8EC] h-[1px] min-w-[180px] w-full" />
-                    <h2 className="text-[#7F56D9] font-inter font-bold md:text-3xl text-2xl">
-                      40.0000 %
-                    </h2>
-                  </div>
-                  <div className="space-y-3 ">
-                    <h1 className="text-xl md:text-2xl font-light font-inter ">
-                      Team
-                    </h1>
-                    <div className="bg-[#E6E8EC] h-[1px] min-w-[180px] w-full" />
-                    <h2 className="text-[#EA7000] font-inter font-bold md:text-3xl text-2xl">
-                      10.00 %
-                    </h2>
-                  </div>
-                  <div className="space-y-3 ">
-                    <h1 className="text-xl md:text-2xl font-light font-inter">
-                      Ecosystem
-                    </h1>
-                    <div className="bg-[#E6E8EC] h-[1px] min-w-[180px] w-full" />
-                    <h2 className="text-[#1A9FFF] font-inter font-bold md:text-3xl text-2xl">
-                      12.50 %
-                    </h2>
-                  </div>
-                </div>
-                <div className="grid gap-12">
-                  <div className="space-y-3 ">
-                    <h1 className="text-xl md:text-2xl font-light font-inter ">
-                      Liquidity
-                    </h1>
-                    <div className="bg-[#E6E8EC] h-[1px] min-w-[180px] w-full" />
-                    <h2 className="text-[#4B5DFF] font-inter font-bold md:text-3xl text-2xl">
-                      22.8000 %
-                    </h2>
-                  </div>
-                  <div className="space-y-3 ">
-                    <h1 className="text-xl md:text-2xl font-light font-inter ">
-                      Holdback
-                    </h1>
-                    <div className="bg-[#E6E8EC] h-[1px] min-w-[180px] w-full" />
-                    <h2 className="text-[#FFBE41] font-inter font-bold md:text-3xl text-2xl">
-                      10.00 %
-                    </h2>
-                  </div>
-                  <div className="space-y-3 ">
-                    <h1 className="text-xl md:text-2xl font-light font-inter ">
-                      Staking
-                    </h1>
-                    <div className="bg-[#E6E8EC] h-[1px] min-w-[180px] w-full" />
-                    <h2 className="text-[#CE1BB1] font-inter font-bold md:text-3xl text-2xl">
-                      4.7000 %
-                    </h2>
-                  </div>
-                </div>
-              </div>
-              <div className="flex justify-between gap-3 p-4 mx-auto bg-[#45B26B] max-w-[400px] w-full rounded-xl">
-                <h1 className="text-xl font-light text-white font-inter">
-                  Total Supply
-                </h1>
-                <div className="bg-[#E6E8EC] h-[30px] w-[1px]" />
-                <h2 className="text-2xl font-bold text-white font-inter">
-                  100.00000%
-                </h2>
-              </div>
-            </div>
-          </div>
-        </motion.div>
-      </section>
-    </>
+          <Image src="/tokenomics.png" alt="tokenomics" width="80%" />
+        </Box>
+      </Flex>
+    </Flex>
   );
 };
 
