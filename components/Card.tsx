@@ -107,6 +107,8 @@ export const FullLinkCard = ({ title, comingSoon, description, imgSrc, link }: L
         return "Soon";
         case "Bro NFT":
         return "Soon";
+       default:
+        return `soon`;
     }
   })();
 
