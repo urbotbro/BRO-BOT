@@ -21,7 +21,7 @@ const Footer = () => {
           <span className={glitch.glitch} data-text="Begin a new trading era with BRO">Begin a new trading era with BRO</span>
         </Box> */}
         <Box mt='50px' fontSize={{base: '20px', md: '50px'}} fontWeight='700' pb='20px' letterSpacing={{base: '1px', md: '1.5px'}} className={newHero.heroContainer} style={orbitronFont.style}>
-          <Box as="span" lineHeight='120%' className={`${newHero.glitch} ${newHero.hero} ${newHero.layers}`} data-text="Begin a new trading era with PandaBro">Begin a new trading era with PandaBro</Box>
+          <Box as="span" lineHeight='120%' className={`${newHero.glitch} ${newHero.hero} ${newHero.layers}`} data-text="Begin a new trading era with Bro">Begin a new trading era with Bro</Box>
         </Box>
         
         <Box>
@@ -37,7 +37,7 @@ const Footer = () => {
 
       </Flex>
         <Box fontSize='12px' color="#ffffff68" mb='10px'>
-          Copyright &copy;{date.getFullYear()} PandaBro. All rights reserved.
+          Copyright &copy;{date.getFullYear()} Bro. All rights reserved.
         </Box>
     </Flex>
   )
