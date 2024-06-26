@@ -7,7 +7,7 @@ import solid from "/solid.png";
 import { motion } from "framer-motion";
 import Marquee from "react-fast-marquee";
 
-const Partners = () => {
+const Boost = () => {
   return (
     <>
       <section className="py-14 lg:py-24 bg-white">
@@ -71,4 +71,4 @@ const Partners = () => {
   );
 };
 
-export default Partners;
+export default Boost;
