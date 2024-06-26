@@ -44,7 +44,7 @@ const GetStarted = () => {
             title: 'BRO NFT',
             comingSoon: false,
             description: ' ',
-            imgSrc: '/bronft.jpeg',
+            imgSrc: '/bronft.png',
             link: '',
         },
     ];
