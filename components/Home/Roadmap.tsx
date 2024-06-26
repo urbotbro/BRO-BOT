@@ -32,14 +32,14 @@ const Roadmap = () => {
       phases: [
         {
           subTitle: 'Beta',
-          desc: 'PandaBro Trade Hub',
+          desc: 'BRO Trade Hub',
         },
         {
-          subTitle: 'PandaBro Trade Hub goes Live',
+          subTitle: 'BRO Trade Hub goes Live',
           desc: null,
         },
         {
-          subTitle: 'PandaBro Launchpad',
+          subTitle: 'BRO Launchpad',
           desc: null,
         },
       ]
