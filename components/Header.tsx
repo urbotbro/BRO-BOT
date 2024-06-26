@@ -29,7 +29,7 @@ const Header = () => {
           <Link href='#get-started' pl='10px' pr='10px' fontSize='15px' style={orbitronFont.style} _hover={{ color: '#9bf0f5' }}>Getting Started</Link>
           <Link href='#features' pl='10px' pr='10px' fontSize='15px' style={orbitronFont.style} _hover={{ color: '#9bf0f5' }}>Features</Link>
           <Link href='#roadmap' pl='10px' pr='10px' fontSize='15px' style={orbitronFont.style} _hover={{ color: '#9bf0f5' }}>Roadmap</Link>
-          <Link href='https://bro-bot-academy.gitbook.io/brobot' pl='10px' pr='10px' fontSize='15px' style={orbitronFont.style} _hover={{ color: '#9bf0f5' }} target="_blank">Docs</Link>
+          <Link href='https://bro-bot-academy.gitbook.io/brobot' pl='10px' pr='10px' fontSize='15px' style={orbitronFont.style} _hover={{ color: '#9bf0f5' }} target="_blank">Tutorial</Link>
           <Link href='/BRO Whitepaper.pdf' pl='10px' pr='10px' fontSize='15px' style={orbitronFont.style} _hover={{ color: '#9bf0f5' }} target="_blank">Whitepaper</Link>
         </Box>
 
@@ -81,7 +81,7 @@ const Header = () => {
         <Link mt='50px' mr='30px' opacity={state ? 1 : 0} onClick={() => { changeState(false) }} href='#get-started' pl='10px' pr='10px' fontSize='20px' style={orbitronFont.style} _hover={{ color: '#9bf0f5' }}>Getting Started</Link>
         <Link mt='50px' mr='30px' opacity={state ? 1 : 0} onClick={() => { changeState(false) }} href='#features' pl='10px' pr='10px' fontSize='20px' style={orbitronFont.style} _hover={{ color: '#9bf0f5' }}>Features</Link>
         <Link mt='50px' mr='30px' opacity={state ? 1 : 0} onClick={() => { changeState(false) }} href='#roadmap' pl='10px' pr='10px' fontSize='20px' style={orbitronFont.style} _hover={{ color: '#9bf0f5' }}>Roadmap</Link>
-        <Link mt='50px' mr='30px' opacity={state ? 1 : 0} onClick={() => { changeState(false) }} href='https://bro-bot-academy.gitbook.io/brobot' pl='10px' pr='10px' fontSize='20px' style={orbitronFont.style} _hover={{ color: '#9bf0f5' }}>Docs</Link>
+        <Link mt='50px' mr='30px' opacity={state ? 1 : 0} onClick={() => { changeState(false) }} href='https://bro-bot-academy.gitbook.io/brobot' pl='10px' pr='10px' fontSize='20px' style={orbitronFont.style} _hover={{ color: '#9bf0f5' }}>Tutorial</Link>
         <Link mt='50px' mr='30px' opacity={state ? 1 : 0} onClick={() => { changeState(false) }} href='/BRO Whitepaper.pdf' pl='10px' pr='10px' fontSize='20px' style={orbitronFont.style} _hover={{ color: '#9bf0f5' }}>Whitepaper</Link>
         <Box display={{ base: 'flex', md: 'none' }} position='absolute' top='0' right='0' m='30px' width="35px" className={glitch.menu} justifyContent='center' alignItems='center' onClick={() => { changeState(false); toggleTool(false); toggleSmallTool(false) }}>
           <FaXmark />
