@@ -84,11 +84,19 @@ const Intro = () => {
             justifyContent="center"
             alignItems="center"
           >
-            <ChakraImage src="/GIF.gif" alt="BroBot Logo" width="350px" />
+            <ChakraImage src="/pandaaa.gif" alt="BroBot Logo" width="350px" />
             {/* <Image src='/GIF.gif' alt="BroBot Image" width={50} height={50} /> */}
           </Box>
         </Flex>
         
+        <CountdownTimer/>
+        <Flex
+        alignItems="center"
+        justify={{ base: "space-evenly", md: "space-evenly" }}
+        flexWrap="wrap"
+        width="100%"
+        paddingBottom='10px'
+      >
         <Box
           display="flex"
           flexDirection={{ base: "column", md: "row" }}
@@ -111,14 +119,6 @@ const Intro = () => {
             alignItems="center"
             mt={{ base: "5px", md: "0" }}
           >
-            <Badge
-              fontSize={{ base: "8px", sm: "11px" }}
-              colorScheme="green"
-              p="2px"
-              borderRadius="5px"
-            >
-              Soon
-            </Badge>
             <Box
               fontSize={{ base: "11px", sm: "14", md: "17px" }}
               textTransform="uppercase"
@@ -151,14 +151,6 @@ const Intro = () => {
             alignItems="center"
             mt={{ base: "5px", md: "0" }}
           >
-            <Badge
-              fontSize={{ base: "8px", sm: "11px" }}
-              colorScheme="green"
-              p="2px"
-              borderRadius="5px"
-            >
-              Soon
-            </Badge>
             <Box
               fontSize={{ base: "11px", sm: "14", md: "17px" }}
               textTransform="uppercase"
@@ -191,14 +183,6 @@ const Intro = () => {
             alignItems="center"
             mt={{ base: "5px", md: "0" }}
           >
-            <Badge
-              fontSize={{ base: "8px", sm: "11px" }}
-              colorScheme="green"
-              p="2px"
-              borderRadius="5px"
-            >
-              Soon
-            </Badge>
             <Box
               fontSize={{ base: "11px", sm: "14", md: "17px" }}
               textTransform="uppercase"
@@ -218,14 +202,6 @@ const Intro = () => {
             <FaGooglePlay />
           </Box>
           <Box>
-            <Badge
-              fontSize="11px"
-              colorScheme="green"
-              p="2px"
-              borderRadius="5px"
-            >
-              Soon
-            </Badge>
             <Box fontSize="14px" textTransform="uppercase" fontWeight="700">
               Play Store
             </Box>
