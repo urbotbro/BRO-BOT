@@ -9,7 +9,7 @@ const oxaniumFont = Oxanium({weight: ['400', '500', '600', '700'], subsets: ['la
 
 export const metadata: Metadata = {
   title: "PANDABRO",
-  description: "Harness the unmatched power of the BRO Bot to dominate the trading landscape",
+  description: "Harness the unmatched power of the PANDABRO Bot to dominate the trading landscape",
   icons: {
     icon: "/panda.png",
   }
