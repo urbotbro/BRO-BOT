@@ -89,29 +89,6 @@ const Intro = () => {
           </Box>
         </Flex>
         
-        <CountdownTimer/>
-        <Flex
-        alignItems="center"
-        justify={{ base: "space-evenly", md: "space-evenly" }}
-        flexWrap="wrap"
-        width="100%"
-        paddingBottom='10px'
-      >
-        <Box
-          as={Link}
-          href=""
-          flexDirection={{ base: "column", md: "row" }}
-          justifyContent="center"
-          _hover={{ textDecoration: "none" }}
-          display="flex"
-          alignItems="center"
-          mr={{ base: "0", md: "15px" }}
-          background="#0088cc"
-          padding="5px"
-          borderRadius="5px"
-        >
-          </Box>
-        </Box>
         <Box
           display="flex"
           flexDirection={{ base: "column", md: "row" }}
