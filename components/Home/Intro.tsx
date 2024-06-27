@@ -61,9 +61,9 @@ const Intro = () => {
             >
               <Text
                 className={`${newHero.glitch} ${newHero.hero} ${newHero.layers}`}
-                data-text="BRO:Your Trading,Our Technology"
+                data-text="PandaBro:Your Trading,Our Technology"
               >
-                BRO:Your Trading,Our Technology
+                PandaBro:Your Trading,Our Technology
               </Text>
             </Heading>
             <Text
@@ -73,7 +73,7 @@ const Intro = () => {
               style={orbitronFont.style}
             >
               Your all-in-one crypto ecosystem. Launching, trading, and signals
-              united under one hub - everything you need with BRO.
+              united under one hub - everything you need with PandaBro.
             </Text>
           </Box>
           <Box
@@ -84,7 +84,7 @@ const Intro = () => {
             justifyContent="center"
             alignItems="center"
           >
-            <ChakraImage src="/pandaaa.gif" alt="BroBot Logo" width="350px" />
+            <ChakraImage src="/GIF.gif" alt="BroBot Logo" width="350px" />
             {/* <Image src='/GIF.gif' alt="BroBot Image" width={50} height={50} /> */}
           </Box>
         </Flex>
@@ -97,6 +97,28 @@ const Intro = () => {
         width="100%"
         paddingBottom='10px'
       >
+        <Box
+          as={Link}
+          href=""
+          flexDirection={{ base: "column", md: "row" }}
+          justifyContent="center"
+          _hover={{ textDecoration: "none" }}
+          display="flex"
+          alignItems="center"
+          mr={{ base: "0", md: "15px" }}
+          background="#0088cc"
+          padding="5px"
+          borderRadius="5px"
+        >
+          </Box>
+        </Box>
+        <Box
+          display="flex"
+          flexDirection={{ base: "column", md: "row" }}
+          justifyContent="center"
+          alignItems="center"
+          mr={{ base: "0", md: "15px" }}
+        >
           <Box
             className={glitch.menu}
             height="90%"
@@ -126,7 +148,7 @@ const Intro = () => {
               fontWeight="700"
               mt={{ base: "5px", md: "0" }}
             >
-              BROTrade Hub
+              PandaBroTrade Hub
             </Box>
           </Box>
         </Box>
@@ -166,7 +188,7 @@ const Intro = () => {
               fontWeight="700"
               mt={{ base: "5px", md: "0" }}
             >
-              BRO Launchpads
+              PandaBro Launchpads
             </Box>
           </Box>
         </Box>
