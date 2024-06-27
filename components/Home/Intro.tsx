@@ -130,7 +130,7 @@ const Intro = () => {
               p="2px"
               borderRadius="5px"
             >
-              Available
+              soon
             </Badge>
             <Box
               fontSize={{ base: "11px", sm: "14", md: "17px" }}
@@ -175,7 +175,7 @@ const Intro = () => {
               p="2px"
               borderRadius="5px"
             >
-              Available
+              soon
             </Badge>
             <Box
               fontSize={{ base: "11px", sm: "14", md: "17px" }}
