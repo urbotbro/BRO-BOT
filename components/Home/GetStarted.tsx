@@ -36,8 +36,7 @@ const GetStarted = () => {
         {
             title: 'BRO Base',
             comingSoon: false,
-            description: 'One of the core utilities of PandaBRO is the ability to allow investors to invest or stake their $BRO, $USDT or $USDC for a specific amount of time and get the agreed-on ROI. Trading pools are generated everyday depending on the supply and demand, and they are limited to use. Only NFT or $BRO holders will be eligible to use our pools. Different NFTs allow access to different pool tiers, generating up to 160% ROI in 14 days (60% net profit). More details will be announced post launch.
- ',
+            description: 'One of the core utilities of PandaBRO is the ability to allow investors to invest or stake their $BRO, $USDT or $USDC for a specific amount of time and get the agreed-on ROI. Trading pools are generated everyday depending on the supply and demand, and they are limited to use. Only NFT or $BRO holders will be eligible to use our pools. Different NFTs allow access to different pool tiers, generating up to 160% ROI in 14 days (60% net profit). More details will be announced post launch. ',
             imgSrc: '/brobase.png',
             link: '',
         },
