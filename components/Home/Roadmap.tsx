@@ -11,39 +11,85 @@ const orbitronFont = Orbitron({weight: ['400', '500', '600', '700'], subsets: ['
 const Roadmap = () => {
   const journeyAhead = [
     {
-      title: "Phase 1 - Launch Day",
+      title: "Phase 1 - Early Stage",
       phases: [
         {
-          subTitle: ' Sniper Bot Premieres',
-          desc: 'Full Features & Earning Dashboard',
-        },
-        {
-          subTitle: 'Signal Bot',
+          subTitle: ' KYC & Audit ',
           desc: null,
         },
         {
-          subTitle: 'Earn With Referrals',
+          subTitle: 'AMA with the community',
+          desc: null,
+        },
+        {
+          subTitle: 'Airdrops announced',
+          desc: null,
+        },
+        {
+          subTitle: 'Competition Rewards',
           desc: null,
         },
       ]
     },
     {
-      title: "Phase 2- Next",
+      title: "Phase 2- Presale Duration",
       phases: [
         {
-          subTitle: 'Beta',
-          desc: 'BRO Trade Hub',
+          subTitle: 'Release utility 1',
+          desc: 'Sniper Bot',
         },
         {
-          subTitle: 'BRO Trade Hub goes Live',
+          subTitle: 'Release utility 2',
+          desc: 'signal Bot',
+        },
+        {
+          subTitle: 'Announcing NFT winners',
           desc: null,
         },
-        {
-          subTitle: 'BRO Launchpad',
+       {
+          subTitle: 'Airdropping tokens',
           desc: null,
         },
       ]
-    }
+    },
+    {
+      title: "Phase 3- Launch week",
+      phases: [
+        {
+          subTitle: 'Earn with referrals',
+          desc: null,
+        },
+        {
+          subTitle: 'Launching on all Dexs',
+          desc: null,
+        },
+        {
+          subTitle: 'Releasing the 3 NFT types',
+          desc: null,
+        },
+       {
+          subTitle: 'Getting fast track Cexs, CMC and Coingecko listing enquiries',
+          desc: null,
+        },
+      ]
+    },
+     {
+      title: "Phase 4- Maturity",
+      phases: [
+        {
+          subTitle: 'Releasing Trading Pools',
+          desc: null,
+        },
+        {
+          subTitle: 'Allowing NFTs minting ',
+          desc: null,
+        },
+        {
+          subTitle: 'Releasing other utilities etc',
+          desc: null,
+        },
+      ]
+    },
   ]
 
   return (
