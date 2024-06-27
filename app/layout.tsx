@@ -8,10 +8,10 @@ import { useState } from "react";
 const oxaniumFont = Oxanium({weight: ['400', '500', '600', '700'], subsets: ['latin']})
 
 export const metadata: Metadata = {
-  title: "BRO",
+  title: "PANDABRO",
   description: "Harness the unmatched power of the BRO Bot to dominate the trading landscape",
   icons: {
-    icon: "/Logo-min.png",
+    icon: "/panda.png",
   }
 };
 
