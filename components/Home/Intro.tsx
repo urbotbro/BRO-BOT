@@ -16,7 +16,7 @@ import {
   FaGlobe,
   FaRocket,
   FaAppStore,
-  FaGooglePlay, 
+  FaGooglePlay,
   FaXTwitter,
 } from "react-icons/fa6";
 import { RiTelegramLine } from "react-icons/ri";
