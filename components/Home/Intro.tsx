@@ -84,11 +84,109 @@ const Intro = () => {
             justifyContent="center"
             alignItems="center"
           >
-            <ChakraImage src="/pandaaa.gif" alt="BroBot Logo" width="350px" />
+            <ChakraImage src="/Pandaaa.gif" alt="BroBot Logo" width="350px" />
             {/* <Image src='/GIF.gif' alt="BroBot Image" width={50} height={50} /> */}
           </Box>
         </Flex>
-
+        
+        <CountdownTimer/>
+        <Flex
+        alignItems="center"
+        justify={{ base: "space-evenly", md: "space-evenly" }}
+        flexWrap="wrap"
+        width="100%"
+        paddingBottom='10px'
+      >
+        <Box
+          as={Link}
+          href=""
+          flexDirection={{ base: "column", md: "row" }}
+          justifyContent="center"
+          _hover={{ textDecoration: "none" }}
+          display="flex"
+          alignItems="center"
+          mr={{ base: "0", md: "15px" }}
+          background="#0088cc"
+          padding="5px"
+          borderRadius="5px"
+        >
+          <Box
+            className={glitch.menu}
+            height="85%"
+            width={{ base: "30px", sm: "45px" }}
+            pr={{ base: "0", md: "8px" }}
+          >
+            <FaTelegram/>
+          </Box>
+          <Box
+            display={{ base: "flex", md: "block" }}
+            flexDirection="column"
+            justifyContent="center"
+            alignItems="center"
+            mt={{ base: "5px", md: "0" }}
+          >
+            <Badge
+              fontSize={{ base: "8px", sm: "11px" }}
+              p="2px"
+              borderRadius="5px"
+            >
+              Available
+            </Badge>
+            <Box
+              fontSize={{ base: "11px", sm: "14", md: "17px" }}
+              textTransform="uppercase"
+              fontWeight="700"
+              mt={{ base: "5px", md: "0" }}
+            >
+               SNIPER BOT
+            </Box>
+          </Box>
+        </Box>
+        <Box
+          as={Link}
+          href=""
+          flexDirection={{ base: "column", md: "row" }}
+          justifyContent="center"
+          _hover={{ textDecoration: "none" }}
+          display="flex"
+          alignItems="center"
+          mr={{ base: "0", md: "15px" }}
+          background="#0088cc"
+          padding="5px"
+          borderRadius="5px" 
+        >
+          <Box
+            className={glitch.menu}
+            height="85%"
+            width={{ base: "30px", sm: "45px" }}
+            pr={{ base: "0", md: "8px" }}
+          >
+            <FaTelegram/>
+          </Box>
+          <Box
+            display={{ base: "flex", md: "block" }}
+            flexDirection="column"
+            justifyContent="center"
+            alignItems="center"
+            mt={{ base: "5px", md: "0" }}
+          >
+            <Badge
+              fontSize={{ base: "8px", sm: "11px" }}
+              p="2px"
+              borderRadius="5px"
+            >
+              Available
+            </Badge>
+            <Box
+              fontSize={{ base: "11px", sm: "14", md: "17px" }}
+              textTransform="uppercase"
+              fontWeight="700"
+              mt={{ base: "5px", md: "0" }} 
+            >
+              Signal Bot
+            </Box>
+          </Box>
+        </Box>
         <Box
           display="flex"
           flexDirection={{ base: "column", md: "row" }}
