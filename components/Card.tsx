@@ -102,7 +102,7 @@ export const FullLinkCard = ({ title, comingSoon, description, imgSrc, link }: L
       case "Bro Launchpads":
         return "Soon";
       case "Dashboards":
-        return "Open Dashboards";
+        return "soon";
        case "Bro Base":
         return "Soon";
         case "Bro NFT":
