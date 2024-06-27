@@ -95,26 +95,133 @@ const Header = () => {
             </Box>
           </Button>
         </Box>
-        <Box as='div' visibility={smallTool ? 'visible' : 'hidden'} zIndex={smallTool ? 1000 : 0} opacity={smallTool ? 1 : 0} transition={'all .2s ease-in-out'} flexDirection='column' width='80%' background="#161c21" padding='10px' borderRadius='5px' right='10px' transform='translateY(286px)' position='absolute'>
-             <ChakraLink onClick={() => toggleSmallTool(false)} href='' isExternal pt='10px' pb='10px' pl='5px' pr='5px' _hover={{ textDecoration: 'none', background: '#1e262d' }} display='flex' alignItems='center'>
-                <Box width='25px' height='25px'><FaTelegram /></Box>
-                <Box as='span' ml='10px'>BRO SNIPER BOT</Box>
-             </ChakraLink>
-             <Divider opacity='.1' />
-             <ChakraLink onClick={() => toggleTool(false)} href='' isExternal pt='10px' pb='10px' pl='5px' pr='5px' _hover={{ textDecoration: 'none', background: '#1e262d' }} display='flex' alignItems='center'>
-                <Box width='25px' height='25px'><FaTelegram /></Box>
-                <Box as='span' ml='10px'>Signal Bot</Box>
-                Signal Bot <Badge variant='outline' justifySelf='flex-end' alignItems='center' display='flex' justifyContent='center' alignContent='center' ml='10px' colorScheme='green'>Coming Soon</Badge>
-          </Box>
-             </ChakraLink>
-          <Divider opacity='.1' />
-          <Box pt='10px' pb='10px' pl='5px' pr='5px' opacity='0.7' _hover={{ textDecoration: 'none', }} cursor='default' display='flex' alignItems='center'>
-            BroTrade Hub <Badge variant='outline' justifySelf='flex-end' alignItems='center' display='flex' justifyContent='center' alignContent='center' ml='10px' colorScheme='green'>Coming Soon</Badge>
-          </Box>
-          <Divider opacity='.1' />
-          <Box pt='10px' pb='10px' pl='5px' pr='5px' opacity='0.7' _hover={{ textDecoration: 'none', }} cursor='default' display='flex' alignItems='center'>
-            Bro Launchpad <Badge variant='outline' justifySelf='flex-end' alignItems='center' display='flex' justifyContent='center' alignContent='center' ml='10px' colorScheme='green'>Coming Soon</Badge>
-          </Box>
+        <Box 
+  as='div' 
+  visibility={smallTool ? 'visible' : 'hidden'} 
+  zIndex={smallTool ? 1000 : 0} 
+  opacity={smallTool ? 1 : 0} 
+  transition={'all .2s ease-in-out'} 
+  flexDirection='column' 
+  width='80%' 
+  background="#161c21" 
+  padding='10px' 
+  borderRadius='5px' 
+  right='10px' 
+  transform='translateY(286px)' 
+  position='absolute'>
+  
+  <ChakraLink 
+    onClick={() => toggleSmallTool(false)} 
+    href='' 
+    isExternal 
+    pt='10px' 
+    pb='10px' 
+    pl='5px' 
+    pr='5px' 
+    _hover={{ textDecoration: 'none', background: '#1e262d' }} 
+    display='flex' 
+    alignItems='center'>
+    
+    <Box width='25px' height='25px'><FaTelegram /></Box>
+    <Box as='span' ml='10px'>BRO SNIPER BOT</Box>
+    <Badge 
+      variant='outline' 
+      justifySelf='flex-end' 
+      alignItems='center' 
+      display='flex' 
+      justifyContent='center' 
+      alignContent='center' 
+      ml='10px' 
+      colorScheme='green'>
+      Coming Soon
+    </Badge>
+  </ChakraLink>
+  
+  <Divider opacity='.1' />
+  
+  <ChakraLink 
+    onClick={() => toggleTool(false)} 
+    href='' 
+    isExternal 
+    pt='10px' 
+    pb='10px' 
+    pl='5px' 
+    pr='5px' 
+    _hover={{ textDecoration: 'none', background: '#1e262d' }} 
+    display='flex' 
+    alignItems='center'>
+    
+    <Box width='25px' height='25px'><FaTelegram /></Box>
+    <Box as='span' ml='10px'>Signal Bot</Box>
+    <Badge 
+      variant='outline' 
+      justifySelf='flex-end' 
+      alignItems='center' 
+      display='flex' 
+      justifyContent='center' 
+      alignContent='center' 
+      ml='10px' 
+      colorScheme='green'>
+      Coming Soon
+    </Badge>
+  </ChakraLink>
+  
+  <Divider opacity='.1' />
+  
+  <Box 
+    pt='10px' 
+    pb='10px' 
+    pl='5px' 
+    pr='5px' 
+    opacity='0.7' 
+    _hover={{ textDecoration: 'none', }} 
+    cursor='default' 
+    display='flex' 
+    alignItems='center'>
+    
+    BroTrade Hub 
+    <Badge 
+      variant='outline' 
+      justifySelf='flex-end' 
+      alignItems='center' 
+      display='flex' 
+      justifyContent='center' 
+      alignContent='center' 
+      ml='10px' 
+      colorScheme='green'>
+      Coming Soon
+    </Badge>
+  </Box>
+  
+  <Divider opacity='.1' />
+  
+  <Box 
+    pt='10px' 
+    pb='10px' 
+    pl='5px' 
+    pr='5px' 
+    opacity='0.7' 
+    _hover={{ textDecoration: 'none', }} 
+    cursor='default' 
+    display='flex' 
+    alignItems='center'>
+    
+    Bro Launchpad 
+    <Badge 
+      variant='outline' 
+      justifySelf='flex-end' 
+      alignItems='center' 
+      display='flex' 
+      justifyContent='center' 
+      alignContent='center' 
+      ml='10px' 
+      colorScheme='green'>
+      Coming Soon
+    </Badge>
+  </Box>
+  
+</Box>
+
         </Box>
       </Box>
     </Flex>
