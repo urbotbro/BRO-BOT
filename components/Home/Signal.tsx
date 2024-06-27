@@ -29,12 +29,12 @@ const Signal = () => {
             color="black"
             style={orbitronFont.style}
           >
-            BRO Signals
+            PANDA BRO
           </Heading>
-          <Box fontSize='20px' color="black">Navigate the dynamic world of cryptocurrency with BRO Signals – the ultimate signal bot that transforms volatility into opportunity. Designed for both novice traders and seasoned investors, BRO Signals harnesses the power of advanced analytics to provide real-time trading alerts, empowering you to make informed decisions with confidence.</Box>
+          <Box fontSize='20px' color="black">Hey, my name is Bro, and I am a panda. I am not a normal panda though, I am not lazy nor am I clumsy. In fact, I am very active and smart. I am here to help you make money. The utilities I offer is next to none in this space. Browse the website to understand the difference between me, and other meme coins.</Box>
         </Box>
         <Flex width={{ base: '100%', md: '50%' }} justify='center' align='center'>
-          <Image src="/BRO SIGNAL BOT.png" width="450px" alt="Trade Like Never Before" />
+          <Image src="/pandaa.png" width="450px" alt="Trade Like Never Before" />
         </Flex>
       </Flex>
     </Flex>
