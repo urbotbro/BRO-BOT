@@ -405,7 +405,7 @@ const Intro = () => {
       </Box> */}
       <Box
         position="absolute"
-        background={`url('/Video.gif') center no-repeat`}
+        background={`url('/mainpanda.gif') center no-repeat`}
         left="0"
         right="0"
         minH="800px"
