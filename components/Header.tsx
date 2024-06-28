@@ -29,7 +29,7 @@ const Header = () => {
           <Link href='#get-started' pl='10px' pr='10px' fontSize='15px' style={orbitronFont.style} _hover={{ color: '#9bf0f5' }}>Getting Started</Link>
           <Link href='#features' pl='10px' pr='10px' fontSize='15px' style={orbitronFont.style} _hover={{ color: '#9bf0f5' }}>Features</Link>
           <Link href='#roadmap' pl='10px' pr='10px' fontSize='15px' style={orbitronFont.style} _hover={{ color: '#9bf0f5' }}>Roadmap</Link>
-          <Link href='https://bro-bot-academy.gitbook.io/brobot' pl='10px' pr='10px' fontSize='15px' style={orbitronFont.style} _hover={{ color: '#9bf0f5' }} target="_blank">Docs</Link>
+          <Link href='https://bro-bot-academy.gitbook.io/brobot' pl='10px' pr='10px' fontSize='15px' style={orbitronFont.style} _hover={{ color: '#9bf0f5' }} target="_blank">Tutorial</Link>
           <Link href='/BRO Whitepaper.pdf' pl='10px' pr='10px' fontSize='15px' style={orbitronFont.style} _hover={{ color: '#9bf0f5' }} target="_blank">Whitepaper</Link>
         </Box>
 
