@@ -90,7 +90,7 @@ const Intro = () => {
           justifyContent="center"
           alignItems="center"
         >
-          <ChakraImage src="/GIF.gif" alt="BroBot Logo" width="350px" />
+          <ChakraImage src="/pandaa.gif" alt="BroBot Logo" width="350px" />
           {/* <Image src='/GIF.gif' alt="BroBot Image" width={50} height={50} /> */}
         </Box>
       </Flex>
