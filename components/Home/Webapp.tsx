@@ -22,7 +22,7 @@ const Webapp = () => {
               background: '#fda007'
            }}
          >
-          BRO Exchange
+          PandaBrO Exchange
         </Button> 
      </Box>
 </Box>
