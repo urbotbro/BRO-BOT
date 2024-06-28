@@ -5,7 +5,7 @@ import {
   Text,
   Image as ChakraImage,
   Heading,
-  Badge, 
+  Badge,
   Button,
   Tooltip,
 } from "@chakra-ui/react";
@@ -35,69 +35,75 @@ const orbitronFont = Orbitron({
 
 const Intro = () => {
   return (
-      <Flex as="section" direction="column"  width="100%" justify="center" align="center">
-        <Flex
-          as="section"
-          width="100%"
-          direction={{ base: "column-reverse", md: "row" }}
-          maxWidth="1280px"
-          justifyContent="center"
-          align="center"
-          minH="700px"
-          pl="20px"
-          pr="20px"
+    <Flex
+      as="section"
+      direction="column"
+      width="100%"
+      justify="center"
+      align="center"
+    >
+      <Flex
+        as="section"
+        width="100%"
+        direction={{ base: "column-reverse", md: "row" }}
+        maxWidth="1280px"
+        justifyContent="center"
+        align="center"
+        minH="700px"
+        pl="20px"
+        pr="20px"
+      >
+        <Box
+          width={{ base: "100%", md: "60%" }}
+          textAlign={{ base: "center", md: "start" }}
+          display={{ base: "flex", md: "block" }}
+          flexDirection={{ base: "column" }}
         >
-          <Box
-            width={{ base: "100%", md: "60%" }}
-            textAlign={{ base: "center", md: "start" }}
-            display={{ base: "flex", md: "block" }}
-            flexDirection={{ base: "column" }}
+          <Heading
+            fontSize={{ base: "33px", md: "40px", lg: "45px", xl: "55px" }}
+            pb="20px"
+            className={newHero.heroContainer}
+            style={orbitronFont.style}
           >
-            <Heading
-              fontSize={{ base: "33px", md: "40px", lg: "45px", xl: "55px" }}
-              pb="20px"
-              className={newHero.heroContainer}
-              style={orbitronFont.style}
-            >
-              <Text
-                className={`${newHero.glitch} ${newHero.hero} ${newHero.layers}`}
-                data-text="PandaBro:Your Trading,Our Technology"
-              >
-                PandaBro:Your Trading,Our Technology
-              </Text>
-            </Heading>
             <Text
-              fontSize={{ base: "20px", md: "25px" }}
-              mt={{ base: "20px", sm: "0" }}
-              lineHeight={{ base: "160%", sm: "initial" }}
-              style={orbitronFont.style}
+              className={`${newHero.glitch} ${newHero.hero} ${newHero.layers}`}
+              data-text="PandaBro:Your Trading,Our Technology"
             >
-              Your all-in-one crypto ecosystem. Launching, trading, and signals
-              united under one hub - everything you need with PandaBro.
+              PandaBro:Your Trading,Our Technology
             </Text>
-          </Box>
-          <Box
-            width={{ base: "90%", md: "40%" }}
-            mt={{ base: "100px", md: "0" }}
-            mb={{ base: "20px", md: "0" }}
-            display={{ base: "none", sm: "flex" }}
-            justifyContent="center"
-            alignItems="center"
+          </Heading>
+          <Text
+            fontSize={{ base: "20px", md: "25px" }}
+            mt={{ base: "20px", sm: "0" }}
+            lineHeight={{ base: "160%", sm: "initial" }}
+            style={orbitronFont.style}
           >
-            <ChakraImage src="/GIF.gif" alt="BroBot Logo" width="350px" />
-            {/* <Image src='/GIF.gif' alt="BroBot Image" width={50} height={50} /> */}
-          </Box>
-        </Flex>
-        
-        <CountdownTimer/>
-        <Flex
+            Your all-in-one crypto ecosystem. Launching, trading, and signals
+            united under one hub - everything you need with PandaBro.
+          </Text>
+        </Box>
+        <Box
+          width={{ base: "90%", md: "40%" }}
+          mt={{ base: "100px", md: "0" }}
+          mb={{ base: "20px", md: "0" }}
+          display={{ base: "none", sm: "flex" }}
+          justifyContent="center"
+          alignItems="center"
+        >
+          <ChakraImage src="/GIF.gif" alt="BroBot Logo" width="350px" />
+          {/* <Image src='/GIF.gif' alt="BroBot Image" width={50} height={50} /> */}
+        </Box>
+      </Flex>
+
+      <CountdownTimer />
+      <Flex
         alignItems="center"
         justify={{ base: "space-evenly", md: "space-evenly" }}
         flexWrap="wrap"
         width="100%"
-        paddingBottom='10px'
+        paddingBottom="10px"
       >
-        <Box
+        {/* <Box
           as={Link}
           href=""
           flexDirection={{ base: "column", md: "row" }}
@@ -116,7 +122,7 @@ const Intro = () => {
             width={{ base: "30px", sm: "45px" }}
             pr={{ base: "0", md: "8px" }}
           >
-            <FaTelegram/>
+            <FaTelegram />
           </Box>
           <Box
             display={{ base: "flex", md: "block" }}
@@ -138,11 +144,11 @@ const Intro = () => {
               fontWeight="700"
               mt={{ base: "5px", md: "0" }}
             >
-               SNIPER BOT
+              SNIPER BOT
             </Box>
           </Box>
-        </Box>
-        <Box
+        </Box> */}
+        {/* <Box
           as={Link}
           href=""
           flexDirection={{ base: "column", md: "row" }}
@@ -153,7 +159,7 @@ const Intro = () => {
           mr={{ base: "0", md: "15px" }}
           background="#0088cc"
           padding="5px"
-          borderRadius="5px" 
+          borderRadius="5px"
         >
           <Box
             className={glitch.menu}
@@ -161,7 +167,7 @@ const Intro = () => {
             width={{ base: "30px", sm: "45px" }}
             pr={{ base: "0", md: "8px" }}
           >
-            <FaTelegram/>
+            <FaTelegram />
           </Box>
           <Box
             display={{ base: "flex", md: "block" }}
@@ -181,12 +187,12 @@ const Intro = () => {
               fontSize={{ base: "11px", sm: "14", md: "17px" }}
               textTransform="uppercase"
               fontWeight="700"
-              mt={{ base: "5px", md: "0" }} 
+              mt={{ base: "5px", md: "0" }}
             >
               Signal Bot
             </Box>
           </Box>
-        </Box>
+        </Box> */}
         <Box
           display="flex"
           flexDirection={{ base: "column", md: "row" }}
@@ -329,7 +335,7 @@ const Intro = () => {
             </Box>
           </Box>
         </Box>
-        <Box height="35px" display={{ base: "none", lg: "flex" }}>
+        {/* <Box height="35px" display={{ base: "none", lg: "flex" }}>
           <Tooltip
             label="Telegram Community"
             padding="10px"
@@ -340,12 +346,7 @@ const Intro = () => {
             placement="top"
             className={glitch.menu}
           >
-            <Link
-              href=""
-              className={glitch.div}
-              height="100%"
-              width="55px"
-            >
+            <Link href="" className={glitch.div} height="100%" width="55px">
               <RiTelegramLine />
             </Link>
           </Tooltip>
@@ -359,18 +360,13 @@ const Intro = () => {
             placement="top"
             className={glitch.menu}
           >
-            <Link
-              href=""
-              className={glitch.div}
-              height="100%"
-              width="50px"
-            >
+            <Link href="" className={glitch.div} height="100%" width="50px">
               <FaXTwitter />
             </Link>
           </Tooltip>
-        </Box>
+        </Box> */}
       </Flex>
-      <Box
+      {/* <Box
         height="40px"
         display={{ base: "flex", lg: "none" }}
         justifyContent="center"
@@ -388,12 +384,7 @@ const Intro = () => {
           placement="top"
           className={glitch.menu}
         >
-          <Link
-            href=""
-            className={glitch.div}
-            height="100%"
-            width="55px"
-          >
+          <Link href="" className={glitch.div} height="100%" width="55px">
             <RiTelegramLine />
           </Link>
         </Tooltip>
@@ -407,27 +398,22 @@ const Intro = () => {
           placement="top"
           className={glitch.menu}
         >
-          <Link
-            href=""
-            className={glitch.div}
-            height="100%"
-            width="50px"
-          >
+          <Link href="" className={glitch.div} height="100%" width="50px">
             <FaXTwitter />
           </Link>
         </Tooltip>
-      </Box>
-        <Box
-          position="absolute"
-          background={`url('/Video.gif') center no-repeat`}
-          left="0"
-          right="0"
-          minH="800px"
-          zIndex="-100"
-          opacity=".1"
-          mt="20px"
-        ></Box>
-      </Flex>
+      </Box> */}
+      <Box
+        position="absolute"
+        background={`url('/Video.gif') center no-repeat`}
+        left="0"
+        right="0"
+        minH="800px"
+        zIndex="-100"
+        opacity=".1"
+        mt="20px"
+      ></Box>
+    </Flex>
   );
 };
 

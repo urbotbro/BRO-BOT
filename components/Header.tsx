@@ -50,17 +50,17 @@ const Header = () => {
           <Divider opacity='.1' />
              <ChakraLink onClick={() => {toggleTool(false)}} as={Link} href='https://tradewithbro.com/pages/launch.html' pt='10px' pb='10px' pl='5px' pr='5px' _hover={{textDecoration: 'none', background: '#1e262d'}} display='flex' alignItems='center'><Box className={glitch.menu} width='25px' height='25px'><FaTelegram /></Box> <Box as='span' ml='10px'>Bro Launchpad</Box></ChakraLink> */}
           <Box pt='10px' pb='10px' pl='5px' pr='5px' opacity='0.7' _hover={{ textDecoration: 'none' }} cursor='pointer' display='flex' alignItems='center'>
-             <a href="https://t.me/snipewithbro_bot" target="_blank" rel="noopener noreferrer" className="sniperBotLink" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', color: 'inherit' }}>
+             <a href="#" target="_blank" rel="noopener noreferrer" className="sniperBotLink" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', color: 'inherit' }}>
                 <FaTelegram style={{ marginRight: '10px' }} />
                 Sniper Bot
-              </a>
+              </a><Badge variant='outline' justifySelf='flex-end' alignItems='center' display='flex' justifyContent='center' alignContent='center' ml='10px' colorScheme='green'>Soon</Badge>
             </Box>
             <Divider opacity='.1' />
             <Box pt='10px' pb='10px' pl='5px' pr='5px' opacity='0.7' _hover={{ textDecoration: 'none' }} cursor='pointer' display='flex' alignItems='center'>
-              <a href="https://t.me/brosignal_bot" target="_blank" rel="noopener noreferrer" className="signalBotLink" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', color: 'inherit' }}>
+              <a href="#" target="_blank" rel="noopener noreferrer" className="signalBotLink" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', color: 'inherit' }}>
                  <FaTelegram style={{ marginRight: '10px' }} />
                  Signal Bot
-               </a>
+               </a><Badge variant='outline' justifySelf='flex-end' alignItems='center' display='flex' justifyContent='center' alignContent='center' ml='10px' colorScheme='green'>Soon</Badge>
              </Box>
           <Divider opacity='.1' />
           <Box pt='10px' pb='10px' pl='5px' pr='5px' opacity='0.7' _hover={{ textDecoration: 'none', }} cursor='default' display='flex' alignItems='center'>
@@ -105,8 +105,9 @@ const Header = () => {
                 <Box width='25px' height='25px'><FaTelegram /></Box>
                 <Box as='span' ml='10px'>Signal Bot</Box>
                 <Badge variant='outline' justifySelf='flex-end' alignItems='center' display='flex' justifyContent='center' alignContent='center' ml='10px' colorScheme='green'>Coming Soon</Badge>
-            </Box>
+            
              </ChakraLink>
+          </Box>
           <Divider opacity='.1' />
           <Box pt='10px' pb='10px' pl='5px' pr='5px' opacity='0.7' _hover={{ textDecoration: 'none', }} cursor='default' display='flex' alignItems='center'>
             BroTrade Hub <Badge variant='outline' justifySelf='flex-end' alignItems='center' display='flex' justifyContent='center' alignContent='center' ml='10px' colorScheme='green'>Coming Soon</Badge>
@@ -116,7 +117,7 @@ const Header = () => {
             Bro Launchpad <Badge variant='outline' justifySelf='flex-end' alignItems='center' display='flex' justifyContent='center' alignContent='center' ml='10px' colorScheme='green'>Coming Soon</Badge>
           </Box>
         </Box>
-      </Box>
+      
     </Flex>
   )
 }

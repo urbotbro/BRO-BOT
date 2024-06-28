@@ -27,10 +27,10 @@ export default function Home() {
       <Box as="main" display='flex' alignItems='center' justifyContent='center' flexDirection='column'>
         <Intro />
         {/* <Sliders/> */}
+        <Signal />
         <Webapp/>
         <GetStarted />
         <Features />
-        <Signal />
         <Tokenomics/>
         <Roadmap />
         <Boost />

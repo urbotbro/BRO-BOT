@@ -35,37 +35,50 @@ const Tokenomics = () => {
         </span>
       </Heading>
       <Flex
-        textAlign={{ base: "center", md: "start" }}
+        textAlign={{ base: "left", md: "start" }}
         width="100%"
         maxWidth="1280px"
         direction={{ base: "column-reverse", md: "row" }}
-        justify="center"
+        justify="left"
         mt="60px"
         mb="150px"
         align="center"
         pl="20px"
         pr="20px"
       >
+        {/* 10,000,000
+
+40% Presale
+20% Liquidity 
+10% Founders, Developers & Incentivising Team Building/Maintaining Project
+10% Marketing & Treasury, Collaboration
+5% Airdrops
+5% CEX
+5% Trading Pools ROI
+5% Rewards */}
+
         <Box width={{ base: "100%", md: "60%" }}>
           <Box fontSize="20px" pl={{ base: "10px", md: "initial" }}>
-          <span style={{color:"#fda007"}}>Total Supply:</span> 1 Million BRO tokens <br />
-          <span style={{color:"#fda007"}}>Team Allocation:</span> 100,000 tokens
+          <span style={{color:"#fda007"}}>10,000,000 </span> Total Supply  <br />
+          {/* <span style={{color:"#fda007"}}>Team Allocation:</span> 100,000 tokens
             <br />
              locked for 5 years without revenue sharing for motivation.quarterly unlocks.
+            <br /> */}
+            <span style={{color:"#fda007"}}>40%</span> Presale
             <br />
-            <span style={{color:"#fda007"}}>Presale:</span> 168,407 tokens via fair launch.
+            <span style={{color:"#fda007"}}>20%</span> Liquidity
             <br />
-            <span style={{color:"#fda007"}}>LP allocation:</span> 81,593 tokens, locked for 1 years for market stability.
+            <span style={{color:"#fda007"}}>10% </span> Founders, Developers & Incentivising Team Building/Maintaining Project
             <br />
-            <span style={{color:"#fda007"}}>Treasury:</span> 650,000 tokens for BRO Bonus, 5-year vesting, quarterly unlocks, re-locking unused tokens for sustainability.
+            <span style={{color:"#fda007"}}>10% </span> Marketing & Treasury, Collaboration
             <br />
-            <span style={{color:"#fda007"}}>Revenue:</span> 45% of bot transaction fees to revenue dashboard
+            <span style={{color:"#fda007"}}>5% </span> Airdrops
             <br />
-            <span style={{color:"#fda007"}}>2% Sell tax</span> for revenue share
-            <br />
-            <span style={{color:"#fda007"}}>2% Sell tax</span> for team and development
+            <span style={{color:"#fda007"}}>5% </span> CEX
             <br/>
-            <span style={{color:"#fda007"}}>2% Buy tax</span> for LP injection
+            <span style={{color:"#fda007"}}>5% </span> Trading Pools ROI
+            <br/>
+            <span style={{color:"#fda007"}}>5% </span>  Rewards
           </Box>
         </Box>
         <Box
