@@ -104,7 +104,7 @@ const Intro = () => {
         width="100%"
         paddingBottom="10px"
       >
-        {/* <Box
+        <Box
           as={Link}
           href=""
           flexDirection={{ base: "column", md: "row" }}
@@ -148,8 +148,8 @@ const Intro = () => {
               SNIPER BOT
             </Box>
           </Box>
-        </Box> */}
-        {/* <Box
+        </Box> 
+        <Box
           as={Link}
           href=""
           flexDirection={{ base: "column", md: "row" }}
@@ -193,7 +193,7 @@ const Intro = () => {
               Signal Bot
             </Box>
           </Box>
-        </Box> */}
+        </Box>
         <Box
           display="flex"
           flexDirection={{ base: "column", md: "row" }}
