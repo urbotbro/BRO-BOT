@@ -132,12 +132,20 @@ const Intro = () => {
             alignItems="center"
             mt={{ base: "5px", md: "0" }}
           >
-            <Badge
+            {/* <Badge
               fontSize={{ base: "8px", sm: "11px" }}
               p="2px"
               borderRadius="5px"
             >
               Available
+            </Badge> */}
+            <Badge
+              fontSize={{ base: "8px", sm: "11px" }}
+              colorScheme="green"
+              p="2px"
+              borderRadius="5px"
+            >
+              Soon
             </Badge>
             <Box
               fontSize={{ base: "11px", sm: "14", md: "17px" }}
@@ -177,12 +185,20 @@ const Intro = () => {
             alignItems="center"
             mt={{ base: "5px", md: "0" }}
           >
-            <Badge
+            {/* <Badge
               fontSize={{ base: "8px", sm: "11px" }}
               p="2px"
               borderRadius="5px"
             >
               Available
+            </Badge> */}
+            <Badge
+              fontSize={{ base: "8px", sm: "11px" }}
+              colorScheme="green"
+              p="2px"
+              borderRadius="5px"
+            >
+              Soon
             </Badge>
             <Box
               fontSize={{ base: "11px", sm: "14", md: "17px" }}

@@ -16,7 +16,7 @@ const Signal = () => {
         textAlign={{ base: 'center', md: 'start' }}
         align='center'
         background='#fda007'
-        padding={{ base: '20px 20px', md: '30px 80px' }}
+        padding={{ base: '10px 10px', md: '30px 80px' }}
         borderRadius='10px'
       >
         <Box width={{ base: '100%', md: '50%' }}>
@@ -31,9 +31,9 @@ const Signal = () => {
           >
             PANDA BRO
           </Heading>
-          <Box fontSize='20px' color="black">Hey, my name is Bro, and I am a panda. I am not a normal panda though, I am not lazy nor am I clumsy. In fact, I am very active and smart. I am here to help you make money. The utilities I offer is next to none in this space. Browse the website to understand the difference between me, and other meme coins.</Box>
+          <Box fontSize={{ base: '18px', md: '20px' }} color="black">Hey, my name is Bro, and I am a panda. I am not a normal panda though, I am not lazy nor am I clumsy. In fact, I am very active and smart. I am here to help you make money. The utilities I offer is next to none in this space. Browse the website to understand the difference between me, and other meme coins.</Box>
         </Box>
-        <Flex width={{ base: '100%', md: '50%' }} justify='center' align='center'>
+        <Flex width={{ base: '80%', md: '50%' }} justify='center' align='center'>
           <Image src="/pandaa.png" width="450px" alt="Trade Like Never Before" />
         </Flex>
       </Flex>
