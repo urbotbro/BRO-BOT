@@ -15,7 +15,6 @@ const Tokenomics = () => {
   return (
     <Flex
       mt="150px"
-      mb="150px"
       width="100%"
       maxW="1280px"
       flexDirection="column"
@@ -36,37 +35,19 @@ const Tokenomics = () => {
         </span>
       </Heading>
       <Flex
-        textAlign={{ base: "left", md: "start" }}
+        textAlign={{ base: "center", md: "center" }}
         width="100%"
         maxWidth="1280px"
-        direction={{ base: "column-reverse", md: "row" }}
-        justify="left"
+        direction={{ base: "column", md: "column" }}
+        justify="center"
         mt="60px"
-        mb="150px"
         align="center"
         pl="20px"
         pr="20px"
       >
-
         <Box width={{ base: "100%", md: "60%" }}>
           <Box fontSize="20px" pl={{ base: "10px", md: "initial" }}>
-            <span style={{ color: "#fda007" }}>10,000,000 </span> Total Supply
-            <br />
-            <span style={{ color: "#fda007" }}>40%</span> Presale
-            <br />
-            <span style={{ color: "#fda007" }}>20%</span> Liquidity
-            <br />
-            <span style={{ color: "#fda007" }}>10% </span> Founders, Developers & Incentivising Team Building/Maintaining Project
-            <br />
-            <span style={{ color: "#fda007" }}>10% </span> Marketing & Treasury, Collaboration
-            <br />
-            <span style={{ color: "#fda007" }}>5% </span> Airdrops
-            <br />
-            <span style={{ color: "#fda007" }}>5% </span> CEX
-            <br />
-            <span style={{ color: "#fda007" }}>5% </span> Trading Pools ROI
-            <br />
-            <span style={{ color: "#fda007" }}>5% </span>  Rewards
+            <span style={{ color: "#fda007" }}>Total Supply:</span> 10,000,000
           </Box>
         </Box>
         <Box
@@ -75,9 +56,10 @@ const Tokenomics = () => {
           justifyContent="center"
           alignItems="center"
         >
-          <TokenomicsChart/>
+          <TokenomicsChart />
           {/* <Image src="/tokenomics.png" alt="tokenomics" width="80%" /> */}
         </Box>
+
       </Flex>
     </Flex>
   );

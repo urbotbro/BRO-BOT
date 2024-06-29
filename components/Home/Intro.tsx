@@ -23,6 +23,7 @@ import { RiTelegramLine } from "react-icons/ri";
 import glitch from "@/components/Home/glitch.module.css";
 import { Link } from "@chakra-ui/next-js";
 import CountdownTimer from "./CountdownTimer";
+import Signal from "./Signal";
 
 const ubuntuFont = Ubuntu({
   weight: ["300", "400", "500", "700"],
@@ -94,8 +95,8 @@ const Intro = () => {
           {/* <Image src='/GIF.gif' alt="BroBot Image" width={50} height={50} /> */}
         </Box>
       </Flex>
-
-      <CountdownTimer />
+      <Signal/>
+      {/* <CountdownTimer /> */}
       <Flex
         alignItems="center"
         justify={{ base: "space-evenly", md: "space-evenly" }}

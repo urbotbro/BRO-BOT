@@ -8,7 +8,7 @@ const orbitronFont = Orbitron({ weight: ['400', '500', '600', '700'], subsets: [
 
 const Signal = () => {
   return (
-    <Flex width="100%" maxWidth='1280px' justify='center' mt='150px' mb='150px' align='center'>
+    <Flex width="100%" maxWidth='1280px' justify='center' mb='150px' align='center'>
       <Flex
         width={{ base: '90%', md: "90%" }}
         justify='space-between'
