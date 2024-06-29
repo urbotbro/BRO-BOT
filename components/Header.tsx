@@ -15,15 +15,15 @@ const Header = () => {
   const [tool, toggleTool] = useState(false);
   const [smallTool, toggleSmallTool] = useState(false);
   const [state, changeState] = useState(false);
-  const toolRef = useRef(null);
-
+  const toolRef = useRef<HTMLDivElement>(null);
+  const handleClickOutside = (event: MouseEvent) => {
+    if (toolRef.current && !toolRef.current.contains(event.target as Node)) {
+      toggleTool(false);
+      toggleSmallTool(false);
+    }
+  };
   useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (toolRef.current && !toolRef.current.contains(event.target as Node)) {
-        toggleTool(false);
-        toggleSmallTool(false);
-      }
-    };
+   
   
 
     document.addEventListener('mousedown', handleClickOutside);
