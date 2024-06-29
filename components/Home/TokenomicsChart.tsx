@@ -20,7 +20,7 @@ const centerTextPlugin = {
     ctx.fillStyle = "rgb(253, 160, 7)";
 
     const text = "$BRO";
-    const textX = centerX - width / 2.8; 
+    const textX = centerX - width / 2.9; 
     const textY = centerY;
 
     ctx.fillText(text, textX, textY);
