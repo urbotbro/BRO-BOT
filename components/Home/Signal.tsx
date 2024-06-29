@@ -34,7 +34,7 @@ const Signal = () => {
           <Box fontSize={{ base: '18px', md: '20px' }} color="black">Hey, my name is Bro, and I am a panda. I am not a normal panda though, I am not lazy nor am I clumsy. In fact, I am very active and smart. I am here to help you make money. The utilities I offer is next to none in this space. Browse the website to understand the difference between me, and other meme coins.</Box>
         </Box>
         <Flex width={{ base: '80%', md: '50%' }} justify='center' align='center'>
-          <Image src="/pandaa.png" width="450px" alt="Trade Like Never Before" />
+          <Image src="/pandare.png" width="450px" alt="Trade Like Never Before" />
         </Flex>
       </Flex>
     </Flex>
