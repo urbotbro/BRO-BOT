@@ -15,7 +15,7 @@ const Footer = () => {
     <Flex as='footer' justify='center' direction='column' align='center' bg='black' textAlign='center' width="100%">
       <Flex direction='column' as='div' width='100%' maxWidth='1280px' mt='150px' mb='150px' justify='center' align='center'>
         <Box width='220px'>
-          <Image src='/GIF.gif' alt='Footer Logo' />
+          <Image src='/pandaa.gif' alt='Footer Logo' />
         </Box>
         {/* <Box mt='50px' fontSize='50px' fontWeight='700' mb='20px' letterSpacing='1.5px' className={glitch.glitchWrapper} style={ubuntuFont.style}>
           <span className={glitch.glitch} data-text="Begin a new trading era with BRO">Begin a new trading era with BRO</span>
@@ -26,10 +26,10 @@ const Footer = () => {
         
         <Box>
           <Flex justify='center' align='center' transition='all 0.2s ease-in-out'>
-            <Link href='' target="_blank" width='30px' height='30px' ml='10px' mr='10px' display='flex'justifyContent='center' alignItems="center" className={glitch.div}>
+            <Link href='https://x.com/PandaBRO___' target="_blank" width='30px' height='30px' ml='10px' mr='10px' display='flex'justifyContent='center' alignItems="center" className={glitch.div}>
               <FaXTwitter />
             </Link>
-            <Link href="" target="_blank" width='30px' height='30px' ml='10px' mr='10px' display='flex'justifyContent='center' alignItems="center" className={glitch.div}>
+            <Link href="https://t.me/pandabro_portal" target="_blank" width='30px' height='30px' ml='10px' mr='10px' display='flex'justifyContent='center' alignItems="center" className={glitch.div}>
               <FaTelegram />
             </Link>
           </Flex>

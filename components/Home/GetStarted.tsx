@@ -34,14 +34,14 @@ const GetStarted = () => {
             link: '',
         },
         {
-            title: 'BRO Base',
+            title: 'Trading Pool',
             comingSoon: false,
             description: 'One of the core utilities of PandaBRO is the ability to allow investors to invest or stake their $BRO, $USDT or $USDC for a specific amount of time and get the agreed-on ROI. Trading pools are generated everyday depending on the supply and demand, and they are limited to use. Only NFT or $BRO holders will be eligible to use our pools. Different NFTs allow access to different pool tiers, generating up to 160% ROI in 14 days (60% net profit). More details will be announced post launch. ',
             imgSrc: '/brobase.png',
             link: '',
         },
         {
-            title: 'BRO NFT',
+            title: 'PandaBrO NFTS',
             comingSoon: false,
             description: 'Owning a PandaBRO NFT is a luxury leveraging the unique opportunities within the digital asset ecosystem. Not everyone will get to own one due to the limited supply, as only 1000 NFTs will ever be minted. The model is simple, there are only 3 different types of NFTs. All of them provide access to our trading pools, but each tier provides customers with different ROI. More details will be announced post launch. ',
             imgSrc: '/bronft.png',
