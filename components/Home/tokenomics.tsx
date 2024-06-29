@@ -4,6 +4,7 @@ import { Orbitron } from "next/font/google";
 import glitch from "@/components/Home/glitch.module.css";
 import React from "react";
 import { motion } from "framer-motion";
+import TokenomicsChart from "./TokenomicsChart";
 
 const orbitronFont = Orbitron({
   weight: ["400", "500", "600", "700"],
@@ -46,39 +47,26 @@ const Tokenomics = () => {
         pl="20px"
         pr="20px"
       >
-        {/* 10,000,000
-
-40% Presale
-20% Liquidity 
-10% Founders, Developers & Incentivising Team Building/Maintaining Project
-10% Marketing & Treasury, Collaboration
-5% Airdrops
-5% CEX
-5% Trading Pools ROI
-5% Rewards */}
 
         <Box width={{ base: "100%", md: "60%" }}>
           <Box fontSize="20px" pl={{ base: "10px", md: "initial" }}>
-          <span style={{color:"#fda007"}}>10,000,000 </span> Total Supply  <br />
-          {/* <span style={{color:"#fda007"}}>Team Allocation:</span> 100,000 tokens
+            <span style={{ color: "#fda007" }}>10,000,000 </span> Total Supply
             <br />
-             locked for 5 years without revenue sharing for motivation.quarterly unlocks.
-            <br /> */}
-            <span style={{color:"#fda007"}}>40%</span> Presale
+            <span style={{ color: "#fda007" }}>40%</span> Presale
             <br />
-            <span style={{color:"#fda007"}}>20%</span> Liquidity
+            <span style={{ color: "#fda007" }}>20%</span> Liquidity
             <br />
-            <span style={{color:"#fda007"}}>10% </span> Founders, Developers & Incentivising Team Building/Maintaining Project
+            <span style={{ color: "#fda007" }}>10% </span> Founders, Developers & Incentivising Team Building/Maintaining Project
             <br />
-            <span style={{color:"#fda007"}}>10% </span> Marketing & Treasury, Collaboration
+            <span style={{ color: "#fda007" }}>10% </span> Marketing & Treasury, Collaboration
             <br />
-            <span style={{color:"#fda007"}}>5% </span> Airdrops
+            <span style={{ color: "#fda007" }}>5% </span> Airdrops
             <br />
-            <span style={{color:"#fda007"}}>5% </span> CEX
-            <br/>
-            <span style={{color:"#fda007"}}>5% </span> Trading Pools ROI
-            <br/>
-            <span style={{color:"#fda007"}}>5% </span>  Rewards
+            <span style={{ color: "#fda007" }}>5% </span> CEX
+            <br />
+            <span style={{ color: "#fda007" }}>5% </span> Trading Pools ROI
+            <br />
+            <span style={{ color: "#fda007" }}>5% </span>  Rewards
           </Box>
         </Box>
         <Box
@@ -87,7 +75,8 @@ const Tokenomics = () => {
           justifyContent="center"
           alignItems="center"
         >
-          <Image src="/tokenomics.png" alt="tokenomics" width="80%" />
+          <TokenomicsChart/>
+          {/* <Image src="/tokenomics.png" alt="tokenomics" width="80%" /> */}
         </Box>
       </Flex>
     </Flex>
