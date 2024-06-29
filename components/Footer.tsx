@@ -26,10 +26,10 @@ const Footer = () => {
         
         <Box>
           <Flex justify='center' align='center' transition='all 0.2s ease-in-out'>
-            <Link href='' target="_blank" width='30px' height='30px' ml='10px' mr='10px' display='flex'justifyContent='center' alignItems="center" className={glitch.div}>
+            <Link href='https://x.com/PandaBRO___' target="_blank" width='30px' height='30px' ml='10px' mr='10px' display='flex'justifyContent='center' alignItems="center" className={glitch.div}>
               <FaXTwitter />
             </Link>
-            <Link href="" target="_blank" width='30px' height='30px' ml='10px' mr='10px' display='flex'justifyContent='center' alignItems="center" className={glitch.div}>
+            <Link href="https://t.me/pandabro_portal" target="_blank" width='30px' height='30px' ml='10px' mr='10px' display='flex'justifyContent='center' alignItems="center" className={glitch.div}>
               <FaTelegram />
             </Link>
           </Flex>
