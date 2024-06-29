@@ -60,16 +60,16 @@ const Intro = () => {
           flexDirection={{ base: "column" }}
         >
           <Heading
-            fontSize={{ base: "33px", md: "40px", lg: "45px", xl: "55px" }}
+            fontSize={{ base: "32px", md: "40px", lg: "45px", xl: "55px" }}
             pb="20px"
             className={newHero.heroContainer}
             style={orbitronFont.style}
           >
             <Text
               className={`${newHero.glitch} ${newHero.hero} ${newHero.layers}`}
-              data-text="PandaBro:Your Trading,Our Technology"
+              data-text="PandaBro:Your Trading, Our Technology"
             >
-              PandaBro:Your Trading,Our Technology
+              PandaBro:Your Trading, Our Technology
             </Text>
           </Heading>
           <Text

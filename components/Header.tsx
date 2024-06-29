@@ -1,6 +1,6 @@
 'use client';
 import { Link as ChakraLink, Divider, Box, Button, Flex, Popover, PopoverBody, Badge, PopoverFooter, PopoverContent, PopoverHeader, PopoverTrigger, Portal } from '@chakra-ui/react'
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Link, Image } from '@chakra-ui/next-js';
 import { Ubuntu, Orbitron } from "next/font/google";
 import { FaBars, FaXmark, FaTelegram } from 'react-icons/fa6';
@@ -15,6 +15,22 @@ const Header = () => {
   const [tool, toggleTool] = useState(false);
   const [smallTool, toggleSmallTool] = useState(false);
   const [state, changeState] = useState(false);
+  const toolRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (toolRef.current && !toolRef.current.contains(event.target as Node)) {
+        toggleTool(false);
+        toggleSmallTool(false);
+      }
+    };
+  
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
 
 
   return (
@@ -40,7 +56,7 @@ const Header = () => {
             <Box as='span' paddingRight='7px'>Start</Box> <FaChevronDown />
           </Button>
         </Box>
-        <Box as='div' visibility={tool ? 'visible' : 'hidden'} zIndex={tool ? 1000 : 0} opacity={tool ? 1 : 0} transition={'all .2s ease-in-out'} flexDirection='column' minWidth='240px' background="#161c21" padding='10px' borderRadius='5px' right='10px' transform='translateY(85px)' position='absolute'>
+        <Box ref={toolRef} as='div' visibility={tool ? 'visible' : 'hidden'} zIndex={tool ? 1000 : 0} opacity={tool ? 1 : 0} transition={'all .2s ease-in-out'} flexDirection='column' minWidth='240px' background="#161c21" padding='10px' borderRadius='5px' right='10px' transform='translateY(85px)' position='absolute'>
           {/* <ChakraLink onClick={() => {toggleTool(false)}} as={Link} href='#' pt='10px' pb='10px' pl='5px' pr='5px' _hover={{textDecoration: 'none', background: '#1e262d'}} display='flex' alignItems='center'><Box className={glitch.menu} width='25px' height='25px'><FaTelegram /></Box> <Box as='span' ml='10px'>BRO BOT</Box></ChakraLink>
             <ChakraLink onClick={() => {toggleTool(false)}} as={Link} href='#' pt='10px' pb='10px' pl='5px' pr='5px' _hover={{textDecoration: 'none', background: '#1e262d'}} display='flex' alignItems='center'><Box className={glitch.menu} width='25px' height='25px'><FaTelegram /></Box> <Box as='span' ml='10px'>BRO SNIPER BOT</Box></ChakraLink>
           <Divider opacity='.1' />
@@ -95,27 +111,41 @@ const Header = () => {
             </Box>
           </Button>
         </Box>
-        <Box as='div' visibility={smallTool ? 'visible' : 'hidden'} zIndex={smallTool ? 1000 : 0} opacity={smallTool ? 1 : 0} transition={'all .2s ease-in-out'} flexDirection='column' width='80%' background="#161c21" padding='10px' borderRadius='5px' right='10px' transform='translateY(286px)' position='absolute'>
+        <Box ref={toolRef} as='div' visibility={smallTool ? 'visible' : 'hidden'} zIndex={smallTool ? 1000 : 0} opacity={smallTool ? 1 : 0} transition={'all .2s ease-in-out'} flexDirection='column' width='80%' background="#161c21" padding='10px' borderRadius='5px' right='10px' transform='translateY(286px)' position='absolute'>
              <ChakraLink onClick={() => toggleSmallTool(false)} href='https://t.me/snipewithbro_bot' isExternal pt='10px' pb='10px' pl='5px' pr='5px' _hover={{ textDecoration: 'none', background: '#1e262d' }} display='flex' alignItems='center'>
                 <Box width='25px' height='25px'><FaTelegram /></Box>
                 <Box as='span' ml='10px'>BRO SNIPER BOT</Box>
+                <Badge variant='outline' justifySelf='flex-end' alignItems='center' display='flex' justifyContent='center' alignContent='center' ml='10px' colorScheme='green'>Soon</Badge>
              </ChakraLink>
              <Divider opacity='.1' />
              <ChakraLink onClick={() => toggleTool(false)} href='https://t.me/brosignal_bot' isExternal pt='10px' pb='10px' pl='5px' pr='5px' _hover={{ textDecoration: 'none', background: '#1e262d' }} display='flex' alignItems='center'>
                 <Box width='25px' height='25px'><FaTelegram /></Box>
                 <Box as='span' ml='10px'>Signal Bot</Box>
-                <Badge variant='outline' justifySelf='flex-end' alignItems='center' display='flex' justifyContent='center' alignContent='center' ml='10px' colorScheme='green'>Coming Soon</Badge>
+                <Badge variant='outline' justifySelf='flex-end' alignItems='center' display='flex' justifyContent='center' alignContent='center' ml='10px' colorScheme='green'>Soon</Badge>
+            
+             </ChakraLink>
+             <Divider opacity='.1' />
+             <ChakraLink onClick={() => toggleSmallTool(false)} href='#' isExternal pt='10px' pb='10px' pl='5px' pr='5px' _hover={{ textDecoration: 'none', background: '#1e262d' }} display='flex' alignItems='center'>
+                <Box width='25px' height='25px'><FaTelegram /></Box>
+                <Box as='span' ml='10px'>BroTrade Hub</Box>
+                <Badge variant='outline' justifySelf='flex-end' alignItems='center' display='flex' justifyContent='center' alignContent='center' ml='10px' colorScheme='green'>Soon</Badge>
+             </ChakraLink>
+             <Divider opacity='.1' />
+             <ChakraLink onClick={() => toggleTool(false)} href='#' isExternal pt='10px' pb='10px' pl='5px' pr='5px' _hover={{ textDecoration: 'none', background: '#1e262d' }} display='flex' alignItems='center'>
+                <Box width='25px' height='25px'><FaTelegram /></Box>
+                <Box as='span' ml='10px'>Bro Launchpad</Box>
+                <Badge variant='outline' justifySelf='flex-end' alignItems='center' display='flex' justifyContent='center' alignContent='center' ml='10px' colorScheme='green'>Soon</Badge>
             
              </ChakraLink>
           </Box>
-          <Divider opacity='.1' />
+          {/* <Divider opacity='.1' />
           <Box pt='10px' pb='10px' pl='5px' pr='5px' opacity='0.7' _hover={{ textDecoration: 'none', }} cursor='default' display='flex' alignItems='center'>
             BroTrade Hub <Badge variant='outline' justifySelf='flex-end' alignItems='center' display='flex' justifyContent='center' alignContent='center' ml='10px' colorScheme='green'>Coming Soon</Badge>
           </Box>
           <Divider opacity='.1' />
           <Box pt='10px' pb='10px' pl='5px' pr='5px' opacity='0.7' _hover={{ textDecoration: 'none', }} cursor='default' display='flex' alignItems='center'>
             Bro Launchpad <Badge variant='outline' justifySelf='flex-end' alignItems='center' display='flex' justifyContent='center' alignContent='center' ml='10px' colorScheme='green'>Coming Soon</Badge>
-          </Box>
+          </Box> */}
         </Box>
       
     </Flex>

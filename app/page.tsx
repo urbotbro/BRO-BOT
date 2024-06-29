@@ -24,7 +24,7 @@ export default function Home() {
     {load ?
     <Loader visibility={load} /> :<>
     <Header />
-      <Box as="main" display='flex' alignItems='center' justifyContent='center' flexDirection='column'>
+      <Box as="main" display='flex' width="100%" alignItems='center' justifyContent='center' flexDirection='column'>
         <Intro />
         {/* <Sliders/> */}
         <Signal />

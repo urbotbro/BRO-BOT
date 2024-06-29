@@ -3,7 +3,7 @@
     
   .hero {
     line-height: 1;
-    display: inline-block;
+    display: block;
     color: #fff;
     z-index: 2;
     letter-spacing: 10px;

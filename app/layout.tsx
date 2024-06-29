@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body style={{
-          display:'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', width: "100%", background:"#0c0f12", color: '#fff'
+          display:'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', background:"#0c0f12", color: '#fff'
         }} className={`${oxaniumFont.className}`}>
         <Providers>
           {children}
