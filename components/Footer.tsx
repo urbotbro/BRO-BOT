@@ -15,7 +15,7 @@ const Footer = () => {
     <Flex as='footer' justify='center' direction='column' align='center' bg='black' textAlign='center' width="100%">
       <Flex direction='column' as='div' width='100%' maxWidth='1280px' mt='150px' mb='150px' justify='center' align='center'>
         <Box width='220px'>
-          <Image src='/pandaaa.gif' alt='Footer Logo' />
+          <Image src='/pandaaaa.gif' alt='Footer Logo' />
         </Box>
         {/* <Box mt='50px' fontSize='50px' fontWeight='700' mb='20px' letterSpacing='1.5px' className={glitch.glitchWrapper} style={ubuntuFont.style}>
           <span className={glitch.glitch} data-text="Begin a new trading era with BRO">Begin a new trading era with BRO</span>
